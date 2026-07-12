@@ -1,0 +1,44 @@
+name: SET_UP Daily Scrape
+
+on:
+  schedule:
+    # 2x/dia: 8h e 20h horário Salvador (UTC-3)
+    - cron: '0 11 * * *'   # 08h Salvador
+    - cron: '0 23 * * *'   # 20h Salvador
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run SET_UP
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_HUB_ID: ${{ secrets.NOTION_HUB_ID }}
+        run: python -m src.main
+
+      - name: Commit dashboard + data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/ data/latest.json
+          git diff --staged --quiet || git commit -m "🤖 SET_UP daily update $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
