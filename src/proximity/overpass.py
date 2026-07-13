@@ -35,7 +35,7 @@ class OverpassClient:
             return self._cache[cache_key]
 
         query = f"""
-        [out:json][timeout:25];
+        [out:json][timeout:10];
         (
           node{query_tag}(around:{radius_meters},{lat},{lon});
           way{query_tag}(around:{radius_meters},{lat},{lon});
@@ -46,7 +46,7 @@ class OverpassClient:
         try:
             time.sleep(1.5)  # Overpass rate limit
             headers = {"User-Agent": "SET_UP-RentalScraper/1.0 (script pessoal de busca de aluguel)"}
-            resp = requests.post(OVERPASS_URL, data={"data": query}, headers=headers, timeout=30)
+            resp = requests.post(OVERPASS_URL, data={"data": query}, headers=headers, timeout=12)
             if resp.status_code != 200:
                 print(f"    [overpass] status {resp.status_code}")
                 return []

@@ -11,7 +11,7 @@ from typing import List, Dict
 from ..config import DOCS_DIR, TARGET_CITIES, DASHBOARD_TITLE
 
 
-def generate_dashboard(listings: List[Dict], prices: List[Dict]):
+def generate_dashboard(listings: List[Dict], prices: List[Dict], consolidados: List[Dict] = None):
     DOCS_DIR.mkdir(exist_ok=True)
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
@@ -30,12 +30,12 @@ def generate_dashboard(listings: List[Dict], prices: List[Dict]):
         if c in listings_by_city:
             listings_by_city[c].append(l)
 
-    html = _build_html(listings_by_city, prices, now)
+    html = _build_html(listings_by_city, prices, now, consolidados or [])
     (DOCS_DIR / "index.html").write_text(html, encoding="utf-8")
     print(f"  ✓ Dashboard v2 gerado em {DOCS_DIR}")
 
 
-def _build_html(listings_by_city, prices, generated_at):
+def _build_html(listings_by_city, prices, generated_at, consolidados=None):
     total = sum(len(v) for v in listings_by_city.values())
     geocoded = sum(1 for v in listings_by_city.values()
                    for l in v if l.get("_geocoded"))
@@ -137,6 +137,7 @@ def _build_html(listings_by_city, prices, generated_at):
   </nav>
   {city_sections}
   {price_section}
+  {_shopping_section(consolidados or [])}
   <footer>
     SET_UP · Dados: OpenStreetMap, Habitaclia, Pisos.com, Idealista, Mercadona
     · <a href='https://github.com/Mauricio1806/SET_UP' style='color:#a5b4fc'>GitHub</a>
@@ -273,3 +274,129 @@ def _esc(t):
     if t is None: return ""
     return (str(t).replace("&","&amp;").replace("<","&lt;")
             .replace(">","&gt;").replace('"',"&quot;"))
+
+
+# -------------------------------------------------------
+# SEÇÃO DE COMPRAS CONSOLIDADA
+# -------------------------------------------------------
+
+def _shopping_section(consolidados: List[Dict]) -> str:
+    if not consolidados:
+        return ""
+
+    tabs_html = ""
+    tables_html = ""
+
+    for idx, c in enumerate(consolidados):
+        city_name = c.get("city_name", "")
+        city_key  = c.get("city", "")
+        carrinho  = c.get("carrinho", [])
+        active = "active" if idx == 0 else ""
+
+        tabs_html += f"<button class='city-tab {active}' onclick=\"showCity('{city_key}')\">{city_name}</button>"
+
+        # Summary cards
+        por_mercado = c.get("por_mercado", {})
+        mercado_breakdown = " · ".join(
+            f"{m}: €{round(v,2)}" for m, v in sorted(por_mercado.items(), key=lambda x: -x[1])
+        )
+
+        display = "block" if idx == 0 else "none"
+        tables_html += f"""
+        <div id='shop-{city_key}' style='display:{display}'>
+          <div class='shop-summary'>
+            <div class='shop-card'>
+              <strong>€{c['total_mercadona']}</strong>
+              <small>Tudo no Mercadona</small>
+            </div>
+            <div class='shop-card green'>
+              <strong>€{c['total_otimizado']}</strong>
+              <small>Mix otimizado</small>
+            </div>
+            <div class='shop-card purple'>
+              <strong>€{c['total_economy']} ({c['pct_total_saved']}%)</strong>
+              <small>Economia mensal</small>
+            </div>
+          </div>
+          <p style='font-size:.8rem;opacity:.6;margin:8px 0 12px'>
+            {mercado_breakdown}
+          </p>
+          <div class='price-table'>
+          <table>
+            <thead><tr>
+              <th>Item</th><th>Consumo/mês</th><th>Produto</th>
+              <th>Mercadona</th><th>Melhor preço</th><th>Mercado</th>
+              <th>Economia</th><th>Variação 15d</th>
+            </tr></thead>
+            <tbody>
+        """
+
+        # Agrupa por categoria
+        cats = {}
+        for row in carrinho:
+            cat = row["category"]
+            cats.setdefault(cat, []).append(row)
+
+        cat_emoji = {
+            "proteína": "🥩", "carboidrato": "🍞", "gordura": "🫒",
+            "bebida": "☕", "tempero": "🧂", "suplemento": "💊",
+            "higiene": "🧴", "gato": "🐱",
+        }
+
+        for cat, rows in cats.items():
+            emoji = cat_emoji.get(cat, "📦")
+            tables_html += f"<tr><td colspan='8' style='background:#0f172a;color:#a5b4fc;font-weight:600;padding:8px 14px'>{emoji} {cat.capitalize()}</td></tr>"
+            for row in rows:
+                economy_html = ""
+                if row["economy"] > 0:
+                    economy_html = f"<span class='trend-down'>-€{row['economy']} ({row['pct_saved']}%)</span>"
+                else:
+                    economy_html = "<span class='trend-stable'>—</span>"
+
+                trend = row.get("trend", "—")
+                change = row.get("change_pct")
+                trend_html = "—"
+                if change is not None:
+                    cls = "trend-up" if change > 0 else "trend-down" if change < 0 else "trend-stable"
+                    trend_html = f"<span class='{cls}'>{trend}</span>"
+
+                best_market_label = row["best_market"].split("(")[0].strip()
+                market_badge = ""
+                if row["best_market"] != "Mercadona":
+                    market_badge = f"<span style='background:#7c3aed;color:#fff;padding:2px 7px;border-radius:8px;font-size:.72rem'>{best_market_label}</span>"
+
+                tables_html += f"""<tr>
+                  <td>{_esc(row['item'])}</td>
+                  <td style='opacity:.7;font-size:.82rem'>{_esc(row['consumo_mensal'])}<br><small style='opacity:.6'>{_esc(row['nota_dieta'])}</small></td>
+                  <td style='font-size:.82rem'>{_esc(row['product_name'][:45])}</td>
+                  <td class='p-price'>€{row['price_mercadona']}</td>
+                  <td class='p-price'>€{row['best_price']}</td>
+                  <td>{market_badge or 'Mercadona'}</td>
+                  <td>{economy_html}</td>
+                  <td>{trend_html}</td>
+                </tr>"""
+
+        tables_html += """
+            </tbody></table></div>
+          </div>
+        """
+
+    return f"""
+    <section id='shopping' style='margin-top:40px'>
+      <h2>🛒 Lista de Compras Mensal — Mix Otimizado por Mercado</h2>
+      <p style='font-size:.85rem;opacity:.7;margin-bottom:14px'>
+        Baseado na sua dieta real (BR→ES) · Comparando Mercadona vs Lidl, DIA, Consum, Aldi por categoria
+      </p>
+      <div class='city-tabs'>{tabs_html}</div>
+      {tables_html}
+    </section>
+    <script>
+    function showCity(key) {{
+      document.querySelectorAll('[id^=shop-]').forEach(el => el.style.display='none');
+      document.querySelectorAll('.city-tab').forEach(el => el.classList.remove('active'));
+      var el = document.getElementById('shop-'+key);
+      if(el) el.style.display='block';
+      event.target.classList.add('active');
+    }}
+    </script>
+    """
