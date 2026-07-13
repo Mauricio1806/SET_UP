@@ -5,15 +5,12 @@ Cidades-alvo, categorias de POI, pesos de scoring.
 
 import os
 from pathlib import Path
-from dotenv import load_dotenv
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
 DOCS_DIR = PROJECT_ROOT / "docs"
 DATA_DIR.mkdir(exist_ok=True)
 DOCS_DIR.mkdir(exist_ok=True)
-
-load_dotenv(PROJECT_ROOT / ".env")
 
 # Câmbio de referência (atualizado pelo scraper de câmbio se disponível)
 EUR_BRL_RATE = float(os.getenv("EUR_BRL_RATE", "5.90"))

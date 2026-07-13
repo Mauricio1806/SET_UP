@@ -2,71 +2,81 @@
 <html lang='pt-BR'>
 <head>
   <meta charset='utf-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
   <title>🏠 SET_UP — Aluguel Live Espanha</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: #0a0e27; color: #e4e6f0; line-height: 1.5; padding: 20px;
-    }
-    .container { max-width: 1200px; margin: 0 auto; }
-    header {
-      background: linear-gradient(135deg, #1e3a8a, #7c3aed);
-      padding: 30px; border-radius: 12px; margin-bottom: 24px;
-    }
-    h1 { font-size: 2rem; margin-bottom: 8px; }
-    header p { opacity: 0.9; margin-bottom: 12px; }
-    .stats { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 16px; }
-    .stat { background: rgba(255,255,255,0.1); padding: 12px 20px; border-radius: 8px; }
-    .stat strong { font-size: 1.5rem; display: block; }
-    nav { margin: 24px 0; }
-    nav a {
-      color: #a5b4fc; text-decoration: none; margin-right: 16px;
-      padding: 8px 16px; border-radius: 6px; background: #1e293b;
-    }
-    nav a:hover { background: #334155; }
-    h2 { font-size: 1.5rem; margin: 32px 0 16px 0; color: #a5b4fc; }
-    .count {
-      background: #7c3aed; color: white; padding: 2px 10px;
-      border-radius: 12px; font-size: 0.9rem; margin-left: 8px;
-    }
-    .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
-    .card {
-      background: #1e293b; border-radius: 12px; padding: 20px;
-      border-left: 4px solid #64748b;
-    }
-    .card.grade-S { border-left-color: #10b981; }
-    .card.grade-A { border-left-color: #3b82f6; }
-    .card.grade-B { border-left-color: #eab308; }
-    .card.grade-C { border-left-color: #f97316; }
-    .card.grade-D { border-left-color: #ef4444; }
-    .card h3 { font-size: 1rem; margin-bottom: 8px; }
-    .card h3 a { color: #f0f0f8; text-decoration: none; }
-    .card h3 a:hover { color: #a5b4fc; }
-    .price { font-size: 1.5rem; font-weight: bold; color: #10b981; margin: 8px 0; }
-    .meta { display: flex; gap: 12px; font-size: 0.85rem; opacity: 0.75; flex-wrap: wrap; }
-    .badges { margin-top: 12px; display: flex; gap: 6px; flex-wrap: wrap; }
-    .badge {
-      background: #334155; padding: 4px 10px; border-radius: 12px; font-size: 0.75rem;
-    }
-    .badge.priority { background: #7c3aed; color: white; }
-    table { width: 100%; border-collapse: collapse; background: #1e293b; border-radius: 12px; overflow: hidden; }
-    th, td { padding: 12px; text-align: left; border-bottom: 1px solid #334155; }
-    th { background: #0f172a; }
-    td.price { font-weight: bold; color: #10b981; }
-    footer { text-align: center; padding: 24px; opacity: 0.6; margin-top: 40px; font-size: 0.85rem; }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+          background:#080d20;color:#e2e8f0;padding:20px}
+    .wrap{max-width:1280px;margin:0 auto}
+    header{background:linear-gradient(135deg,#1e40af,#6d28d9);
+            padding:28px;border-radius:14px;margin-bottom:24px}
+    h1{font-size:1.8rem;margin-bottom:6px}
+    header p{opacity:.85;margin-bottom:14px}
+    .stats{display:flex;gap:16px;flex-wrap:wrap}
+    .stat{background:rgba(255,255,255,.12);padding:12px 18px;border-radius:10px;min-width:130px}
+    .stat strong{font-size:1.4rem;display:block}
+    .stat small{opacity:.8;font-size:.8rem}
+    nav{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}
+    nav a{color:#a5b4fc;text-decoration:none;padding:8px 16px;
+           border-radius:8px;background:#1e293b;font-size:.9rem}
+    nav a:hover{background:#334155}
+    .city-section{margin-bottom:40px}
+    h2{font-size:1.35rem;margin:28px 0 14px;color:#a5b4fc;
+        display:flex;align-items:center;gap:10px}
+    .cnt{background:#6d28d9;color:#fff;padding:2px 10px;
+          border-radius:12px;font-size:.85rem}
+    .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+    .card{background:#1e293b;border-radius:12px;padding:18px;
+           border-left:4px solid #475569;transition:border-color .2s}
+    .card.S{border-left-color:#10b981}
+    .card.A{border-left-color:#3b82f6}
+    .card.B{border-left-color:#eab308}
+    .card.C{border-left-color:#f97316}
+    .card.D{border-left-color:#ef4444}
+    .card-title{font-size:.95rem;font-weight:600;margin-bottom:8px;line-height:1.3}
+    .card-title a{color:#f1f5f9;text-decoration:none}
+    .card-title a:hover{color:#a5b4fc}
+    .price{font-size:1.5rem;font-weight:700;color:#10b981;margin:6px 0}
+    .price small{font-size:.65em;opacity:.7}
+    .meta{display:flex;gap:10px;font-size:.8rem;opacity:.75;flex-wrap:wrap;margin:6px 0}
+    .badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+    .badge{padding:3px 9px;border-radius:10px;font-size:.75rem;background:#334155}
+    .badge.green{background:#065f46;color:#6ee7b7}
+    .badge.orange{background:#7c2d12;color:#fdba74}
+    .badge.blue{background:#1e3a8a;color:#93c5fd}
+    .badge.purple{background:#4c1d95;color:#c4b5fd}
+    .badge.red{background:#7f1d1d;color:#fca5a5}
+    .no-geocode{opacity:.6;font-size:.75rem;color:#fb923c}
+    /* Preços */
+    .price-section{margin-top:40px}
+    .city-tabs{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+    .city-tab{padding:6px 14px;border-radius:8px;background:#1e293b;
+               border:1px solid #334155;cursor:pointer;font-size:.85rem}
+    .city-tab.active,.city-tab:hover{background:#6d28d9;border-color:#6d28d9}
+    .price-table{background:#1e293b;border-radius:12px;overflow:auto;width:100%}
+    table{width:100%;border-collapse:collapse;font-size:.88rem}
+    th{background:#0f172a;padding:10px 14px;text-align:left;
+        color:#94a3b8;font-weight:600;white-space:nowrap}
+    td{padding:10px 14px;border-bottom:1px solid #334155}
+    tr:last-child td{border-bottom:none}
+    .p-price{font-weight:700;color:#10b981}
+    .trend-up{color:#ef4444}
+    .trend-down{color:#10b981}
+    .trend-stable{color:#94a3b8}
+    footer{text-align:center;padding:24px;opacity:.5;font-size:.82rem;margin-top:40px}
   </style>
 </head>
 <body>
-<div class='container'>
+<div class='wrap'>
   <header>
     <h1>🏠 SET_UP — Aluguel Live Espanha</h1>
-    <p>Scoring de apartamentos por proximidade + preço + bairro</p>
+    <p>Scraping diário · Scoring por preço + distância real a pé + marcas</p>
     <div class='stats'>
-      <div class='stat'><strong>27</strong>Aluguéis coletados</div>
-      <div class='stat'><strong>111</strong>Preços mapeados</div>
-      <div class='stat'><strong>2026-07-12 21:34 UTC</strong>Atualizado</div>
+      <div class='stat'><strong>7</strong><small>Aluguéis</small></div>
+      <div class='stat'><strong>7</strong><small>Com distância real</small></div>
+      <div class='stat'><strong>159</strong><small>Preços Mercadona</small></div>
+      <div class='stat'><strong>2026-07-13 12:06 UTC</strong><small>Atualizado</small></div>
     </div>
   </header>
   <nav>
@@ -74,214 +84,87 @@
     <a href='#alicante'>🏙️ Alicante</a>
     <a href='#nerja'>🏖️ Nerja</a>
     <a href='#prices'>🛒 Preços</a>
+    <a href='data.json' target='_blank'>📥 JSON</a>
   </nav>
   
-        <section class='city-section' id='granada'>
-          <h2>🏘️ Granada <span class='count'>15</span></h2>
-          <div class='cards'>
-        
-    <div class='card grade-B'>
-      <h3><a href='https://www.pisos.com/alquilar/apartamento-pajaritos_plaza_de_toros18014-35883636699_100500/' target='_blank' rel='noopener'>Apartamento en calle Curro Cuchares</a></h3>
-      <div class='price'>€590<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🛏️ 1q</span><span>🔗 pisos.com</span><span>⭐ 63pt · B — Bom</span></div>
-      <div class='badges'><span class='badge'>🛒 148m</span><span class='badge'>💪 497m</span><span class='badge priority'>Covirán</span></div>
+    <section class='city-section' id='granada'>
+      <h2>🏘️ Granada
+        <span class='cnt'>5</span>
+      </h2>
+      <div class='cards'>
+    <div class='card C'>
+      <div class='card-title'><a href='https://www.pisos.com/alquilar/piso-granada_capital_centro_catedral18001-65886473581_106100/' target='_blank' rel='noopener'>Piso en calle Santa Paula</a></div>
+      <div style='font-size:.78rem;opacity:.6;margin-bottom:4px'>📍 Centro-Catedral (Granada Capital)</div>
+      <div class='price'>€500<small>/mês</small></div>
+      <div class='meta'><span>🛏️ 1q</span><span>⭐ 49pt</span><span>C — OK</span><span>🔗 pisos.com</span></div>
+      
+      <div class='badges'><span class='badge blue'>🛒 288m · 3.6min · Covirán</span><span class='badge purple'>💪 743m · 9.3min · Sano</span><span class='badge green'>Covirán</span><span class='badge green'>Mercadona</span></div>
     </div>
-    
-    <div class='card grade-B'>
-      <h3><a href='https://www.pisos.com/alquilar/apartamento-pajaritos_plaza_de_toros18014-35883636699_100500/' target='_blank' rel='noopener'>Apartamento en calle Curro Cuchares</a></h3>
-      <div class='price'>€590<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🛏️ 1q</span><span>🔗 pisos.com</span><span>⭐ 63pt · B — Bom</span></div>
-      <div class='badges'><span class='badge'>🛒 148m</span><span class='badge'>💪 497m</span><span class='badge priority'>Covirán</span></div>
+    <div class='card C'>
+      <div class='card-title'><a href='https://www.pisos.com/alquilar/apartamento-pajaritos_plaza_de_toros18014-35883636699_100500/' target='_blank' rel='noopener'>Apartamento en calle Curro Cuchares</a></div>
+      <div style='font-size:.78rem;opacity:.6;margin-bottom:4px'>📍 Pajaritos-Plaza de Toros (Distrito Beiro. Granada Capital)</div>
+      <div class='price'>€590<small>/mês</small></div>
+      <div class='meta'><span>🛏️ 1q</span><span>⭐ 44pt</span><span>C — OK</span><span>🔗 pisos.com</span></div>
+      
+      <div class='badges'><span class='badge blue'>🛒 68m · 0.9min · Covirán</span><span class='badge green'>Covirán</span><span class='badge green'>Lidl</span><span class='badge green'>Mercadona</span></div>
     </div>
-    
-    <div class='card grade-B'>
-      <h3><a href='https://www.pisos.com/alquilar/apartamento-granada_capital_centro_catedral-24249285578_516255/' target='_blank' rel='noopener'>Apartamento en Centro-Catedral</a></h3>
-      <div class='price'>€625<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🛏️ 1q</span><span>🔗 pisos.com</span><span>⭐ 62pt · B — Bom</span></div>
-      <div class='badges'><span class='badge'>🛒 148m</span><span class='badge'>💪 497m</span><span class='badge priority'>Covirán</span></div>
+    <div class='card D'>
+      <div class='card-title'><a href='https://www.pisos.com/alquilar/piso-figares_san_anton18005-65084432527_530524/' target='_blank' rel='noopener'>Piso en calle Nueva de San Antón, 19</a></div>
+      <div style='font-size:.78rem;opacity:.6;margin-bottom:4px'>📍 Figares-San Antón (Granada Capital)</div>
+      <div class='price'>€750<small>/mês</small></div>
+      <div class='meta'><span>🛏️ 1q</span><span>⭐ 32pt</span><span>D — Fraco</span><span>🔗 pisos.com</span></div>
+      
+      <div class='badges'><span class='badge blue'>🛒 101m · 1.3min · Alcampo</span><span class='badge green'>Mercadona</span></div>
     </div>
-    
-    <div class='card grade-B'>
-      <h3><a href='https://www.pisos.com/alquilar/apartamento-granada_capital_centro_catedral-24249285578_516255/' target='_blank' rel='noopener'>Apartamento en Centro-Catedral</a></h3>
-      <div class='price'>€625<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🛏️ 1q</span><span>🔗 pisos.com</span><span>⭐ 62pt · B — Bom</span></div>
-      <div class='badges'><span class='badge'>🛒 148m</span><span class='badge'>💪 497m</span><span class='badge priority'>Covirán</span></div>
+    <div class='card D'>
+      <div class='card-title'><a href='https://www.pisos.com/alquilar/apartamento-granada_capital_centro_catedral-24249285578_516255/' target='_blank' rel='noopener'>Apartamento en Centro-Catedral</a></div>
+      <div style='font-size:.78rem;opacity:.6;margin-bottom:4px'>📍 Centro-Catedral (Granada Capital)</div>
+      <div class='price'>€625<small>/mês</small></div>
+      <div class='meta'><span>🛏️ 1q</span><span>⭐ 20pt</span><span>D — Fraco</span><span>🔗 pisos.com</span></div>
+      
+      <div class='badges'><span class='badge purple'>💪 743m · 9.3min · Sano</span></div>
     </div>
-    
-    <div class='card grade-B'>
-      <h3><a href='https://www.pisos.com/alquilar/piso-genil_cervantes18006-65870302897_100500/' target='_blank' rel='noopener'>Piso en calle Ángel, 21</a></h3>
-      <div class='price'>€680<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🛏️ 2q</span><span>🔗 pisos.com</span><span>⭐ 60pt · B — Bom</span></div>
-      <div class='badges'><span class='badge'>🛒 148m</span><span class='badge'>💪 497m</span><span class='badge priority'>Covirán</span></div>
+    <div class='card D'>
+      <div class='card-title'><a href='https://www.pisos.com/alquilar/apartamento-realejo-65027865555_104700/' target='_blank' rel='noopener'>Apartamento en calle de la Castañeda</a></div>
+      <div style='font-size:.78rem;opacity:.6;margin-bottom:4px'>📍 Realejo (Granada Capital)</div>
+      <div class='price'>€700<small>/mês</small></div>
+      <div class='meta'><span>🛏️ 1q</span><span>⭐ 17pt</span><span>D — Fraco</span><span>🔗 pisos.com</span></div>
+      
+      <div class='badges'><span class='badge purple'>💪 954m · 11.9min · Gimnasio &quot;Sierra Nevada&quot;</span></div>
+    </div></div>
+    </section>
+    <section class='city-section' id='alicante'>
+      <h2>🏙️ Alicante
+        <span class='cnt'>0</span>
+      </h2>
+      <div class='cards'><p style='opacity:.5'>Nenhum anúncio coletado ainda.</p></div>
+    </section>
+    <section class='city-section' id='nerja'>
+      <h2>🏖️ Nerja
+        <span class='cnt'>2</span>
+      </h2>
+      <div class='cards'>
+    <div class='card D'>
+      <div class='card-title'><a href='https://www.pisos.com/alquilar/piso-nerja_centro-64249667411_106400/' target='_blank' rel='noopener'>Piso en Centro</a></div>
+      <div style='font-size:.78rem;opacity:.6;margin-bottom:4px'>📍 Centro (Nerja)</div>
+      <div class='price'>€750<small>/mês</small></div>
+      <div class='meta'><span>🛏️ 2q</span><span>⭐ 16pt</span><span>D — Fraco</span><span>🔗 pisos.com</span></div>
+      
+      <div class='badges'></div>
     </div>
-    
-    <div class='card grade-B'>
-      <h3><a href='https://www.pisos.com/alquilar/piso-genil_cervantes18006-65870302897_100500/' target='_blank' rel='noopener'>Piso en calle Ángel, 21</a></h3>
-      <div class='price'>€680<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🛏️ 2q</span><span>🔗 pisos.com</span><span>⭐ 60pt · B — Bom</span></div>
-      <div class='badges'><span class='badge'>🛒 148m</span><span class='badge'>💪 497m</span><span class='badge priority'>Covirán</span></div>
-    </div>
-    
-    <div class='card grade-B'>
-      <h3><a href='https://www.pisos.com/alquilar/piso-genil_cervantes18006-65870302897_100500/' target='_blank' rel='noopener'>Piso en calle Ángel, 21</a></h3>
-      <div class='price'>€680<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🛏️ 2q</span><span>🔗 pisos.com</span><span>⭐ 60pt · B — Bom</span></div>
-      <div class='badges'><span class='badge'>🛒 148m</span><span class='badge'>💪 497m</span><span class='badge priority'>Covirán</span></div>
-    </div>
-    
-    <div class='card grade-B'>
-      <h3><a href='https://www.pisos.com/alquilar/apartamento-realejo-65027865555_104700/' target='_blank' rel='noopener'>Apartamento en calle de la Castañeda</a></h3>
-      <div class='price'>€700<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🛏️ 1q</span><span>🔗 pisos.com</span><span>⭐ 59pt · B — Bom</span></div>
-      <div class='badges'><span class='badge'>🛒 148m</span><span class='badge'>💪 497m</span><span class='badge priority'>Covirán</span></div>
-    </div>
-    
-    <div class='card grade-B'>
-      <h3><a href='https://www.pisos.com/alquilar/apartamento-realejo-65027865555_104700/' target='_blank' rel='noopener'>Apartamento en calle de la Castañeda</a></h3>
-      <div class='price'>€700<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🛏️ 1q</span><span>🔗 pisos.com</span><span>⭐ 59pt · B — Bom</span></div>
-      <div class='badges'><span class='badge'>🛒 148m</span><span class='badge'>💪 497m</span><span class='badge priority'>Covirán</span></div>
-    </div>
-    
-    <div class='card grade-B'>
-      <h3><a href='https://www.pisos.com/alquilar/apartamento-realejo-65027865555_104700/' target='_blank' rel='noopener'>Apartamento en calle de la Castañeda</a></h3>
-      <div class='price'>€700<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🛏️ 1q</span><span>🔗 pisos.com</span><span>⭐ 59pt · B — Bom</span></div>
-      <div class='badges'><span class='badge'>🛒 148m</span><span class='badge'>💪 497m</span><span class='badge priority'>Covirán</span></div>
-    </div>
-    
-    <div class='card grade-B'>
-      <h3><a href='https://www.pisos.com/alquilar/piso-figares_san_anton18005-65084432527_530524/' target='_blank' rel='noopener'>Piso en calle Nueva de San Antón, 19</a></h3>
-      <div class='price'>€750<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🛏️ 1q</span><span>🔗 pisos.com</span><span>⭐ 57pt · B — Bom</span></div>
-      <div class='badges'><span class='badge'>🛒 148m</span><span class='badge'>💪 497m</span><span class='badge priority'>Covirán</span></div>
-    </div>
-    
-    <div class='card grade-B'>
-      <h3><a href='https://www.pisos.com/alquilar/piso-figares_san_anton18005-65084432527_530524/' target='_blank' rel='noopener'>Piso en calle Nueva de San Antón, 19</a></h3>
-      <div class='price'>€750<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🛏️ 1q</span><span>🔗 pisos.com</span><span>⭐ 57pt · B — Bom</span></div>
-      <div class='badges'><span class='badge'>🛒 148m</span><span class='badge'>💪 497m</span><span class='badge priority'>Covirán</span></div>
-    </div>
-    
-    <div class='card grade-C'>
-      <h3><a href='https://www.pisos.com/alquilar/apartamento-granada_capital_centro_catedral-24249285578_516255/' target='_blank' rel='noopener'>Apartamento en Centro-Catedral</a></h3>
-      <div class='price'>€625<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🛏️ 1q</span><span>🔗 pisos.com</span><span>⭐ 35pt · C — OK</span></div>
-      <div class='badges'><span class='badge'>💪 497m</span></div>
-    </div>
-    
-    <div class='card grade-D'>
-      <h3><a href='https://www.pisos.com/alquilar/piso-figares_san_anton18005-65084432527_530524/' target='_blank' rel='noopener'>Piso en calle Nueva de San Antón, 19</a></h3>
-      <div class='price'>€750<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🛏️ 1q</span><span>🔗 pisos.com</span><span>⭐ 30pt · D — Fraco</span></div>
-      <div class='badges'><span class='badge'>💪 497m</span></div>
-    </div>
-    
-    <div class='card grade-D'>
-      <h3><a href='https://www.pisos.com/alquilar/apartamento-pajaritos_plaza_de_toros18014-35883636699_100500/' target='_blank' rel='noopener'>Apartamento en calle Curro Cuchares</a></h3>
-      <div class='price'>€590<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🛏️ 1q</span><span>🔗 pisos.com</span><span>⭐ 26pt · D — Fraco</span></div>
-      <div class='badges'><span class='badge'>💪 497m</span></div>
-    </div>
-    </div></section>
-        <section class='city-section' id='alicante'>
-          <h2>🏘️ Alicante <span class='count'>0</span></h2>
-          <div class='cards'>
-        </div></section>
-        <section class='city-section' id='nerja'>
-          <h2>🏘️ Nerja <span class='count'>12</span></h2>
-          <div class='cards'>
-        
-    <div class='card grade-A'>
-      <h3><a href='https://www.pisos.com/alquilar/piso-nerja_centro-64249667411_106400/' target='_blank' rel='noopener'>Piso en Centro</a></h3>
-      <div class='price'>€750<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🛏️ 2q</span><span>🔗 pisos.com</span><span>⭐ 69pt · A — Muito bom</span></div>
-      <div class='badges'><span class='badge'>🛒 135m</span><span class='badge'>💪 750m</span><span class='badge priority'>Carrefour</span><span class='badge priority'>Covirán</span><span class='badge priority'>Dia</span></div>
-    </div>
-    
-    <div class='card grade-A'>
-      <h3><a href='https://www.pisos.com/alquilar/piso-nerja_centro-64249667411_106400/' target='_blank' rel='noopener'>Piso en Centro</a></h3>
-      <div class='price'>€750<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🛏️ 2q</span><span>🔗 pisos.com</span><span>⭐ 69pt · A — Muito bom</span></div>
-      <div class='badges'><span class='badge'>🛒 135m</span><span class='badge'>💪 750m</span><span class='badge priority'>Carrefour</span><span class='badge priority'>Covirán</span><span class='badge priority'>Dia</span></div>
-    </div>
-    
-    <div class='card grade-A'>
-      <h3><a href='https://www.pisos.com/alquilar/atico-nerja_centro-60092595564_106500/' target='_blank' rel='noopener'>Ático en Centro</a></h3>
-      <div class='price'>€800<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🛏️ 1q</span><span>🔗 pisos.com</span><span>⭐ 68pt · A — Muito bom</span></div>
-      <div class='badges'><span class='badge'>🛒 135m</span><span class='badge'>💪 750m</span><span class='badge priority'>Carrefour</span><span class='badge priority'>Covirán</span><span class='badge priority'>Dia</span></div>
-    </div>
-    
-    <div class='card grade-A'>
-      <h3><a href='https://www.pisos.com/alquilar/piso-nerja_centro-64263921668_106400/' target='_blank' rel='noopener'>Piso en calle de la Diputación Provincial</a></h3>
-      <div class='price'>€800<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🔗 pisos.com</span><span>⭐ 68pt · A — Muito bom</span></div>
-      <div class='badges'><span class='badge'>🛒 135m</span><span class='badge'>💪 750m</span><span class='badge priority'>Carrefour</span><span class='badge priority'>Covirán</span><span class='badge priority'>Dia</span></div>
-    </div>
-    
-    <div class='card grade-A'>
-      <h3><a href='https://www.pisos.com/alquilar/atico-nerja_centro-60092595564_106500/' target='_blank' rel='noopener'>Ático en Centro</a></h3>
-      <div class='price'>€800<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🛏️ 1q</span><span>🔗 pisos.com</span><span>⭐ 68pt · A — Muito bom</span></div>
-      <div class='badges'><span class='badge'>🛒 135m</span><span class='badge'>💪 750m</span><span class='badge priority'>Carrefour</span><span class='badge priority'>Covirán</span><span class='badge priority'>Dia</span></div>
-    </div>
-    
-    <div class='card grade-A'>
-      <h3><a href='https://www.pisos.com/alquilar/piso-nerja_centro-64263921668_106400/' target='_blank' rel='noopener'>Piso en calle de la Diputación Provincial</a></h3>
-      <div class='price'>€800<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🔗 pisos.com</span><span>⭐ 68pt · A — Muito bom</span></div>
-      <div class='badges'><span class='badge'>🛒 135m</span><span class='badge'>💪 750m</span><span class='badge priority'>Carrefour</span><span class='badge priority'>Covirán</span><span class='badge priority'>Dia</span></div>
-    </div>
-    
-    <div class='card grade-B'>
-      <h3><a href='https://www.pisos.com/alquilar/piso-nerja_centro-60865964537_100200/' target='_blank' rel='noopener'>Piso en Centro</a></h3>
-      <div class='price'>€900<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🛏️ 2q</span><span>🔗 pisos.com</span><span>⭐ 65pt · B — Bom</span></div>
-      <div class='badges'><span class='badge'>🛒 135m</span><span class='badge'>💪 750m</span><span class='badge priority'>Carrefour</span><span class='badge priority'>Covirán</span><span class='badge priority'>Dia</span></div>
-    </div>
-    
-    <div class='card grade-B'>
-      <h3><a href='https://www.pisos.com/alquilar/piso-nerja_centro-60865964537_100200/' target='_blank' rel='noopener'>Piso en Centro</a></h3>
-      <div class='price'>€900<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🛏️ 2q</span><span>🔗 pisos.com</span><span>⭐ 65pt · B — Bom</span></div>
-      <div class='badges'><span class='badge'>🛒 135m</span><span class='badge'>💪 750m</span><span class='badge priority'>Carrefour</span><span class='badge priority'>Covirán</span><span class='badge priority'>Dia</span></div>
-    </div>
-    
-    <div class='card grade-B'>
-      <h3><a href='https://www.pisos.com/alquilar/atico-nerja_centro-60092595564_106500/' target='_blank' rel='noopener'>Ático en Centro</a></h3>
-      <div class='price'>€800<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🛏️ 1q</span><span>🔗 pisos.com</span><span>⭐ 53pt · B — Bom</span></div>
-      <div class='badges'><span class='badge'>🛒 135m</span><span class='badge priority'>Carrefour</span><span class='badge priority'>Covirán</span><span class='badge priority'>Dia</span></div>
-    </div>
-    
-    <div class='card grade-B'>
-      <h3><a href='https://www.pisos.com/alquilar/piso-nerja_centro-64263921668_106400/' target='_blank' rel='noopener'>Piso en calle de la Diputación Provincial</a></h3>
-      <div class='price'>€800<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🔗 pisos.com</span><span>⭐ 53pt · B — Bom</span></div>
-      <div class='badges'><span class='badge'>🛒 135m</span><span class='badge priority'>Carrefour</span><span class='badge priority'>Covirán</span><span class='badge priority'>Dia</span></div>
-    </div>
-    
-    <div class='card grade-C'>
-      <h3><a href='https://www.pisos.com/alquilar/piso-nerja_centro-60865964537_100200/' target='_blank' rel='noopener'>Piso en Centro</a></h3>
-      <div class='price'>€900<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🛏️ 2q</span><span>🔗 pisos.com</span><span>⭐ 50pt · C — OK</span></div>
-      <div class='badges'><span class='badge'>🛒 135m</span><span class='badge priority'>Carrefour</span><span class='badge priority'>Covirán</span><span class='badge priority'>Dia</span></div>
-    </div>
-    
-    <div class='card grade-C'>
-      <h3><a href='https://www.pisos.com/alquilar/piso-nerja_centro-64249667411_106400/' target='_blank' rel='noopener'>Piso en Centro</a></h3>
-      <div class='price'>€750<span style='font-size:0.6em;opacity:0.7'>/mês</span></div>
-      <div class='meta'><span>🛏️ 2q</span><span>🔗 pisos.com</span><span>⭐ 49pt · C — OK</span></div>
-      <div class='badges'><span class='badge'>🛒 135m</span><span class='badge priority'>Carrefour</span><span class='badge priority'>Covirán</span><span class='badge priority'>Dia</span></div>
-    </div>
-    </div></section>
-  <div id='prices'><section class='price-section'><h2>🛒 Preços Mercadona</h2><table><thead><tr><th>Produto</th><th>Marca</th><th>Cidade</th><th>Preço</th></tr></thead><tbody><tr><td>Tiras de pechuga pollo al horno Hacendado</td><td>Hacendado</td><td>Granada</td><td class='price'>€2.25</td></tr><tr><td>Pechugas de pollo enteras congeladas</td><td></td><td>Granada</td><td class='price'>€6.96</td></tr><tr><td>Claras de huevo líquidas pasteurizadas</td><td></td><td>Granada</td><td class='price'>€2.85</td></tr><tr><td>Claras de huevo líquidas pasteurizadas</td><td></td><td>Granada</td><td class='price'>€1.7</td></tr><tr><td>Huevos super grandes XL</td><td></td><td>Granada</td><td class='price'>€4.3</td></tr><tr><td>Atún claro en aceite de oliva Hacendado</td><td>Hacendado</td><td>Granada</td><td class='price'>€4.9</td></tr><tr><td>Atún claro al natural Hacendado</td><td>Hacendado</td><td>Granada</td><td class='price'>€4.2</td></tr><tr><td>Arroz integral largo Hacendado</td><td>Hacendado</td><td>Granada</td><td class='price'>€1.65</td></tr><tr><td>Arroz cocido integral Sabroz</td><td>Sabroz</td><td>Granada</td><td class='price'>€1.05</td></tr><tr><td>Patatas fritas clásicas Hacendado</td><td>Hacendado</td><td>Granada</td><td class='price'>€1.8</td></tr><tr><td>Patatas</td><td></td><td>Granada</td><td class='price'>€4.65</td></tr><tr><td>Panes integrales 100% fino</td><td></td><td>Granada</td><td class='price'>€1.4</td></tr><tr><td>Pan integral de trigo 100% rebanado</td><td></td><td>Granada</td><td class='price'>€1.5</td></tr><tr><td>Aceite de oliva virgen extra Hacendado</td><td>Hacendado</td><td>Granada</td><td class='price'>€4.8</td></tr><tr><td>Aceite de oliva virgen extra Hacendado</td><td>Hacendado</td><td>Granada</td><td class='price'>€13.85</td></tr><tr><td>Mantequilla sin sal añadida Hacendado</td><td>Hacendado</td><td>Granada</td><td class='price'>€2.05</td></tr><tr><td>Mantequilla con sal Hacendado</td><td>Hacendado</td><td>Granada</td><td class='price'>€2.05</td></tr><tr><td>Cacahuete frito con sal Hacendado pelado</td><td>Hacendado</td><td>Granada</td><td class='price'>€0.9</td></tr><tr><td>Cacahuete frito con miel Hacendado</td><td>Hacendado</td><td>Granada</td><td class='price'>€1.65</td></tr><tr><td>Miel de flores Hacendado</td><td>Hacendado</td><td>Granada</td><td class='price'>€3.1</td></tr><tr><td>Miel de flores Hacendado</td><td>Hacendado</td><td>Granada</td><td class='price'>€4.8</td></tr><tr><td>Café molido natural Hacendado</td><td>Hacendado</td><td>Granada</td><td class='price'>€4.5</td></tr><tr><td>Café molido mezcla Hacendado</td><td>Hacendado</td><td>Granada</td><td class='price'>€4.6</td></tr><tr><td>Leche desnatada Hacendado</td><td>Hacendado</td><td>Granada</td><td class='price'>€4.92</td></tr><tr><td>Leche desnatada sin lactosa Hacendado</td><td>Hacendado</td><td>Granada</td><td class='price'>€5.46</td></tr><tr><td>Leche en polvo desnatada Hacendado</td><td>Hacendado</td><td>Granada</td><td class='price'>€5.4</td></tr><tr><td>Leche de continuación en polvo 2 Nativa Nestlé</td><td>Nativa</td><td>Granada</td><td class='price'>€12.95</td></tr><tr><td>Champú protección y brillo Deliplus todo tipo de cabello</td><td>Deliplus</td><td>Granada</td><td class='price'>€1.35</td></tr><tr><td>Champú Repara &amp; Protege Pantene cabello débil y dañado</td><td>Pantene</td><td>Granada</td><td class='price'>€3.0</td></tr><tr><td>Dentífrico Triple Acción Colgate menta intensa</td><td>Colgate</td><td>Granada</td><td class='price'>€1.95</td></tr><tr><td>Dentífrico Pro-Expert Oral-B sabor menta especiada</td><td>Oral-B</td><td>Granada</td><td class='price'>€2.5</td></tr><tr><td>Gel de baño Frutal Deliplus piel normal</td><td>Deliplus</td><td>Granada</td><td class='price'>€1.2</td></tr><tr><td>Gel de baño frescor azul Deliplus piel normal</td><td>Deliplus</td><td>Granada</td><td class='price'>€0.95</td></tr><tr><td>Comida gato adulto Compy con pollo, ternera, frutas y verduras</td><td>Compy</td><td>Granada</td><td class='price'>€2.95</td></tr><tr><td>Comida gato adulto esterilizado Supreme Compy con pollo fresco, frutas y verduras</td><td>Compy</td><td>Granada</td><td class='price'>€5.8</td></tr><tr><td>Arena para gato antibacterias Nuske</td><td>Nuske</td><td>Granada</td><td class='price'>€1.5</td></tr><tr><td>Arena para gato aglomerante Nuske perfumada</td><td>Nuske</td><td>Granada</td><td class='price'>€3.6</td></tr><tr><td>Tiras de pechuga pollo al horno Hacendado</td><td>Hacendado</td><td>Alicante</td><td class='price'>€2.25</td></tr><tr><td>Pechugas de pollo enteras congeladas</td><td></td><td>Alicante</td><td class='price'>€7.32</td></tr><tr><td>Claras de huevo líquidas pasteurizadas</td><td></td><td>Alicante</td><td class='price'>€2.85</td></tr><tr><td>Claras de huevo líquidas pasteurizadas</td><td></td><td>Alicante</td><td class='price'>€1.7</td></tr><tr><td>Huevos super grandes XL</td><td></td><td>Alicante</td><td class='price'>€4.3</td></tr><tr><td>Atún claro en aceite de oliva Hacendado</td><td>Hacendado</td><td>Alicante</td><td class='price'>€4.9</td></tr><tr><td>Atún claro al natural Hacendado</td><td>Hacendado</td><td>Alicante</td><td class='price'>€4.2</td></tr><tr><td>Arroz integral largo Hacendado</td><td>Hacendado</td><td>Alicante</td><td class='price'>€1.65</td></tr><tr><td>Arroz cocido integral Sabroz</td><td>Sabroz</td><td>Alicante</td><td class='price'>€1.05</td></tr><tr><td>Patatas fritas clásicas Hacendado</td><td>Hacendado</td><td>Alicante</td><td class='price'>€1.8</td></tr><tr><td>Patatas</td><td></td><td>Alicante</td><td class='price'>€4.65</td></tr><tr><td>Panes integrales 100% fino</td><td></td><td>Alicante</td><td class='price'>€1.4</td></tr><tr><td>Pan integral de trigo 100% rebanado</td><td></td><td>Alicante</td><td class='price'>€1.5</td></tr></tbody></table></section></div>
+    <div class='card D'>
+      <div class='card-title'><a href='https://www.pisos.com/alquilar/atico-nerja_centro-60092595564_106500/' target='_blank' rel='noopener'>Ático en Centro</a></div>
+      <div style='font-size:.78rem;opacity:.6;margin-bottom:4px'>📍 Centro (Nerja)</div>
+      <div class='price'>€800<small>/mês</small></div>
+      <div class='meta'><span>🛏️ 1q</span><span>⭐ 15pt</span><span>D — Fraco</span><span>🔗 pisos.com</span></div>
+      
+      <div class='badges'></div>
+    </div></div>
+    </section>
+  <section class='price-section' id='prices'><h2>🛒 Preços Mercadona</h2><h3 style='margin:20px 0 10px;color:#a5b4fc'>🏷️ Alicante</h3><div class='price-table'><table><thead><tr><th>Produto</th><th>Marca</th><th>Preço</th><th>Unidade</th><th>Variação 15d</th></tr></thead><tbody><tr><td>Tiras de pechuga pollo al horno Hacendado</td><td>Hacendado</td><td class='p-price'>€2.25</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Pechugas de pollo enteras congeladas</td><td></td><td class='p-price'>€7.32</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Claras de huevo líquidas pasteurizadas</td><td></td><td class='p-price'>€2.85</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Claras de huevo líquidas pasteurizadas</td><td></td><td class='p-price'>€1.7</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Huevos super grandes XL</td><td></td><td class='p-price'>€4.3</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Atún claro en aceite de oliva Hacendado</td><td>Hacendado</td><td class='p-price'>€4.9</td><td style='opacity:.7'>latas</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Atún claro al natural Hacendado</td><td>Hacendado</td><td class='p-price'>€4.2</td><td style='opacity:.7'>latas</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Salmón ahumado Hacendado</td><td>Hacendado</td><td class='p-price'>€3.7</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Salmón ahumado Hacendado</td><td>Hacendado</td><td class='p-price'>€10.8</td><td style='opacity:.7'>paquetes</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Arroz integral largo Hacendado</td><td>Hacendado</td><td class='p-price'>€1.65</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Arroz cocido integral Sabroz</td><td>Sabroz</td><td class='p-price'>€1.05</td><td style='opacity:.7'>vasitos</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Patatas fritas clásicas Hacendado</td><td>Hacendado</td><td class='p-price'>€1.8</td><td style='opacity:.7'>bolsas</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Patatas</td><td></td><td class='p-price'>€4.65</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Panes integrales 100% fino</td><td></td><td class='p-price'>€1.4</td><td style='opacity:.7'>ud.</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Pan integral de trigo 100% rebanado</td><td></td><td class='p-price'>€1.5</td><td style='opacity:.7'>ud.</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Avena molida Hacendado</td><td>Hacendado</td><td class='p-price'>€1.15</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Galletas avena Hacendado</td><td>Hacendado</td><td class='p-price'>€1.0</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Aceite de oliva virgen extra Hacendado</td><td>Hacendado</td><td class='p-price'>€4.8</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Aceite de oliva virgen extra Hacendado</td><td>Hacendado</td><td class='p-price'>€13.85</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Mantequilla sin sal añadida Hacendado</td><td>Hacendado</td><td class='p-price'>€2.05</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Mantequilla sin sal añadida Hacendado</td><td>Hacendado</td><td class='p-price'>€2.45</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Cacahuete tostado Hacendado 0% sal añadida pelado</td><td>Hacendado</td><td class='p-price'>€1.05</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Cacahuete tostado Hacendado 0% sal añadida</td><td>Hacendado</td><td class='p-price'>€1.55</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Miel de flores Hacendado</td><td>Hacendado</td><td class='p-price'>€3.1</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Miel de flores Hacendado</td><td>Hacendado</td><td class='p-price'>€4.8</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Café molido natural Hacendado</td><td>Hacendado</td><td class='p-price'>€4.5</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Café molido mezcla Hacendado</td><td>Hacendado</td><td class='p-price'>€4.6</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Leche desnatada Hacendado</td><td>Hacendado</td><td class='p-price'>€4.92</td><td style='opacity:.7'>briks</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Leche desnatada sin lactosa Hacendado</td><td>Hacendado</td><td class='p-price'>€5.46</td><td style='opacity:.7'>briks</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Leche en polvo desnatada Hacendado</td><td>Hacendado</td><td class='p-price'>€5.4</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Leche de continuación en polvo 2 Nativa Nestlé</td><td>Nativa</td><td class='p-price'>€12.95</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Champú Liso Keratina TRESemmé cabello encrespado o dañado</td><td>TRESemmé</td><td class='p-price'>€2.95</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Acondicionador Liso Keratina TRESemmé cabello encrespado o dañado</td><td>TRESemmé</td><td class='p-price'>€2.95</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Champú anticaspa Citrus Fresh H&amp;S cabello graso</td><td>H&amp;S</td><td class='p-price'>€3.9</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Champú anticaspa Menthol Fresh H&amp;S</td><td>H&amp;S</td><td class='p-price'>€3.9</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Dentífrico Triple Acción Colgate menta intensa</td><td>Colgate</td><td class='p-price'>€1.95</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Dentífrico Pro-Expert Oral-B sabor menta especiada</td><td>Oral-B</td><td class='p-price'>€2.5</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Gel de baño Frutal Deliplus piel normal</td><td>Deliplus</td><td class='p-price'>€1.2</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Gel de baño frescor azul Deliplus piel normal</td><td>Deliplus</td><td class='p-price'>€0.95</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Desodorante roll-on original Dove antitranspirante</td><td>Dove</td><td class='p-price'>€1.95</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Desodorante roll-on Aloe Deliplus antitranspirante</td><td>Deliplus</td><td class='p-price'>€0.9</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Comida gato adulto Compy con pollo, ternera, frutas y verduras</td><td>Compy</td><td class='p-price'>€2.95</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Comida gato adulto esterilizado Supreme Compy con pollo fresco, frutas y verduras</td><td>Compy</td><td class='p-price'>€5.8</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Arena para gato antibacterias Nuske</td><td>Nuske</td><td class='p-price'>€1.5</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Arena para gato aglomerante Nuske perfumada</td><td>Nuske</td><td class='p-price'>€3.6</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Cacahuete +Proteínas en polvo desgrasado Hacendado 14 g proteínas 70% reducido en grasa</td><td>Hacendado</td><td class='p-price'>€2.75</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Leche desnatada +Proteínas &amp; calcio</td><td>+Proteínas</td><td class='p-price'>€8.1</td><td style='opacity:.7'>briks</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Comprimidos Vitaminas y Minerales Deliplus</td><td>Deliplus</td><td class='p-price'>€3.0</td><td style='opacity:.7'>ud.</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Comprimidos efervescentes vitamina C y zinc Deliplus sabor limón</td><td>Deliplus</td><td class='p-price'>€1.95</td><td style='opacity:.7'>ud.</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Perlas Omega 3 Deliplus</td><td>Deliplus</td><td class='p-price'>€3.95</td><td style='opacity:.7'>cápsulas</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Bebida láctea Omega 3 Puleva con leche desnatada</td><td>Puleva</td><td class='p-price'>€10.14</td><td style='opacity:.7'>briks</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Comprimidos efervescentes magnesio Deliplus 300 mg sabor naranja</td><td>Deliplus</td><td class='p-price'>€1.95</td><td style='opacity:.7'>ud.</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Laca de uñas alto brillo Deliplus 20 rosa magnético</td><td>Deliplus</td><td class='p-price'>€2.5</td><td style='opacity:.7'>ud.</td><td><span class='trend-stable'>—</span></td></tr></tbody></table></div><h3 style='margin:20px 0 10px;color:#a5b4fc'>🏷️ Granada</h3><div class='price-table'><table><thead><tr><th>Produto</th><th>Marca</th><th>Preço</th><th>Unidade</th><th>Variação 15d</th></tr></thead><tbody><tr><td>Tiras de pechuga pollo al horno Hacendado</td><td>Hacendado</td><td class='p-price'>€2.25</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Pechugas de pollo enteras congeladas</td><td></td><td class='p-price'>€6.96</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Claras de huevo líquidas pasteurizadas</td><td></td><td class='p-price'>€2.85</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Claras de huevo líquidas pasteurizadas</td><td></td><td class='p-price'>€1.7</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Huevos super grandes XL</td><td></td><td class='p-price'>€4.3</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Atún claro en aceite de oliva Hacendado</td><td>Hacendado</td><td class='p-price'>€4.9</td><td style='opacity:.7'>latas</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Atún claro al natural Hacendado</td><td>Hacendado</td><td class='p-price'>€4.2</td><td style='opacity:.7'>latas</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Salmón ahumado Hacendado</td><td>Hacendado</td><td class='p-price'>€3.7</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Salmón ahumado Hacendado</td><td>Hacendado</td><td class='p-price'>€10.8</td><td style='opacity:.7'>paquetes</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Arroz integral largo Hacendado</td><td>Hacendado</td><td class='p-price'>€1.65</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Arroz cocido integral Sabroz</td><td>Sabroz</td><td class='p-price'>€1.05</td><td style='opacity:.7'>vasitos</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Patatas fritas clásicas Hacendado</td><td>Hacendado</td><td class='p-price'>€1.8</td><td style='opacity:.7'>bolsas</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Patatas</td><td></td><td class='p-price'>€4.65</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Panes integrales 100% fino</td><td></td><td class='p-price'>€1.4</td><td style='opacity:.7'>ud.</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Pan integral de trigo 100% rebanado</td><td></td><td class='p-price'>€1.5</td><td style='opacity:.7'>ud.</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Avena molida Hacendado</td><td>Hacendado</td><td class='p-price'>€1.15</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Galletas avena Hacendado</td><td>Hacendado</td><td class='p-price'>€1.0</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Aceite de oliva virgen extra Hacendado</td><td>Hacendado</td><td class='p-price'>€4.8</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Aceite de oliva virgen extra Hacendado</td><td>Hacendado</td><td class='p-price'>€13.85</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Mantequilla sin sal añadida Hacendado</td><td>Hacendado</td><td class='p-price'>€2.05</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Mantequilla sin sal añadida Hacendado</td><td>Hacendado</td><td class='p-price'>€2.45</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Cacahuete tostado Hacendado 0% sal añadida pelado</td><td>Hacendado</td><td class='p-price'>€1.05</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Cacahuete tostado Hacendado 0% sal añadida</td><td>Hacendado</td><td class='p-price'>€1.55</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Miel de flores Hacendado</td><td>Hacendado</td><td class='p-price'>€3.1</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Miel de flores Hacendado</td><td>Hacendado</td><td class='p-price'>€4.8</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Café molido natural Hacendado</td><td>Hacendado</td><td class='p-price'>€4.5</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Café molido mezcla Hacendado</td><td>Hacendado</td><td class='p-price'>€4.6</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Leche desnatada Hacendado</td><td>Hacendado</td><td class='p-price'>€4.92</td><td style='opacity:.7'>briks</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Leche desnatada sin lactosa Hacendado</td><td>Hacendado</td><td class='p-price'>€5.46</td><td style='opacity:.7'>briks</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Leche en polvo desnatada Hacendado</td><td>Hacendado</td><td class='p-price'>€5.4</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Leche de continuación en polvo 2 Nativa Nestlé</td><td>Nativa</td><td class='p-price'>€12.95</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Champú Liso Keratina TRESemmé cabello encrespado o dañado</td><td>TRESemmé</td><td class='p-price'>€2.95</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Acondicionador Liso Keratina TRESemmé cabello encrespado o dañado</td><td>TRESemmé</td><td class='p-price'>€2.95</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Champú anticaspa Citrus Fresh H&amp;S cabello graso</td><td>H&amp;S</td><td class='p-price'>€3.9</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Champú anticaspa Menthol Fresh H&amp;S</td><td>H&amp;S</td><td class='p-price'>€3.9</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Dentífrico Triple Acción Colgate menta intensa</td><td>Colgate</td><td class='p-price'>€1.95</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Dentífrico Pro-Expert Oral-B sabor menta especiada</td><td>Oral-B</td><td class='p-price'>€2.5</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Gel de baño Frutal Deliplus piel normal</td><td>Deliplus</td><td class='p-price'>€1.2</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Gel de baño frescor azul Deliplus piel normal</td><td>Deliplus</td><td class='p-price'>€0.95</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Desodorante roll-on original Dove antitranspirante</td><td>Dove</td><td class='p-price'>€1.95</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Desodorante roll-on Aloe Deliplus antitranspirante</td><td>Deliplus</td><td class='p-price'>€0.9</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Comida gato adulto Compy con pollo, ternera, frutas y verduras</td><td>Compy</td><td class='p-price'>€2.95</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Comida gato adulto esterilizado Supreme Compy con pollo fresco, frutas y verduras</td><td>Compy</td><td class='p-price'>€5.8</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Arena para gato antibacterias Nuske</td><td>Nuske</td><td class='p-price'>€1.5</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Arena para gato aglomerante Nuske perfumada</td><td>Nuske</td><td class='p-price'>€3.6</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Cacahuete +Proteínas en polvo desgrasado Hacendado 14 g proteínas 70% reducido en grasa</td><td>Hacendado</td><td class='p-price'>€2.75</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Leche desnatada +Proteínas &amp; calcio</td><td>+Proteínas</td><td class='p-price'>€8.1</td><td style='opacity:.7'>briks</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Comprimidos Vitaminas y Minerales Deliplus</td><td>Deliplus</td><td class='p-price'>€3.0</td><td style='opacity:.7'>ud.</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Comprimidos efervescentes vitamina C y zinc Deliplus sabor limón</td><td>Deliplus</td><td class='p-price'>€1.95</td><td style='opacity:.7'>ud.</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Perlas Omega 3 Deliplus</td><td>Deliplus</td><td class='p-price'>€3.95</td><td style='opacity:.7'>cápsulas</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Bebida láctea Omega 3 Puleva con leche desnatada</td><td>Puleva</td><td class='p-price'>€10.14</td><td style='opacity:.7'>briks</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Comprimidos efervescentes magnesio Deliplus 300 mg sabor naranja</td><td>Deliplus</td><td class='p-price'>€1.95</td><td style='opacity:.7'>ud.</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Laca de uñas alto brillo Deliplus 20 rosa magnético</td><td>Deliplus</td><td class='p-price'>€2.5</td><td style='opacity:.7'>ud.</td><td><span class='trend-stable'>—</span></td></tr></tbody></table></div><h3 style='margin:20px 0 10px;color:#a5b4fc'>🏷️ Nerja</h3><div class='price-table'><table><thead><tr><th>Produto</th><th>Marca</th><th>Preço</th><th>Unidade</th><th>Variação 15d</th></tr></thead><tbody><tr><td>Tiras de pechuga pollo al horno Hacendado</td><td>Hacendado</td><td class='p-price'>€2.25</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Pechugas de pollo enteras congeladas</td><td></td><td class='p-price'>€6.96</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Claras de huevo líquidas pasteurizadas</td><td></td><td class='p-price'>€2.85</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Claras de huevo líquidas pasteurizadas</td><td></td><td class='p-price'>€1.7</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Huevos super grandes XL</td><td></td><td class='p-price'>€4.3</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Atún claro en aceite de oliva Hacendado</td><td>Hacendado</td><td class='p-price'>€4.9</td><td style='opacity:.7'>latas</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Atún claro al natural Hacendado</td><td>Hacendado</td><td class='p-price'>€4.2</td><td style='opacity:.7'>latas</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Salmón ahumado Hacendado</td><td>Hacendado</td><td class='p-price'>€3.7</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Salmón ahumado Hacendado</td><td>Hacendado</td><td class='p-price'>€10.8</td><td style='opacity:.7'>paquetes</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Arroz integral largo Hacendado</td><td>Hacendado</td><td class='p-price'>€1.65</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Arroz cocido integral Sabroz</td><td>Sabroz</td><td class='p-price'>€1.05</td><td style='opacity:.7'>vasitos</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Patatas fritas clásicas Hacendado</td><td>Hacendado</td><td class='p-price'>€1.8</td><td style='opacity:.7'>bolsas</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Patatas</td><td></td><td class='p-price'>€4.65</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Panes integrales 100% fino</td><td></td><td class='p-price'>€1.4</td><td style='opacity:.7'>ud.</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Pan integral de trigo 100% rebanado</td><td></td><td class='p-price'>€1.5</td><td style='opacity:.7'>ud.</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Avena molida Hacendado</td><td>Hacendado</td><td class='p-price'>€1.15</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Galletas avena Hacendado</td><td>Hacendado</td><td class='p-price'>€1.0</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Aceite de oliva virgen extra Hacendado</td><td>Hacendado</td><td class='p-price'>€4.8</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Aceite de oliva virgen extra Hacendado</td><td>Hacendado</td><td class='p-price'>€13.85</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Mantequilla sin sal añadida Hacendado</td><td>Hacendado</td><td class='p-price'>€2.05</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Mantequilla sin sal añadida Hacendado</td><td>Hacendado</td><td class='p-price'>€2.45</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Cacahuete tostado Hacendado 0% sal añadida pelado</td><td>Hacendado</td><td class='p-price'>€1.05</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Cacahuete tostado Hacendado 0% sal añadida</td><td>Hacendado</td><td class='p-price'>€1.55</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Miel de flores Hacendado</td><td>Hacendado</td><td class='p-price'>€3.1</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Miel de flores Hacendado</td><td>Hacendado</td><td class='p-price'>€4.8</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Café molido natural Hacendado</td><td>Hacendado</td><td class='p-price'>€4.5</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Café molido mezcla Hacendado</td><td>Hacendado</td><td class='p-price'>€4.6</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Leche desnatada Hacendado</td><td>Hacendado</td><td class='p-price'>€4.92</td><td style='opacity:.7'>briks</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Leche desnatada sin lactosa Hacendado</td><td>Hacendado</td><td class='p-price'>€5.46</td><td style='opacity:.7'>briks</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Leche en polvo desnatada Hacendado</td><td>Hacendado</td><td class='p-price'>€5.4</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Leche de continuación en polvo 2 Nativa Nestlé</td><td>Nativa</td><td class='p-price'>€12.95</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Champú Liso Keratina TRESemmé cabello encrespado o dañado</td><td>TRESemmé</td><td class='p-price'>€2.95</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Acondicionador Liso Keratina TRESemmé cabello encrespado o dañado</td><td>TRESemmé</td><td class='p-price'>€2.95</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Champú anticaspa Citrus Fresh H&amp;S cabello graso</td><td>H&amp;S</td><td class='p-price'>€3.9</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Champú anticaspa Menthol Fresh H&amp;S</td><td>H&amp;S</td><td class='p-price'>€3.9</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Dentífrico Triple Acción Colgate menta intensa</td><td>Colgate</td><td class='p-price'>€1.95</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Dentífrico Pro-Expert Oral-B sabor menta especiada</td><td>Oral-B</td><td class='p-price'>€2.5</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Gel de baño Frutal Deliplus piel normal</td><td>Deliplus</td><td class='p-price'>€1.2</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Gel de baño frescor azul Deliplus piel normal</td><td>Deliplus</td><td class='p-price'>€0.95</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Desodorante roll-on original Dove antitranspirante</td><td>Dove</td><td class='p-price'>€1.95</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Desodorante roll-on Aloe Deliplus antitranspirante</td><td>Deliplus</td><td class='p-price'>€0.9</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Comida gato adulto Compy con pollo, ternera, frutas y verduras</td><td>Compy</td><td class='p-price'>€2.95</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Comida gato adulto esterilizado Supreme Compy con pollo fresco, frutas y verduras</td><td>Compy</td><td class='p-price'>€5.8</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Arena para gato antibacterias Nuske</td><td>Nuske</td><td class='p-price'>€1.5</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Arena para gato aglomerante Nuske perfumada</td><td>Nuske</td><td class='p-price'>€3.6</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Cacahuete +Proteínas en polvo desgrasado Hacendado 14 g proteínas 70% reducido en grasa</td><td>Hacendado</td><td class='p-price'>€2.75</td><td style='opacity:.7'></td><td><span class='trend-stable'>—</span></td></tr><tr><td>Leche desnatada +Proteínas &amp; calcio</td><td>+Proteínas</td><td class='p-price'>€8.1</td><td style='opacity:.7'>briks</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Comprimidos Vitaminas y Minerales Deliplus</td><td>Deliplus</td><td class='p-price'>€3.0</td><td style='opacity:.7'>ud.</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Comprimidos efervescentes vitamina C y zinc Deliplus sabor limón</td><td>Deliplus</td><td class='p-price'>€1.95</td><td style='opacity:.7'>ud.</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Perlas Omega 3 Deliplus</td><td>Deliplus</td><td class='p-price'>€3.95</td><td style='opacity:.7'>cápsulas</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Bebida láctea Omega 3 Puleva con leche desnatada</td><td>Puleva</td><td class='p-price'>€10.14</td><td style='opacity:.7'>briks</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Comprimidos efervescentes magnesio Deliplus 300 mg sabor naranja</td><td>Deliplus</td><td class='p-price'>€1.95</td><td style='opacity:.7'>ud.</td><td><span class='trend-stable'>—</span></td></tr><tr><td>Laca de uñas alto brillo Deliplus 20 rosa magnético</td><td>Deliplus</td><td class='p-price'>€2.5</td><td style='opacity:.7'>ud.</td><td><span class='trend-stable'>—</span></td></tr></tbody></table></div></section>
   <footer>
-    Gerado por SET_UP · <a href='https://github.com/Mauricio1806/SET_UP' style='color:#a5b4fc'>GitHub</a>
-    · Dados: OpenStreetMap, Habitaclia, Pisos.com, Mercadona
+    SET_UP · Dados: OpenStreetMap, Habitaclia, Pisos.com, Idealista, Mercadona
+    · <a href='https://github.com/Mauricio1806/SET_UP' style='color:#a5b4fc'>GitHub</a>
   </footer>
 </div>
-</body>
-</html>
+</body></html>
