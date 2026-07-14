@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-14T12:21:53.152242+00:00",
+  "generated_at": "2026-07-14T23:55:34.296464+00:00",
   "stats": {
-    "total_scraped": 10,
-    "total_ranked": 8,
+    "total_scraped": 9,
+    "total_ranked": 5,
     "geocoded_ok": 9,
     "total_prices": 159,
     "by_source": {
-      "pisos.com": 10
+      "pisos.com": 9
     }
   },
   "listings": [
@@ -26,79 +26,192 @@
       "has_cooktop_only": false,
       "_geocoded": true,
       "_geocoded_from": "Centro (Nerja)",
-      "lat": 36.7479427,
-      "lon": -3.8780788,
+      "lat": 36.7471737,
+      "lon": -3.88066,
       "pois": {
         "supermarket": [
           {
-            "name": "365 Dias Supermercado",
-            "brand": "",
-            "lat": 36.7475198,
-            "lon": -3.876653,
-            "distance_meters": 135,
-            "walk_minutes": 1.7,
-            "address": "",
-            "priority_brand": "Dia"
-          },
-          {
-            "name": "Mercadona",
-            "brand": "Mercadona",
-            "lat": 36.7495777,
-            "lon": -3.8783407,
-            "distance_meters": 183,
-            "walk_minutes": 2.3,
-            "address": "Calle San Miguel 11",
-            "priority_brand": "Mercadona"
+            "name": "Carrefour Market",
+            "brand": "Carrefour Market",
+            "lat": 36.7476456,
+            "lon": -3.8807393,
+            "distance_meters": 53,
+            "walk_minutes": 0.7,
+            "address": "Calle Antonio Ferrandis Chanquete",
+            "priority_brand": "Carrefour"
           },
           {
             "name": "Naturisma",
             "brand": "",
             "lat": 36.7477063,
             "lon": -3.8801188,
-            "distance_meters": 184,
-            "walk_minutes": 2.3,
+            "distance_meters": 76,
+            "walk_minutes": 1.0,
             "address": "Calle Carretera 1",
             "priority_brand": null
           },
           {
-            "name": "Carrefour Market",
-            "brand": "Carrefour Market",
-            "lat": 36.7476456,
-            "lon": -3.8807393,
-            "distance_meters": 239,
-            "walk_minutes": 3.0,
-            "address": "Calle Antonio Ferrandis Chanquete",
-            "priority_brand": "Carrefour"
-          },
-          {
             "name": "Covirán",
             "brand": "Covirán",
-            "lat": 36.7461407,
-            "lon": -3.8757538,
-            "distance_meters": 288,
-            "walk_minutes": 3.6,
-            "address": "Calle Almirante Ferrándiz 7",
+            "lat": 36.7457328,
+            "lon": -3.8810292,
+            "distance_meters": 164,
+            "walk_minutes": 2.0,
+            "address": "",
             "priority_brand": "Covirán"
+          },
+          {
+            "name": "Sem nome",
+            "brand": "",
+            "lat": 36.7481576,
+            "lon": -3.8836943,
+            "distance_meters": 292,
+            "walk_minutes": 3.6,
+            "address": "",
+            "priority_brand": null
+          },
+          {
+            "name": "MAS",
+            "brand": "",
+            "lat": 36.7454878,
+            "lon": -3.8833694,
+            "distance_meters": 306,
+            "walk_minutes": 3.8,
+            "address": "",
+            "priority_brand": null
           }
         ],
-        "gym": [],
-        "pharmacy": [],
-        "public_transport": [],
+        "gym": [
+          {
+            "name": "Time Sport",
+            "brand": "",
+            "lat": 36.7541638,
+            "lon": -3.8748318,
+            "distance_meters": 935,
+            "walk_minutes": 11.7,
+            "address": "",
+            "priority_brand": null
+          }
+        ],
+        "pharmacy": [
+          {
+            "name": "Farmacia Cristina Ruiz García",
+            "brand": "",
+            "lat": 36.7476618,
+            "lon": -3.8802981,
+            "distance_meters": 63,
+            "walk_minutes": 0.8,
+            "address": "Calle Antonio Ferrandis \"Chanquete\" 1",
+            "priority_brand": null
+          },
+          {
+            "name": "Farmacia Molina Saenz",
+            "brand": "",
+            "lat": 36.745392,
+            "lon": -3.8800127,
+            "distance_meters": 206,
+            "walk_minutes": 2.6,
+            "address": "Avenida Castilla Pérez 24",
+            "priority_brand": null
+          },
+          {
+            "name": "Farmacia La Ermita",
+            "brand": "",
+            "lat": 36.7485711,
+            "lon": -3.8784487,
+            "distance_meters": 251,
+            "walk_minutes": 3.1,
+            "address": "Plaza de la Ermita 21",
+            "priority_brand": null
+          },
+          {
+            "name": "Farmacia El Barco",
+            "brand": "",
+            "lat": 36.745627,
+            "lon": -3.8831814,
+            "distance_meters": 283,
+            "walk_minutes": 3.5,
+            "address": "Calle Antonio Ferrandis \"Chanquete\" 4",
+            "priority_brand": null
+          },
+          {
+            "name": "Farmacia Lucía Sáenz de Buruaga Molina",
+            "brand": "",
+            "lat": 36.7477563,
+            "lon": -3.8763293,
+            "distance_meters": 391,
+            "walk_minutes": 4.9,
+            "address": "Calle Pintada 48",
+            "priority_brand": null
+          }
+        ],
+        "public_transport": [
+          {
+            "name": "Sem nome",
+            "brand": "",
+            "lat": 36.7474248,
+            "lon": -3.8805159,
+            "distance_meters": 31,
+            "walk_minutes": 0.4,
+            "address": "",
+            "priority_brand": null
+          },
+          {
+            "name": "Sem nome",
+            "brand": "",
+            "lat": 36.7476994,
+            "lon": -3.8804009,
+            "distance_meters": 63,
+            "walk_minutes": 0.8,
+            "address": "",
+            "priority_brand": null
+          },
+          {
+            "name": "Fuente Hostal Ermita",
+            "brand": "",
+            "lat": 36.7480501,
+            "lon": -3.8790752,
+            "distance_meters": 172,
+            "walk_minutes": 2.1,
+            "address": "",
+            "priority_brand": null
+          },
+          {
+            "name": "Fuente Hostal Ermita",
+            "brand": "",
+            "lat": 36.7483585,
+            "lon": -3.8786631,
+            "distance_meters": 221,
+            "walk_minutes": 2.8,
+            "address": "",
+            "priority_brand": null
+          },
+          {
+            "name": "Estanco Tabaco Shop",
+            "brand": "",
+            "lat": 36.7447651,
+            "lon": -3.8801598,
+            "distance_meters": 272,
+            "walk_minutes": 3.4,
+            "address": "",
+            "priority_brand": null
+          }
+        ],
         "green_space": [],
         "restaurant": []
       },
-      "nearest_supermarket_m": 135,
-      "nearest_supermarket_name": "365 Dias Supermercado",
-      "nearest_supermarket_walk_min": 1.7,
-      "nearest_gym_m": null,
-      "nearest_gym_name": null,
-      "nearest_gym_walk_min": null,
-      "nearest_pharmacy_m": null,
-      "nearest_pharmacy_name": null,
-      "nearest_pharmacy_walk_min": null,
-      "nearest_public_transport_m": null,
-      "nearest_public_transport_name": null,
-      "nearest_public_transport_walk_min": null,
+      "nearest_supermarket_m": 53,
+      "nearest_supermarket_name": "Carrefour Market",
+      "nearest_supermarket_walk_min": 0.7,
+      "nearest_gym_m": 935,
+      "nearest_gym_name": "Time Sport",
+      "nearest_gym_walk_min": 11.7,
+      "nearest_pharmacy_m": 63,
+      "nearest_pharmacy_name": "Farmacia Cristina Ruiz García",
+      "nearest_pharmacy_walk_min": 0.8,
+      "nearest_public_transport_m": 31,
+      "nearest_public_transport_name": "Sem nome",
+      "nearest_public_transport_walk_min": 0.4,
       "nearest_green_space_m": null,
       "nearest_green_space_name": null,
       "nearest_green_space_walk_min": null,
@@ -108,13 +221,13 @@
       "scores": {
         "price": 6.3,
         "supermarket": 25,
-        "gym": 0,
-        "other_pois": 0,
-        "priority_brands": 10,
+        "gym": 10.0,
+        "other_pois": 10,
+        "priority_brands": 5.0,
         "penalty": 0,
-        "total": 41.3
+        "total": 56.3
       },
-      "grade": "C — OK",
+      "grade": "B — Bom",
       "alerts": []
     },
     {
@@ -133,79 +246,192 @@
       "has_cooktop_only": false,
       "_geocoded": true,
       "_geocoded_from": "Centro (Nerja)",
-      "lat": 36.7479427,
-      "lon": -3.8780788,
+      "lat": 36.7471737,
+      "lon": -3.88066,
       "pois": {
         "supermarket": [
           {
-            "name": "365 Dias Supermercado",
-            "brand": "",
-            "lat": 36.7475198,
-            "lon": -3.876653,
-            "distance_meters": 135,
-            "walk_minutes": 1.7,
-            "address": "",
-            "priority_brand": "Dia"
-          },
-          {
-            "name": "Mercadona",
-            "brand": "Mercadona",
-            "lat": 36.7495777,
-            "lon": -3.8783407,
-            "distance_meters": 183,
-            "walk_minutes": 2.3,
-            "address": "Calle San Miguel 11",
-            "priority_brand": "Mercadona"
+            "name": "Carrefour Market",
+            "brand": "Carrefour Market",
+            "lat": 36.7476456,
+            "lon": -3.8807393,
+            "distance_meters": 53,
+            "walk_minutes": 0.7,
+            "address": "Calle Antonio Ferrandis Chanquete",
+            "priority_brand": "Carrefour"
           },
           {
             "name": "Naturisma",
             "brand": "",
             "lat": 36.7477063,
             "lon": -3.8801188,
-            "distance_meters": 184,
-            "walk_minutes": 2.3,
+            "distance_meters": 76,
+            "walk_minutes": 1.0,
             "address": "Calle Carretera 1",
             "priority_brand": null
           },
           {
-            "name": "Carrefour Market",
-            "brand": "Carrefour Market",
-            "lat": 36.7476456,
-            "lon": -3.8807393,
-            "distance_meters": 239,
-            "walk_minutes": 3.0,
-            "address": "Calle Antonio Ferrandis Chanquete",
-            "priority_brand": "Carrefour"
-          },
-          {
             "name": "Covirán",
             "brand": "Covirán",
-            "lat": 36.7461407,
-            "lon": -3.8757538,
-            "distance_meters": 288,
-            "walk_minutes": 3.6,
-            "address": "Calle Almirante Ferrándiz 7",
+            "lat": 36.7457328,
+            "lon": -3.8810292,
+            "distance_meters": 164,
+            "walk_minutes": 2.0,
+            "address": "",
             "priority_brand": "Covirán"
+          },
+          {
+            "name": "Sem nome",
+            "brand": "",
+            "lat": 36.7481576,
+            "lon": -3.8836943,
+            "distance_meters": 292,
+            "walk_minutes": 3.6,
+            "address": "",
+            "priority_brand": null
+          },
+          {
+            "name": "MAS",
+            "brand": "",
+            "lat": 36.7454878,
+            "lon": -3.8833694,
+            "distance_meters": 306,
+            "walk_minutes": 3.8,
+            "address": "",
+            "priority_brand": null
           }
         ],
-        "gym": [],
-        "pharmacy": [],
-        "public_transport": [],
+        "gym": [
+          {
+            "name": "Time Sport",
+            "brand": "",
+            "lat": 36.7541638,
+            "lon": -3.8748318,
+            "distance_meters": 935,
+            "walk_minutes": 11.7,
+            "address": "",
+            "priority_brand": null
+          }
+        ],
+        "pharmacy": [
+          {
+            "name": "Farmacia Cristina Ruiz García",
+            "brand": "",
+            "lat": 36.7476618,
+            "lon": -3.8802981,
+            "distance_meters": 63,
+            "walk_minutes": 0.8,
+            "address": "Calle Antonio Ferrandis \"Chanquete\" 1",
+            "priority_brand": null
+          },
+          {
+            "name": "Farmacia Molina Saenz",
+            "brand": "",
+            "lat": 36.745392,
+            "lon": -3.8800127,
+            "distance_meters": 206,
+            "walk_minutes": 2.6,
+            "address": "Avenida Castilla Pérez 24",
+            "priority_brand": null
+          },
+          {
+            "name": "Farmacia La Ermita",
+            "brand": "",
+            "lat": 36.7485711,
+            "lon": -3.8784487,
+            "distance_meters": 251,
+            "walk_minutes": 3.1,
+            "address": "Plaza de la Ermita 21",
+            "priority_brand": null
+          },
+          {
+            "name": "Farmacia El Barco",
+            "brand": "",
+            "lat": 36.745627,
+            "lon": -3.8831814,
+            "distance_meters": 283,
+            "walk_minutes": 3.5,
+            "address": "Calle Antonio Ferrandis \"Chanquete\" 4",
+            "priority_brand": null
+          },
+          {
+            "name": "Farmacia Lucía Sáenz de Buruaga Molina",
+            "brand": "",
+            "lat": 36.7477563,
+            "lon": -3.8763293,
+            "distance_meters": 391,
+            "walk_minutes": 4.9,
+            "address": "Calle Pintada 48",
+            "priority_brand": null
+          }
+        ],
+        "public_transport": [
+          {
+            "name": "Sem nome",
+            "brand": "",
+            "lat": 36.7474248,
+            "lon": -3.8805159,
+            "distance_meters": 31,
+            "walk_minutes": 0.4,
+            "address": "",
+            "priority_brand": null
+          },
+          {
+            "name": "Sem nome",
+            "brand": "",
+            "lat": 36.7476994,
+            "lon": -3.8804009,
+            "distance_meters": 63,
+            "walk_minutes": 0.8,
+            "address": "",
+            "priority_brand": null
+          },
+          {
+            "name": "Fuente Hostal Ermita",
+            "brand": "",
+            "lat": 36.7480501,
+            "lon": -3.8790752,
+            "distance_meters": 172,
+            "walk_minutes": 2.1,
+            "address": "",
+            "priority_brand": null
+          },
+          {
+            "name": "Fuente Hostal Ermita",
+            "brand": "",
+            "lat": 36.7483585,
+            "lon": -3.8786631,
+            "distance_meters": 221,
+            "walk_minutes": 2.8,
+            "address": "",
+            "priority_brand": null
+          },
+          {
+            "name": "Estanco Tabaco Shop",
+            "brand": "",
+            "lat": 36.7447651,
+            "lon": -3.8801598,
+            "distance_meters": 272,
+            "walk_minutes": 3.4,
+            "address": "",
+            "priority_brand": null
+          }
+        ],
         "green_space": [],
         "restaurant": []
       },
-      "nearest_supermarket_m": 135,
-      "nearest_supermarket_name": "365 Dias Supermercado",
-      "nearest_supermarket_walk_min": 1.7,
-      "nearest_gym_m": null,
-      "nearest_gym_name": null,
-      "nearest_gym_walk_min": null,
-      "nearest_pharmacy_m": null,
-      "nearest_pharmacy_name": null,
-      "nearest_pharmacy_walk_min": null,
-      "nearest_public_transport_m": null,
-      "nearest_public_transport_name": null,
-      "nearest_public_transport_walk_min": null,
+      "nearest_supermarket_m": 53,
+      "nearest_supermarket_name": "Carrefour Market",
+      "nearest_supermarket_walk_min": 0.7,
+      "nearest_gym_m": 935,
+      "nearest_gym_name": "Time Sport",
+      "nearest_gym_walk_min": 11.7,
+      "nearest_pharmacy_m": 63,
+      "nearest_pharmacy_name": "Farmacia Cristina Ruiz García",
+      "nearest_pharmacy_walk_min": 0.8,
+      "nearest_public_transport_m": 31,
+      "nearest_public_transport_name": "Sem nome",
+      "nearest_public_transport_walk_min": 0.4,
       "nearest_green_space_m": null,
       "nearest_green_space_name": null,
       "nearest_green_space_walk_min": null,
@@ -215,13 +441,13 @@
       "scores": {
         "price": 4.7,
         "supermarket": 25,
-        "gym": 0,
-        "other_pois": 0,
-        "priority_brands": 10,
+        "gym": 10.0,
+        "other_pois": 10,
+        "priority_brands": 5.0,
         "penalty": 0,
-        "total": 39.7
+        "total": 54.7
       },
-      "grade": "C — OK",
+      "grade": "B — Bom",
       "alerts": []
     },
     {
@@ -287,58 +513,7 @@
         ],
         "gym": [],
         "pharmacy": [],
-        "public_transport": [
-          {
-            "name": "Aconcagua Frente 50",
-            "brand": "",
-            "lat": 37.1580938,
-            "lon": -3.5758601,
-            "distance_meters": 95,
-            "walk_minutes": 1.2,
-            "address": "",
-            "priority_brand": null
-          },
-          {
-            "name": "Aconcagua Frente 22",
-            "brand": "",
-            "lat": 37.1593162,
-            "lon": -3.5774927,
-            "distance_meters": 105,
-            "walk_minutes": 1.3,
-            "address": "",
-            "priority_brand": null
-          },
-          {
-            "name": "Camino Real de los Neveros - Frente Aconcagua",
-            "brand": "",
-            "lat": 37.1577254,
-            "lon": -3.5786073,
-            "distance_meters": 193,
-            "walk_minutes": 2.4,
-            "address": "",
-            "priority_brand": null
-          },
-          {
-            "name": "El Serrallo",
-            "brand": "",
-            "lat": 37.1577315,
-            "lon": -3.5786177,
-            "distance_meters": 194,
-            "walk_minutes": 2.4,
-            "address": "",
-            "priority_brand": null
-          },
-          {
-            "name": "Camino de los Neveros Serrallo 1",
-            "brand": "",
-            "lat": 37.1580823,
-            "lon": -3.5793268,
-            "distance_meters": 238,
-            "walk_minutes": 3.0,
-            "address": "",
-            "priority_brand": null
-          }
-        ],
+        "public_transport": [],
         "green_space": [],
         "restaurant": []
       },
@@ -351,9 +526,9 @@
       "nearest_pharmacy_m": null,
       "nearest_pharmacy_name": null,
       "nearest_pharmacy_walk_min": null,
-      "nearest_public_transport_m": 95,
-      "nearest_public_transport_name": "Aconcagua Frente 50",
-      "nearest_public_transport_walk_min": 1.2,
+      "nearest_public_transport_m": null,
+      "nearest_public_transport_name": null,
+      "nearest_public_transport_walk_min": null,
       "nearest_green_space_m": null,
       "nearest_green_space_name": null,
       "nearest_green_space_walk_min": null,
@@ -364,275 +539,10 @@
         "price": 2.8,
         "supermarket": 12.5,
         "gym": 0,
-        "other_pois": 5,
+        "other_pois": 0,
         "priority_brands": 5.0,
         "penalty": 0,
-        "total": 25.3
-      },
-      "grade": "D — Fraco",
-      "alerts": []
-    },
-    {
-      "source": "pisos.com",
-      "city": "granada",
-      "title": "Apartamento en calle Curro Cuchares",
-      "url": "https://www.pisos.com/alquilar/apartamento-pajaritos_plaza_de_toros18014-35883636699_100500/",
-      "price": 590,
-      "location": "Pajaritos-Plaza de Toros (Distrito Beiro. Granada Capital)",
-      "location_raw": "Pajaritos-Plaza de Toros (Distrito Beiro. Granada Capital)",
-      "rooms": 1,
-      "m2": null,
-      "raw_details": "1 hab. ¡bienvenido a este  apartamento de un dormitorio! con su espacioso cuarto equipado con dos cómodas camas individuales, tendrás to...",
-      "kitchen_type": "unknown",
-      "is_seasonal": false,
-      "has_cooktop_only": false,
-      "_geocoded": true,
-      "_geocoded_from": "Apartamento en calle Curro Cuchares",
-      "lat": 37.1948655,
-      "lon": -3.612359,
-      "pois": {
-        "supermarket": [],
-        "gym": [],
-        "pharmacy": [],
-        "public_transport": [],
-        "green_space": [
-          {
-            "name": "Sem nome",
-            "brand": "",
-            "lat": 37.1960773,
-            "lon": -3.6127539,
-            "distance_meters": 139,
-            "walk_minutes": 1.7,
-            "address": "",
-            "priority_brand": null
-          },
-          {
-            "name": "Sem nome",
-            "brand": "",
-            "lat": 37.1962095,
-            "lon": -3.6111738,
-            "distance_meters": 183,
-            "walk_minutes": 2.3,
-            "address": "",
-            "priority_brand": null
-          },
-          {
-            "name": "Sem nome",
-            "brand": "",
-            "lat": 37.1958356,
-            "lon": -3.6141734,
-            "distance_meters": 194,
-            "walk_minutes": 2.4,
-            "address": "",
-            "priority_brand": null
-          },
-          {
-            "name": "Sem nome",
-            "brand": "",
-            "lat": 37.1937797,
-            "lon": -3.6106247,
-            "distance_meters": 195,
-            "walk_minutes": 2.4,
-            "address": "",
-            "priority_brand": null
-          },
-          {
-            "name": "Sem nome",
-            "brand": "",
-            "lat": 37.1938247,
-            "lon": -3.6148371,
-            "distance_meters": 248,
-            "walk_minutes": 3.1,
-            "address": "",
-            "priority_brand": null
-          }
-        ],
-        "restaurant": [
-          {
-            "name": "La tienda del pollo asado",
-            "brand": "",
-            "lat": 37.1941797,
-            "lon": -3.6087059,
-            "distance_meters": 332,
-            "walk_minutes": 4.2,
-            "address": "",
-            "priority_brand": null
-          },
-          {
-            "name": "Tellini",
-            "brand": "",
-            "lat": 37.1979989,
-            "lon": -3.6164828,
-            "distance_meters": 505,
-            "walk_minutes": 6.3,
-            "address": "",
-            "priority_brand": null
-          },
-          {
-            "name": "Sem nome",
-            "brand": "",
-            "lat": 37.1994536,
-            "lon": -3.6135612,
-            "distance_meters": 521,
-            "walk_minutes": 6.5,
-            "address": "",
-            "priority_brand": null
-          },
-          {
-            "name": "Pizzería La Nonna",
-            "brand": "",
-            "lat": 37.1905672,
-            "lon": -3.6094572,
-            "distance_meters": 543,
-            "walk_minutes": 6.8,
-            "address": "",
-            "priority_brand": null
-          },
-          {
-            "name": "7 Pecados",
-            "brand": "",
-            "lat": 37.1898523,
-            "lon": -3.6104577,
-            "distance_meters": 582,
-            "walk_minutes": 7.3,
-            "address": "",
-            "priority_brand": null
-          }
-        ]
-      },
-      "nearest_supermarket_m": null,
-      "nearest_supermarket_name": null,
-      "nearest_supermarket_walk_min": null,
-      "nearest_gym_m": null,
-      "nearest_gym_name": null,
-      "nearest_gym_walk_min": null,
-      "nearest_pharmacy_m": null,
-      "nearest_pharmacy_name": null,
-      "nearest_pharmacy_walk_min": null,
-      "nearest_public_transport_m": null,
-      "nearest_public_transport_name": null,
-      "nearest_public_transport_walk_min": null,
-      "nearest_green_space_m": 139,
-      "nearest_green_space_name": "Sem nome",
-      "nearest_green_space_walk_min": 1.7,
-      "nearest_restaurant_m": 332,
-      "nearest_restaurant_name": "La tienda del pollo asado",
-      "nearest_restaurant_walk_min": 4.2,
-      "scores": {
-        "price": 6.4,
-        "supermarket": 0,
-        "gym": 0,
-        "other_pois": 5,
-        "priority_brands": 0.0,
-        "penalty": 0,
-        "total": 11.4
-      },
-      "grade": "D — Fraco",
-      "alerts": []
-    },
-    {
-      "source": "pisos.com",
-      "city": "granada",
-      "title": "Apartamento en Centro-Catedral",
-      "url": "https://www.pisos.com/alquilar/apartamento-granada_capital_centro_catedral-24249285578_516255/",
-      "price": 625,
-      "location": "Centro-Catedral (Granada Capital)",
-      "location_raw": "Centro-Catedral (Granada Capital)",
-      "rooms": 1,
-      "m2": null,
-      "raw_details": "1 hab. por favor leed antes de llamar!!! disponible 1 de julio!!! no se reserva para septiembre!!!!!la vivienda consta de un dormitorio c...",
-      "kitchen_type": "unknown",
-      "is_seasonal": false,
-      "has_cooktop_only": false,
-      "_geocoded": true,
-      "_geocoded_from": "Centro-Catedral (Granada Capital)",
-      "lat": 37.1750402,
-      "lon": -3.5906528,
-      "pois": {
-        "supermarket": [],
-        "gym": [],
-        "pharmacy": [],
-        "public_transport": [],
-        "green_space": [
-          {
-            "name": "Plaza Campo del Príncipe",
-            "brand": "",
-            "lat": 37.17302,
-            "lon": -3.5920786,
-            "distance_meters": 258,
-            "walk_minutes": 3.2,
-            "address": "",
-            "priority_brand": null
-          },
-          {
-            "name": "Placeta del Rey Chico",
-            "brand": "",
-            "lat": 37.1788361,
-            "lon": -3.588496,
-            "distance_meters": 463,
-            "walk_minutes": 5.8,
-            "address": "",
-            "priority_brand": null
-          },
-          {
-            "name": "Parque del Cuarto Real de Santo Domingo",
-            "brand": "",
-            "lat": 37.171623,
-            "lon": -3.5943219,
-            "distance_meters": 500,
-            "walk_minutes": 6.3,
-            "address": "",
-            "priority_brand": null
-          },
-          {
-            "name": "Sem nome",
-            "brand": "",
-            "lat": 37.1741945,
-            "lon": -3.5838915,
-            "distance_meters": 606,
-            "walk_minutes": 7.6,
-            "address": "",
-            "priority_brand": null
-          },
-          {
-            "name": "Sem nome",
-            "brand": "",
-            "lat": 37.169582,
-            "lon": -3.5927109,
-            "distance_meters": 634,
-            "walk_minutes": 7.9,
-            "address": "",
-            "priority_brand": null
-          }
-        ],
-        "restaurant": []
-      },
-      "nearest_supermarket_m": null,
-      "nearest_supermarket_name": null,
-      "nearest_supermarket_walk_min": null,
-      "nearest_gym_m": null,
-      "nearest_gym_name": null,
-      "nearest_gym_walk_min": null,
-      "nearest_pharmacy_m": null,
-      "nearest_pharmacy_name": null,
-      "nearest_pharmacy_walk_min": null,
-      "nearest_public_transport_m": null,
-      "nearest_public_transport_name": null,
-      "nearest_public_transport_walk_min": null,
-      "nearest_green_space_m": 258,
-      "nearest_green_space_name": "Plaza Campo del Príncipe",
-      "nearest_green_space_walk_min": 3.2,
-      "nearest_restaurant_m": null,
-      "nearest_restaurant_name": null,
-      "nearest_restaurant_walk_min": null,
-      "scores": {
-        "price": 5.0,
-        "supermarket": 0,
-        "gym": 0,
-        "other_pois": 5,
-        "priority_brands": 0.0,
-        "penalty": 0,
-        "total": 10.0
+        "total": 20.3
       },
       "grade": "D — Fraco",
       "alerts": []
@@ -657,7 +567,58 @@
       "lon": -3.586021,
       "pois": {
         "supermarket": [],
-        "gym": [],
+        "gym": [
+          {
+            "name": "Gimnasio \"Sierra Nevada\"",
+            "brand": "",
+            "lat": 37.1653782,
+            "lon": -3.5832864,
+            "distance_meters": 954,
+            "walk_minutes": 11.9,
+            "address": "Calle Trevenque 16",
+            "priority_brand": null
+          },
+          {
+            "name": "Sano",
+            "brand": "",
+            "lat": 37.1701972,
+            "lon": -3.5964234,
+            "distance_meters": 999,
+            "walk_minutes": 12.5,
+            "address": "",
+            "priority_brand": null
+          },
+          {
+            "name": "Inbo Pilates",
+            "brand": "",
+            "lat": 37.1664781,
+            "lon": -3.5956561,
+            "distance_meters": 1170,
+            "walk_minutes": 14.6,
+            "address": "",
+            "priority_brand": null
+          },
+          {
+            "name": "Move It Center",
+            "brand": "",
+            "lat": 37.1661067,
+            "lon": -3.596288,
+            "distance_meters": 1239,
+            "walk_minutes": 15.5,
+            "address": "Calle Sos del Rey Católico 5",
+            "priority_brand": null
+          },
+          {
+            "name": "Selected Trainers",
+            "brand": "",
+            "lat": 37.1648371,
+            "lon": -3.5950929,
+            "distance_meters": 1270,
+            "walk_minutes": 15.9,
+            "address": "Avenida Pablo Picasso 27",
+            "priority_brand": null
+          }
+        ],
         "pharmacy": [],
         "public_transport": [],
         "green_space": [
@@ -712,14 +673,65 @@
             "priority_brand": null
           }
         ],
-        "restaurant": []
+        "restaurant": [
+          {
+            "name": "Jardines Alberto",
+            "brand": "",
+            "lat": 37.1741332,
+            "lon": -3.5851041,
+            "distance_meters": 96,
+            "walk_minutes": 1.2,
+            "address": "",
+            "priority_brand": null
+          },
+          {
+            "name": "La Mimbre",
+            "brand": "",
+            "lat": 37.1744449,
+            "lon": -3.5849759,
+            "distance_meters": 126,
+            "walk_minutes": 1.6,
+            "address": "Paseo del Generalife 18",
+            "priority_brand": null
+          },
+          {
+            "name": "Restaurante Arrayán del Generalife",
+            "brand": "",
+            "lat": 37.173654,
+            "lon": -3.5842082,
+            "distance_meters": 161,
+            "walk_minutes": 2.0,
+            "address": "",
+            "priority_brand": null
+          },
+          {
+            "name": "Hotel América",
+            "brand": "",
+            "lat": 37.1760194,
+            "lon": -3.5884348,
+            "distance_meters": 337,
+            "walk_minutes": 4.2,
+            "address": "Calle Real de la Alhambra 53",
+            "priority_brand": null
+          },
+          {
+            "name": "Balcón de Granada (Casa Paco)",
+            "brand": "",
+            "lat": 37.1700761,
+            "lon": -3.5851748,
+            "distance_meters": 407,
+            "walk_minutes": 5.1,
+            "address": "",
+            "priority_brand": null
+          }
+        ]
       },
       "nearest_supermarket_m": null,
       "nearest_supermarket_name": null,
       "nearest_supermarket_walk_min": null,
-      "nearest_gym_m": null,
-      "nearest_gym_name": null,
-      "nearest_gym_walk_min": null,
+      "nearest_gym_m": 954,
+      "nearest_gym_name": "Gimnasio \"Sierra Nevada\"",
+      "nearest_gym_walk_min": 11.9,
       "nearest_pharmacy_m": null,
       "nearest_pharmacy_name": null,
       "nearest_pharmacy_walk_min": null,
@@ -729,78 +741,20 @@
       "nearest_green_space_m": 197,
       "nearest_green_space_name": "Sem nome",
       "nearest_green_space_walk_min": 2.5,
-      "nearest_restaurant_m": null,
-      "nearest_restaurant_name": null,
-      "nearest_restaurant_walk_min": null,
+      "nearest_restaurant_m": 96,
+      "nearest_restaurant_name": "Jardines Alberto",
+      "nearest_restaurant_walk_min": 1.2,
       "scores": {
         "price": 2.0,
         "supermarket": 0,
-        "gym": 0,
+        "gym": 10.0,
         "other_pois": 5,
         "priority_brands": 0.0,
         "penalty": 0,
-        "total": 7.0
+        "total": 17.0
       },
       "grade": "D — Fraco",
       "alerts": []
-    },
-    {
-      "source": "pisos.com",
-      "city": "granada",
-      "title": "Piso en Avenida de los Andaluces",
-      "url": "https://www.pisos.com/alquilar/piso-pajaritos_plaza_de_toros18014-25892823781_100500/",
-      "price": 750,
-      "location": "Pajaritos-Plaza de Toros (Distrito Beiro. Granada Capital)",
-      "location_raw": "Pajaritos-Plaza de Toros (Distrito Beiro. Granada Capital)",
-      "rooms": 3,
-      "m2": null,
-      "raw_details": "3 habs. ¡reserva este piso para el próximo curso 26-27!\n \npiso de 3 dormitorios ideal para estudiantes en zona pajaritos, una ubicación mu...",
-      "kitchen_type": "unknown",
-      "is_seasonal": false,
-      "has_cooktop_only": false,
-      "_geocoded": false,
-      "_geocoded_from": "fallback:city_center",
-      "lat": 37.1773,
-      "lon": -3.5986,
-      "pois": {
-        "supermarket": [],
-        "gym": [],
-        "pharmacy": [],
-        "public_transport": [],
-        "green_space": [],
-        "restaurant": []
-      },
-      "nearest_supermarket_m": null,
-      "nearest_supermarket_name": null,
-      "nearest_supermarket_walk_min": null,
-      "nearest_gym_m": null,
-      "nearest_gym_name": null,
-      "nearest_gym_walk_min": null,
-      "nearest_pharmacy_m": null,
-      "nearest_pharmacy_name": null,
-      "nearest_pharmacy_walk_min": null,
-      "nearest_public_transport_m": null,
-      "nearest_public_transport_name": null,
-      "nearest_public_transport_walk_min": null,
-      "nearest_green_space_m": null,
-      "nearest_green_space_name": null,
-      "nearest_green_space_walk_min": null,
-      "nearest_restaurant_m": null,
-      "nearest_restaurant_name": null,
-      "nearest_restaurant_walk_min": null,
-      "scores": {
-        "price": 0,
-        "supermarket": 0,
-        "gym": 0,
-        "other_pois": 0,
-        "priority_brands": 0.0,
-        "penalty": -10,
-        "total": 0
-      },
-      "grade": "D — Fraco",
-      "alerts": [
-        "📍 Localização imprecisa"
-      ]
     },
     {
       "source": "pisos.com",
@@ -826,7 +780,58 @@
         "pharmacy": [],
         "public_transport": [],
         "green_space": [],
-        "restaurant": []
+        "restaurant": [
+          {
+            "name": "Restaurante Dikken",
+            "brand": "",
+            "lat": 37.1653296,
+            "lon": -3.605391,
+            "distance_meters": 175,
+            "walk_minutes": 2.2,
+            "address": "",
+            "priority_brand": null
+          },
+          {
+            "name": "La Farra",
+            "brand": "",
+            "lat": 37.1681844,
+            "lon": -3.6022858,
+            "distance_meters": 245,
+            "walk_minutes": 3.1,
+            "address": "Calle Pintor Zuloaga 21",
+            "priority_brand": null
+          },
+          {
+            "name": "Casa Ángeles",
+            "brand": "",
+            "lat": 37.1688488,
+            "lon": -3.6037437,
+            "distance_meters": 261,
+            "walk_minutes": 3.3,
+            "address": "Calle Alhamar 41",
+            "priority_brand": null
+          },
+          {
+            "name": "Mesón La Cabaña del Río",
+            "brand": "",
+            "lat": 37.164135,
+            "lon": -3.6047021,
+            "distance_meters": 270,
+            "walk_minutes": 3.4,
+            "address": "",
+            "priority_brand": null
+          },
+          {
+            "name": "Kebab Alhamar",
+            "brand": "",
+            "lat": 37.1689121,
+            "lon": -3.6029026,
+            "distance_meters": 286,
+            "walk_minutes": 3.6,
+            "address": "Calle Alhamar",
+            "priority_brand": null
+          }
+        ]
       },
       "nearest_supermarket_m": null,
       "nearest_supermarket_name": null,
@@ -843,9 +848,9 @@
       "nearest_green_space_m": null,
       "nearest_green_space_name": null,
       "nearest_green_space_walk_min": null,
-      "nearest_restaurant_m": null,
-      "nearest_restaurant_name": null,
-      "nearest_restaurant_walk_min": null,
+      "nearest_restaurant_m": 175,
+      "nearest_restaurant_name": "Restaurante Dikken",
+      "nearest_restaurant_walk_min": 2.2,
       "scores": {
         "price": 0,
         "supermarket": 0,
