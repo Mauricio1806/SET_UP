@@ -207,4 +207,46 @@ class CitySyncNotion:
         # Divisor
         blocks.append({"object": "block", "type": "divider", "divider": {}})
 
+        # Filtros Idealista por bairro
+        IDEALISTA_FILTERS = {
+            "granada": [
+                ("Zaidín (MELHOR custo-benefício)", "https://www.idealista.com/alquiler-viviendas/zaidin-granada-granada/con-precio-hasta_750,de-un-dormitorio,amueblado/?ordenado-por=precios-asc"),
+                ("Arabial / Pajaritos (4 academias)", "https://www.idealista.com/alquiler-viviendas/arabial-granada-granada/con-precio-hasta_750,de-un-dormitorio,amueblado/?ordenado-por=precios-asc"),
+                ("Camino de Ronda", "https://www.idealista.com/alquiler-viviendas/camino-de-ronda-granada-granada/con-precio-hasta_750,de-un-dormitorio,amueblado/?ordenado-por=precios-asc"),
+                ("Chana (mais barato)", "https://www.idealista.com/alquiler-viviendas/chana-granada-granada/con-precio-hasta_750,de-un-dormitorio,amueblado/?ordenado-por=precios-asc"),
+                ("Beiro", "https://www.idealista.com/alquiler-viviendas/beiro-granada-granada/con-precio-hasta_750,de-un-dormitorio,amueblado/?ordenado-por=precios-asc"),
+            ],
+            "alicante": [
+                ("Benalúa (MELHOR)", "https://www.idealista.com/alquiler-viviendas/benalua-alicante-alacant/con-precio-hasta_950,de-un-dormitorio,amueblado/?ordenado-por=precios-asc"),
+                ("Carolinas Bajas", "https://www.idealista.com/alquiler-viviendas/carolinas-alicante-alacant/con-precio-hasta_950,de-un-dormitorio,amueblado/?ordenado-por=precios-asc"),
+                ("Centro Alicante", "https://www.idealista.com/alquiler-viviendas/centro-alicante-alacant/con-precio-hasta_950,de-un-dormitorio,amueblado/?ordenado-por=precios-asc"),
+            ],
+            "nerja": [
+                ("Centro Nerja", "https://www.idealista.com/alquiler-viviendas/nerja-malaga/con-precio-hasta_950,de-un-dormitorio,amueblado/?ordenado-por=precios-asc"),
+                ("Capistrano", "https://www.idealista.com/alquiler-viviendas/capistrano-nerja-malaga/con-precio-hasta_950,de-un-dormitorio,amueblado/?ordenado-por=precios-asc"),
+            ],
+        }
+
+        city_filters = IDEALISTA_FILTERS.get(city_key, [])
+        if city_filters:
+            blocks.append({
+                "object": "block", "type": "heading_3",
+                "heading_3": {"rich_text": [{"type": "text", "text": {
+                    "content": "🔍 Buscar agora no Idealista — por bairro (1 quarto mobilhado, preço crescente)"
+                }}]}
+            })
+            for label, url in city_filters:
+                blocks.append({
+                    "object": "block",
+                    "type": "bulleted_list_item",
+                    "bulleted_list_item": {
+                        "rich_text": [
+                            {"type": "text", "text": {"content": f"{label} → "}},
+                            {"type": "text", "text": {"content": "abrir no Idealista", "link": {"url": url}},
+                             "annotations": {"color": "blue", "underline": True}},
+                        ]
+                    }
+                })
+
+        blocks.append({"object": "block", "type": "divider", "divider": {}})
         return blocks
