@@ -63,16 +63,8 @@ class BaseScraper:
         return None
 
     def parse_price(self, text: str) -> Optional[int]:
-        """Extrai número de preço mensal em '€520/mes' ou '520 €'.
-
-        Anúncios de temporada/turismo ('€/día', '€/noche') não são aluguel
-        mensal — descartados para não contaminar o ranking com valores
-        de diária muito abaixo do teto de aluguel.
-        """
+        """Extrai número de preço em '€520/mes' ou '520 €'."""
         if not text:
-            return None
-        lowered = text.lower()
-        if "día" in lowered or "dia" in lowered or "noche" in lowered:
             return None
         cleaned = text.replace(".", "").replace("\xa0", " ")
         match = re.search(r"(\d[\d\s]*)", cleaned)

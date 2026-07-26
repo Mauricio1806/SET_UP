@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>🏠 SET_UP — Filtros Idealista por Bairro</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0 }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+           background: #0a0e27; color: #e2e8f0; padding: 20px }
+    .container { max-width: 1100px; margin: 0 auto }
+    header { background: linear-gradient(135deg, #1e40af, #6d28d9);
+              padding: 24px; border-radius: 12px; margin-bottom: 24px }
+    h1 { font-size: 1.6rem; margin-bottom: 6px }
+    header p { opacity: .8; font-size: .9rem }
+    .city { margin-bottom: 36px }
+    h2 { font-size: 1.3rem; color: #a5b4fc; margin-bottom: 6px }
+    .budget { font-size: .85rem; opacity: .7; margin-bottom: 14px }
+    .nb-grid { display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 14px }
+    .nb-card { background: #1e293b; border-radius: 10px; padding: 16px;
+                border-left: 4px solid #6d28d9 }
+    .nb-card h3 { font-size: .95rem; margin-bottom: 6px }
+    .notes { font-size: .8rem; opacity: .7; margin-bottom: 12px }
+    .links { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px }
+    .btn { padding: 7px 12px; border-radius: 7px; text-decoration: none;
+            font-size: .8rem; font-weight: 600 }
+    .btn.primary { background: #6d28d9; color: #fff }
+    .btn.secondary { background: #1e40af; color: #fff }
+    .btn.alt { background: #334155; color: #e2e8f0 }
+    .btn:hover { opacity: .85 }
+    details { margin-top: 8px }
+    summary { font-size: .75rem; opacity: .6; cursor: pointer }
+    code { display: block; font-size: .7rem; word-break: break-all;
+             background: #0f172a; padding: 8px; border-radius: 6px;
+             margin-top: 6px; color: #86efac }
+    .tip { background: #1e293b; border-left: 4px solid #10b981;
+            padding: 14px; border-radius: 8px; margin-bottom: 24px;
+            font-size: .85rem; line-height: 1.6 }
+    footer { text-align: center; opacity: .4; font-size: .8rem; margin-top: 32px }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>🏠 SET_UP — Filtros Idealista por Bairro</h1>
+    <p>Atualizado: 2026-07-25 20:18 UTC · Perfil: 1q mobiliado · preço crescente</p>
+  </header>
+
+  <div class="tip">
+    💡 <strong>Como usar:</strong> Clique no botão do bairro que quer pesquisar.
+    O link abre o Idealista já filtrado por bairro + preço máximo + 1 quarto + mobilhado.
+    Os resultados já aparecem do mais barato para o mais caro.
+    <br><br>
+    ⏳ <strong>Enquanto a API oficial não chega:</strong> use estes filtros manualmente.
+    Quando chegar a API key, o pipeline vai puxar automaticamente e você não precisará mais fazer isso.
+  </div>
+
+  
+        <section class="city">
+          <h2>🏘️ Granada</h2>
+          <p class="budget">Orçamento ideal: <strong>≤€750/mês</strong></p>
+          <div class="nb-grid">
+            <div class="nb-card">
+              <h3>Zaidín (MELHOR — Score 9.5)</h3>
+              <p class="notes">📍 6+ supermercados <5min · Synergym · Sano · Tapas grátis</p>
+              <div class="links">
+                <a href="https://www.idealista.com/alquiler-viviendas/zaidin-granada-granada/con-precio-hasta_750,de-un-dormitorio,amueblado/?ordenado-por=precios-asc" target="_blank" class="btn primary">
+                  🏠 Idealista ≤€750
+                </a>
+                <a href="https://www.idealista.com/alquiler-viviendas/zaidin-granada-granada/con-precio-hasta_900,de-un-dormitorio,amueblado/?ordenado-por=precios-asc" target="_blank" class="btn secondary">
+                  🏠 Idealista ≤€900
+                </a>
+                <a href="https://www.pisos.com/alquiler/pisos-zaidin_granada/" 
+                   target="_blank" class="btn alt">
+                  📋 Pisos.com
+                </a>
+              </div>
+              <details>
+                <summary>Ver URLs completas</summary>
+                <code>https://www.idealista.com/alquiler-viviendas/zaidin-granada-granada/con-precio-hasta_750,de-un-dormitorio,amueblado/?ordenado-por=precios-asc</code>
+              </details>
+            </div>
+            <div class="nb-card">
+              <h3>Arabial / Pajaritos (4 academias na mesma rua)</h3>
+              <p class="notes">📍 Basic-Fit + McFit + VivaGym + Brooklyn em <500m</p>
+              <div class="links">
+                <a href="https://www.idealista.com/alquiler-viviendas/arabial-granada-granada/con-precio-hasta_750,de-un-dormitorio,amueblado/?ordenado-por=precios-asc" target="_blank" class="btn primary">
+                  🏠 Idealista ≤€750
+                </a>
+                <a href="https://www.idealista.com/alquiler-viviendas/arabial-granada-granada/con-precio-hasta_900,de-un-dormitorio,amueblado/?ordenado-por=precios-asc" target="_blank" class="btn secondary">
+                  🏠 Idealista ≤€900
+                </a>
+                <a href="https://www.pisos.com/alquiler/pisos-arabial_pajaritos_granada/" 
+                   target="_blank" class="btn alt">
+                  📋 Pisos.com
+                </a>
+              </div>
+              <details>
+                <summary>Ver URLs completas</summary>
+                <code>https://www.idealista.com/alquiler-viviendas/arabial-granada-granada/con-precio-hasta_750,de-un-dormitorio,amueblado/?ordenado-por=precios-asc</code>
+              </details>
+            </div>
+            <div class="nb-card">
+              <h3>Camino de Ronda</h3>
+              <p class="notes">📍 Eixo comercial principal · Basic-Fit · BeOne</p>
+              <div class="links">
+                <a href="https://www.idealista.com/alquiler-viviendas/camino-de-ronda-granada-granada/con-precio-hasta_750,de-un-dormitorio,amueblado/?ordenado-por=precios-asc" target="_blank" class="btn primary">
+                  🏠 Idealista ≤€750
+                </a>
+                <a href="https://www.idealista.com/alquiler-viviendas/camino-de-ronda-granada-granada/con-precio-hasta_900,de-un-dormitorio,amueblado/?ordenado-por=precios-asc" target="_blank" class="btn secondary">
+                  🏠 Idealista ≤€900
+                </a>
+                <a href="https://www.pisos.com/alquiler/pisos-camino_ronda_granada/" 
+                   target="_blank" class="btn alt">
+                  📋 Pisos.com
+                </a>
+              </div>
+              <details>
+                <summary>Ver URLs completas</summary>
+                <code>https://www.idealista.com/alquiler-viviendas/camino-de-ronda-granada-granada/con-precio-hasta_750,de-un-dormitorio,amueblado/?ordenado-por=precios-asc</code>
+              </details>
+            </div>
+            <div class="nb-card">
+              <h3>Chana (mais barato)</h3>
+              <p class="notes">📍 €470-610 · Mercadona próximo</p>
+              <div class="links">
+                <a href="https://www.idealista.com/alquiler-viviendas/chana-granada-granada/con-precio-hasta_750,de-un-dormitorio,amueblado/?ordenado-por=precios-asc" target="_blank" class="btn primary">
+                  🏠 Idealista ≤€750
+                </a>
+                <a href="https://www.idealista.com/alquiler-viviendas/chana-granada-granada/con-precio-hasta_900,de-un-dormitorio,amueblado/?ordenado-por=precios-asc" target="_blank" class="btn secondary">
+                  🏠 Idealista ≤€900
+                </a>
+                <a href="https://www.pisos.com/alquiler/pisos-chana_granada/" 
+                   target="_blank" class="btn alt">
+                  📋 Pisos.com
+                </a>
+              </div>
+              <details>
+                <summary>Ver URLs completas</summary>
+                <code>https://www.idealista.com/alquiler-viviendas/chana-granada-granada/con-precio-hasta_750,de-un-dormitorio,amueblado/?ordenado-por=precios-asc</code>
+              </details>
+            </div>
+            <div class="nb-card">
+              <h3>Beiro</h3>
+              <p class="notes">📍 Residencial tranquilo</p>
+              <div class="links">
+                <a href="https://www.idealista.com/alquiler-viviendas/beiro-granada-granada/con-precio-hasta_750,de-un-dormitorio,amueblado/?ordenado-por=precios-asc" target="_blank" class="btn primary">
+                  🏠 Idealista ≤€750
+                </a>
+                <a href="https://www.idealista.com/alquiler-viviendas/beiro-granada-granada/con-precio-hasta_900,de-un-dormitorio,amueblado/?ordenado-por=precios-asc" target="_blank" class="btn secondary">
+                  🏠 Idealista ≤€900
+                </a>
+                <a href="https://www.pisos.com/alquiler/pisos-beiro_granada/" 
+                   target="_blank" class="btn alt">
+                  📋 Pisos.com
+                </a>
+              </div>
+              <details>
+                <summary>Ver URLs completas</summary>
+                <code>https://www.idealista.com/alquiler-viviendas/beiro-granada-granada/con-precio-hasta_750,de-un-dormitorio,amueblado/?ordenado-por=precios-asc</code>
+              </details>
+            </div></div>
+        </section>
+        <section class="city">
+          <h2>🏙️ Alicante</h2>
+          <p class="budget">Orçamento ideal: <strong>≤€950/mês</strong></p>
+          <div class="nb-grid">
+            <div class="nb-card">
+              <h3>Benalúa (MELHOR — Score 9.2)</h3>
+              <p class="notes">📍 5+ supermercados · Basic-Fit próximo</p>
+              <div class="links">
+                <a href="https://www.idealista.com/alquiler-viviendas/benalua-alicante-alacant/con-precio-hasta_950,de-un-dormitorio,amueblado/?ordenado-por=precios-asc" target="_blank" class="btn primary">
+                  🏠 Idealista ≤€950
+                </a>
+                <a href="https://www.idealista.com/alquiler-viviendas/benalua-alicante-alacant/con-precio-hasta_1100,de-un-dormitorio,amueblado/?ordenado-por=precios-asc" target="_blank" class="btn secondary">
+                  🏠 Idealista ≤€1100
+                </a>
+                <a href="https://www.pisos.com/alquiler/pisos-benalua_alicante/" 
+                   target="_blank" class="btn alt">
+                  📋 Pisos.com
+                </a>
+              </div>
+              <details>
+                <summary>Ver URLs completas</summary>
+                <code>https://www.idealista.com/alquiler-viviendas/benalua-alicante-alacant/con-precio-hasta_950,de-un-dormitorio,amueblado/?ordenado-por=precios-asc</code>
+              </details>
+            </div>
+            <div class="nb-card">
+              <h3>Carolinas Bajas</h3>
+              <p class="notes">📍 4 supermercados · 4 academias</p>
+              <div class="links">
+                <a href="https://www.idealista.com/alquiler-viviendas/carolinas-alicante-alacant/con-precio-hasta_950,de-un-dormitorio,amueblado/?ordenado-por=precios-asc" target="_blank" class="btn primary">
+                  🏠 Idealista ≤€950
+                </a>
+                <a href="https://www.idealista.com/alquiler-viviendas/carolinas-alicante-alacant/con-precio-hasta_1100,de-un-dormitorio,amueblado/?ordenado-por=precios-asc" target="_blank" class="btn secondary">
+                  🏠 Idealista ≤€1100
+                </a>
+                <a href="https://www.pisos.com/alquiler/pisos-carolinas_alicante/" 
+                   target="_blank" class="btn alt">
+                  📋 Pisos.com
+                </a>
+              </div>
+              <details>
+                <summary>Ver URLs completas</summary>
+                <code>https://www.idealista.com/alquiler-viviendas/carolinas-alicante-alacant/con-precio-hasta_950,de-un-dormitorio,amueblado/?ordenado-por=precios-asc</code>
+              </details>
+            </div>
+            <div class="nb-card">
+              <h3>Centro Alicante</h3>
+              <p class="notes">📍 Central · mais caro</p>
+              <div class="links">
+                <a href="https://www.idealista.com/alquiler-viviendas/centro-alicante-alacant/con-precio-hasta_950,de-un-dormitorio,amueblado/?ordenado-por=precios-asc" target="_blank" class="btn primary">
+                  🏠 Idealista ≤€950
+                </a>
+                <a href="https://www.idealista.com/alquiler-viviendas/centro-alicante-alacant/con-precio-hasta_1100,de-un-dormitorio,amueblado/?ordenado-por=precios-asc" target="_blank" class="btn secondary">
+                  🏠 Idealista ≤€1100
+                </a>
+                <a href="https://www.pisos.com/alquiler/pisos-centro_alicante/" 
+                   target="_blank" class="btn alt">
+                  📋 Pisos.com
+                </a>
+              </div>
+              <details>
+                <summary>Ver URLs completas</summary>
+                <code>https://www.idealista.com/alquiler-viviendas/centro-alicante-alacant/con-precio-hasta_950,de-un-dormitorio,amueblado/?ordenado-por=precios-asc</code>
+              </details>
+            </div></div>
+        </section>
+        <section class="city">
+          <h2>🏖️ Nerja</h2>
+          <p class="budget">Orçamento ideal: <strong>≤€950/mês</strong></p>
+          <div class="nb-grid">
+            <div class="nb-card">
+              <h3>Centro Nerja</h3>
+              <p class="notes">📍 Centro histórico · praia próxima</p>
+              <div class="links">
+                <a href="https://www.idealista.com/alquiler-viviendas/nerja-malaga/con-precio-hasta_950,de-un-dormitorio,amueblado/?ordenado-por=precios-asc" target="_blank" class="btn primary">
+                  🏠 Idealista ≤€950
+                </a>
+                <a href="https://www.idealista.com/alquiler-viviendas/nerja-malaga/con-precio-hasta_1100,de-un-dormitorio,amueblado/?ordenado-por=precios-asc" target="_blank" class="btn secondary">
+                  🏠 Idealista ≤€1100
+                </a>
+                <a href="https://www.pisos.com/alquiler/pisos-centro_nerja/" 
+                   target="_blank" class="btn alt">
+                  📋 Pisos.com
+                </a>
+              </div>
+              <details>
+                <summary>Ver URLs completas</summary>
+                <code>https://www.idealista.com/alquiler-viviendas/nerja-malaga/con-precio-hasta_950,de-un-dormitorio,amueblado/?ordenado-por=precios-asc</code>
+              </details>
+            </div>
+            <div class="nb-card">
+              <h3>Capistrano</h3>
+              <p class="notes">📍 Urbanização tranquila</p>
+              <div class="links">
+                <a href="https://www.idealista.com/alquiler-viviendas/capistrano-nerja-malaga/con-precio-hasta_950,de-un-dormitorio,amueblado/?ordenado-por=precios-asc" target="_blank" class="btn primary">
+                  🏠 Idealista ≤€950
+                </a>
+                <a href="https://www.idealista.com/alquiler-viviendas/capistrano-nerja-malaga/con-precio-hasta_1100,de-un-dormitorio,amueblado/?ordenado-por=precios-asc" target="_blank" class="btn secondary">
+                  🏠 Idealista ≤€1100
+                </a>
+                <a href="https://www.pisos.com/alquiler/pisos-capistrano_nerja/" 
+                   target="_blank" class="btn alt">
+                  📋 Pisos.com
+                </a>
+              </div>
+              <details>
+                <summary>Ver URLs completas</summary>
+                <code>https://www.idealista.com/alquiler-viviendas/capistrano-nerja-malaga/con-precio-hasta_950,de-un-dormitorio,amueblado/?ordenado-por=precios-asc</code>
+              </details>
+            </div></div>
+        </section>
+
+  <footer>SET_UP · Gerado automaticamente · GitHub Pages</footer>
+</div>
+</body>
+</html>

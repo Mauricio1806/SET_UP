@@ -28,7 +28,7 @@ TARGET_CITIES = {
             "Zaidín", "Camino de Ronda", "Beiro",
             "Centro", "Ronda", "Pajaritos"
         ],
-        "max_rent_eur": 750,
+        "max_rent_eur": 900,    # cap de coleta — scorer penaliza acima do ideal (€750)
         "min_rooms": 1,
         "notion_page_id": "3736d7bcf70c81fa99b6f425e9585326",
     },
@@ -40,7 +40,7 @@ TARGET_CITIES = {
             "Benalúa", "Carolinas Bajas", "Centro",
             "San Blas", "Ensanche Diputación"
         ],
-        "max_rent_eur": 950,
+        "max_rent_eur": 1100,   # cap de coleta — ideal é €950
         "min_rooms": 1,
         "notion_page_id": "3736d7bcf70c81cf80c9e70f08b9c264",
     },
@@ -52,7 +52,7 @@ TARGET_CITIES = {
             "Centro", "Balcón de Europa", "Parador",
             "Capistrano"
         ],
-        "max_rent_eur": 950,
+        "max_rent_eur": 1100,   # cap de coleta — ideal é €950
         "min_rooms": 1,
         "notion_page_id": "3736d7bcf70c816cbb7ac922c2c0138e",
     },

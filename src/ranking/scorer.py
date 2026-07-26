@@ -21,10 +21,17 @@ class ListingScorer:
     - Anúncio sazonal              (-20 pts)
     """
 
+    # Cap IDEAL por cidade (orçamento real do Mauricio)
+    # Separado do cap de COLETA no config (que é mais alto pra garantir volume)
+    IDEAL_RENT = {
+        "granada":  750,
+        "alicante": 950,
+        "nerja":    950,
+    }
+
     def score(self, listing: Dict) -> Dict:
         city_key = listing.get("city", "granada")
-        city = TARGET_CITIES.get(city_key, {})
-        max_rent = city.get("max_rent_eur", 1000)
+        max_rent = self.IDEAL_RENT.get(city_key, 900)
 
         # Componentes positivos
         price_score      = self._score_price(listing.get("price"), max_rent)

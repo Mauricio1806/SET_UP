@@ -1,8 +1,7 @@
-name: SET_UP Daily Scrape
+name: SET_UP Daily Scrape + Notion Update
 
 on:
   schedule:
-    # 2x/dia: 8h e 20h horário Salvador (UTC-3)
     - cron: '0 11 * * *'   # 08h Salvador
     - cron: '0 23 * * *'   # 20h Salvador
   workflow_dispatch:
@@ -13,7 +12,7 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -29,11 +28,20 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run SET_UP
+      - name: Run SET_UP pipeline
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_HUB_ID: ${{ secrets.NOTION_HUB_ID }}
+          ZENROWS_KEY: ${{ secrets.ZENROWS_KEY }}
+          IDEALISTA_API_KEY: ${{ secrets.IDEALISTA_API_KEY }}
+          IDEALISTA_API_SECRET: ${{ secrets.IDEALISTA_API_SECRET }}
         run: python -m src.main
+
+      - name: Update Notion via Claude API
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: python -m src.tools.claude_notion_sync
 
       - name: Commit dashboard + data
         run: |
