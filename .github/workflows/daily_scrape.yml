@@ -2,7 +2,7 @@ name: SET_UP Daily Scrape + Notion Update
 
 on:
   schedule:
-    - cron: '0 11 * * *'   # 08h Salvador
+    - cron: '0 11 * * *'   # 08h Salvador (BRT = UTC-3)
     - cron: '0 23 * * *'   # 20h Salvador
   workflow_dispatch:
 
@@ -12,7 +12,7 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 55        # aumentado: multi-market scraping + Amazon.es
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -28,25 +28,34 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run SET_UP pipeline
+      - name: Run SET_UP pipeline (aluguéis + Mercadona)
         env:
-          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-          NOTION_HUB_ID: ${{ secrets.NOTION_HUB_ID }}
-          ZENROWS_KEY: ${{ secrets.ZENROWS_KEY }}
-          IDEALISTA_API_KEY: ${{ secrets.IDEALISTA_API_KEY }}
+          NOTION_TOKEN:         ${{ secrets.NOTION_TOKEN }}
+          NOTION_HUB_ID:        ${{ secrets.NOTION_HUB_ID }}
+          ZENROWS_KEY:          ${{ secrets.ZENROWS_KEY }}
+          IDEALISTA_API_KEY:    ${{ secrets.IDEALISTA_API_KEY }}
           IDEALISTA_API_SECRET: ${{ secrets.IDEALISTA_API_SECRET }}
+          EUR_BRL_RATE:         "5.90"
         run: python -m src.main
 
-      - name: Update Notion via Claude API
+      - name: Run multi-market price scraping (Lidl + DIA + Consum + Amazon.es)
+        continue-on-error: true   # falha não para o pipeline
+        env:
+          EUR_BRL_RATE: "5.90"
+        run: python -m src.tools.multi_market_runner
+
+      - name: Update Notion via Claude API (v2 — remove antigos + insere novo)
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_TOKEN:      ${{ secrets.NOTION_TOKEN }}
         run: python -m src.tools.claude_notion_sync
 
       - name: Commit dashboard + data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/ data/latest.json
+          git add docs/ data/latest.json data/prices_history.json
+          # Adicionar novos arquivos se existirem
+          [ -f data/multi_market.json ] && git add data/multi_market.json || true
           git diff --staged --quiet || git commit -m "🤖 SET_UP daily update $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
