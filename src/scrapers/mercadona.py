@@ -12,42 +12,51 @@ from ..config import DATA_DIR
 # Dieta REAL do Mauricio (do Notion) com consumo mensal ES
 # Substituições BR→ES já aplicadas (cuscuz→arroz+batata, Orfeu→Marcilla, etc.)
 DIET_ITEMS: List[Dict] = [
-    # Proteínas
-    {"category": "proteína",   "query": "pechuga pollo",                "consumo_mensal_unidade": "9kg",    "nota": "300g/dia"},
-    {"category": "proteína",   "query": "claras huevo pasteurizadas",    "consumo_mensal_unidade": "2kg",    "nota": "Substitui parte dos ovos"},
-    {"category": "proteína",   "query": "huevos xl",                    "consumo_mensal_unidade": "30un",   "nota": "3 ovos/dia (rest vão claras)"},
-    {"category": "proteína",   "query": "atun claro lata",              "consumo_mensal_unidade": "4 latas","nota": "Opcional backup"},
-    # Carboidratos (cuscuz não existe na ES → arroz + batata + pão)
-    {"category": "carboidrato","query": "arroz integral",               "consumo_mensal_unidade": "3kg",    "nota": "Substitui cuscuz no almoço"},
-    {"category": "carboidrato","query": "patatas",                      "consumo_mensal_unidade": "3kg",    "nota": "Complemento carboidrato"},
-    {"category": "carboidrato","query": "pan integral rebanado",        "consumo_mensal_unidade": "4 packs","nota": "Substitui cuscuz no jantar"},
-    {"category": "carboidrato","query": "verduras congeladas",          "consumo_mensal_unidade": "3kg",    "nota": "100g/dia misto"},
-    # Gorduras
-    {"category": "gordura",    "query": "aceite oliva virgen extra",    "consumo_mensal_unidade": "1L",     "nota": "Base de preparo"},
-    {"category": "gordura",    "query": "mantequilla sin sal",          "consumo_mensal_unidade": "250g",   "nota": "Receita frango"},
-    {"category": "gordura",    "query": "cacahuete tostado",            "consumo_mensal_unidade": "500g",   "nota": "Lanche + jantar"},
-    {"category": "gordura",    "query": "miel",                         "consumo_mensal_unidade": "500g",   "nota": "Shake manhã"},
-    # Bebidas / laticínios
-    {"category": "bebida",     "query": "cafe molido",                  "consumo_mensal_unidade": "2kg",    "nota": "2L/dia → ~60g pó"},
-    {"category": "bebida",     "query": "leche entera",                 "consumo_mensal_unidade": "4L",     "nota": "Shake manhã"},
-    {"category": "bebida",     "query": "leche en polvo",               "consumo_mensal_unidade": "400g",   "nota": "Shake jantar"},
-    # Molhos (substituição Kikkoman Teriyaki)
-    {"category": "tempero",    "query": "salsa teriyaki",               "consumo_mensal_unidade": "1 frs",  "nota": "Substitui molho tare"},
-    {"category": "tempero",    "query": "ketchup",                      "consumo_mensal_unidade": "1 frs",  "nota": "Receita frango"},
-    # Suplementos
-    {"category": "suplemento", "query": "proteina whey",                "consumo_mensal_unidade": "1kg",    "nota": "HSN/Bulk na Amazon.es"},
-    {"category": "suplemento", "query": "creatina monohidrato",         "consumo_mensal_unidade": "150g",   "nota": "5g/dia"},
-    {"category": "suplemento", "query": "vitamina d3",                  "consumo_mensal_unidade": "30 caps","nota": "Essencial inverno Granada"},
-    {"category": "suplemento", "query": "omega 3 capsulas",             "consumo_mensal_unidade": "30 caps","nota": "Mensal"},
-    {"category": "suplemento", "query": "magnesio bisglicinato",        "consumo_mensal_unidade": "30 caps","nota": "Sono + músculo"},
-    # Higiene (Amazon.es é mais barato pra higiene)
-    {"category": "higiene",    "query": "champu anticaspa",             "consumo_mensal_unidade": "1 frs",  "nota": "H&S equiv."},
-    {"category": "higiene",    "query": "pasta dientes blanqueadora",   "consumo_mensal_unidade": "1 tubo", "nota": "Oral-B equiv."},
-    {"category": "higiene",    "query": "gel ducha",                    "consumo_mensal_unidade": "1 frs",  "nota": "Mensal"},
-    {"category": "higiene",    "query": "desodorante",                  "consumo_mensal_unidade": "1 un",   "nota": "Mensal"},
-    # Gato
-    {"category": "gato",       "query": "pienso gato adulto",           "consumo_mensal_unidade": "3kg",    "nota": "Gato adulto"},
-    {"category": "gato",       "query": "arena gato aglomerante",       "consumo_mensal_unidade": "5L",     "nota": "Mensal"},
+    # PROTEÍNAS (dieta real do Notion)
+    {"category": "proteína",    "query": "pechuga pollo congelada",       "consumo_mensal_unidade": "9kg",     "nota": "300g/dia — base da dieta"},
+    {"category": "proteína",    "query": "claras huevo pasteurizadas",    "consumo_mensal_unidade": "6un500ml","nota": "100g/dia — Ovonatur equiv."},
+    {"category": "proteína",    "query": "huevos medianos",               "consumo_mensal_unidade": "8 dz",    "nota": "3/dia"},
+    {"category": "proteína",    "query": "leche en polvo entera",         "consumo_mensal_unidade": "3×500g",  "nota": "100g/dia no shake"},
+    {"category": "proteína",    "query": "queso manchego curado",         "consumo_mensal_unidade": "200g",    "nota": "5g/dia — substitui parmesão"},
+    {"category": "proteína",    "query": "queso mozzarella",              "consumo_mensal_unidade": "1kg",     "nota": "30g/dia"},
+
+    # CARBOIDRATOS
+    {"category": "carboidrato", "query": "arroz integral",                "consumo_mensal_unidade": "3kg",     "nota": "100g/dia — substitui cuscuz almoço"},
+    {"category": "carboidrato", "query": "patatas",                       "consumo_mensal_unidade": "6kg",     "nota": "200g/dia — substitui cuscuz jantar"},
+    {"category": "carboidrato", "query": "pan integral rebanado",         "consumo_mensal_unidade": "4 un",    "nota": "Substitui cuscuz parcialmente"},
+
+    # VEGETAIS E FRUTAS CONGELADAS
+    {"category": "vegetal",     "query": "verduras congeladas mix",       "consumo_mensal_unidade": "3kg",     "nota": "100g/dia"},
+    {"category": "vegetal",     "query": "arandanos congelados",          "consumo_mensal_unidade": "1kg",     "nota": "Mirtilos — shake manhã"},
+    {"category": "vegetal",     "query": "moras congeladas",              "consumo_mensal_unidade": "1kg",     "nota": "Amoras — shake manhã"},
+    {"category": "vegetal",     "query": "fresas congeladas",             "consumo_mensal_unidade": "2kg",     "nota": "Morangos — shake manhã"},
+    {"category": "vegetal",     "query": "platano banana",                "consumo_mensal_unidade": "2kg",     "nota": "Fruta fresca"},
+
+    # GORDURAS
+    {"category": "gordura",     "query": "mantequilla sin sal",           "consumo_mensal_unidade": "3×250g",  "nota": "30g/dia"},
+    {"category": "gordura",     "query": "cacahuete natural",             "consumo_mensal_unidade": "500g",    "nota": "Amendoim jantar"},
+    {"category": "gordura",     "query": "aceite oliva virgen extra",     "consumo_mensal_unidade": "1L",      "nota": "Base preparo"},
+    {"category": "gordura",     "query": "miel flores",                   "consumo_mensal_unidade": "500g",    "nota": "10g/dia no shake"},
+
+    # BEBIDAS E TEMPEROS
+    {"category": "bebida",      "query": "cafe molido natural",           "consumo_mensal_unidade": "1.2kg",   "nota": "40g/dia — 2L café"},
+    {"category": "bebida",      "query": "leche entera",                  "consumo_mensal_unidade": "6L",      "nota": "Shake + jantar"},
+    {"category": "tempero",     "query": "ketchup heinz",                 "consumo_mensal_unidade": "1 frs",   "nota": "Receita frango"},
+    {"category": "tempero",     "query": "salsa teriyaki kikkoman",       "consumo_mensal_unidade": "1 frs",   "nota": "Substitui molho tare"},
+
+    # SUPLEMENTOS
+    {"category": "suplemento",  "query": "creatina monohidrato",          "consumo_mensal_unidade": "150g",    "nota": "5g/dia — Amazon.es HSN"},
+    {"category": "suplemento",  "query": "proteina whey",                 "consumo_mensal_unidade": "2kg",     "nota": "70g/dia — Amazon.es"},
+
+    # HIGIENE
+    {"category": "higiene",     "query": "champu anticaspa hombre",       "consumo_mensal_unidade": "1 frs",   "nota": "H&S equiv."},
+    {"category": "higiene",     "query": "pasta dientes blanqueadora",    "consumo_mensal_unidade": "1 tubo",  "nota": "Oral-B equiv."},
+    {"category": "higiene",     "query": "gel ducha",                     "consumo_mensal_unidade": "1 frs",   "nota": "Sabonete equiv."},
+    {"category": "higiene",     "query": "desodorante roll on",           "consumo_mensal_unidade": "1 un",    "nota": "Mensal"},
+
+    # GATO
+    {"category": "gato",        "query": "pienso gato adulto",            "consumo_mensal_unidade": "3kg",     "nota": "Ração mensal"},
+    {"category": "gato",        "query": "arena gato aglomerante",        "consumo_mensal_unidade": "5L",      "nota": "Areia mensal"},
 ]
 
 # Warehouses por cidade

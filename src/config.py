@@ -72,8 +72,9 @@ POI_CATEGORIES = {
     },
     "gym": {
         "label": "Academia",
-        "overpass_query": '["leisure"="fitness_centre"]',
-        "priority_brands": ["Basic-Fit", "Synergym", "McFit", "Anytime Fitness", "VivaGym"],
+        # Exclui CrossFit explicitamente — só academias regulares
+        "overpass_query": '["leisure"="fitness_centre"]["name"!~"CrossFit|crossfit|Crossfit",i]',
+        "priority_brands": ["Basic-Fit", "Synergym", "McFit", "Anytime Fitness", "VivaGym", "Sano", "BeOne", "Nature"],
         "weight": 25,
         "max_walk_meters": 800,
     },
