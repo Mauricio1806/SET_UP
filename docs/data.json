@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "generated_at": "2026-07-26 01:59 UTC",
   "listings": [
     {
@@ -12,9 +13,24 @@
       "rooms": 1,
       "m2": null,
       "raw_details": "1 /18 nuevo destacado 850 € /mes loft en calle alfonso x ´el sabio´ centro (distrito núcleo urbano. elx - elche) 1 hab. 1 baño 60 m² disponible a partir del 16 de agosto 2026\n\neste loft 55 m² útiles, se presenta como una opción ideal para quienes buscan un espaci... llamar contactar avísame si baja ",
+=======
+  "generated_at": "2026-07-26 12:13 UTC",
+  "listings": [
+    {
+      "source": "pisos.com",
+      "city": "nerja",
+      "title": "Ático en Centro",
+      "url": "https://www.pisos.com/alquilar/atico-nerja_centro-60092595564_106500/",
+      "price": 800,
+      "location": "Centro (Nerja)",
+      "location_raw": "Centro (Nerja)",
+      "rooms": 1,
+      "m2": null,
+      "raw_details": "1 hab. alquiler de invierno:  disponible de noviembre a marzo. electricidad a parte. si tienes alguna duda contacta con nosotros: \naparta...",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "kitchen_type": "unknown",
-      "has_cooktop_only": false,
       "is_seasonal": false,
+<<<<<<< HEAD
       "_geocoded": true,
       "_geocoded_from": "Centro (Distrito Núcleo Urbano. Elx - Elche)",
       "lat": 38.3451121,
@@ -238,10 +254,49 @@
             "walk_minutes": 2.8,
             "address": "",
             "priority_brand": null
+=======
+      "has_cooktop_only": false,
+      "_geocoded": true,
+      "_geocoded_from": "Centro (Nerja)",
+      "lat": 36.7471737,
+      "lon": -3.88066,
+      "pois": {
+        "supermarket": [
+          {
+            "name": "Carrefour Market",
+            "brand": "Carrefour Market",
+            "lat": 36.7476456,
+            "lon": -3.8807393,
+            "distance_meters": 53,
+            "walk_minutes": 0.7,
+            "address": "Calle Antonio Ferrandis Chanquete",
+            "priority_brand": "Carrefour"
+          },
+          {
+            "name": "Naturisma",
+            "brand": "",
+            "lat": 36.7477063,
+            "lon": -3.8801188,
+            "distance_meters": 76,
+            "walk_minutes": 1.0,
+            "address": "Calle Carretera 1",
+            "priority_brand": null
+          },
+          {
+            "name": "Covirán",
+            "brand": "Covirán",
+            "lat": 36.7457328,
+            "lon": -3.8810292,
+            "distance_meters": 164,
+            "walk_minutes": 2.0,
+            "address": "",
+            "priority_brand": "Covirán"
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
           },
           {
             "name": "Sem nome",
             "brand": "",
+<<<<<<< HEAD
             "lat": 38.3465875,
             "lon": -0.4844933,
             "distance_meters": 232,
@@ -392,49 +447,28 @@
             "walk_minutes": 1.3,
             "address": "",
             "priority_brand": null
-          },
-          {
-            "name": "Mercadona",
-            "brand": "Mercadona",
-            "lat": 37.1673041,
-            "lon": -3.6048696,
-            "distance_meters": 112,
-            "walk_minutes": 1.4,
-            "address": "Camino de Ronda 43",
-            "priority_brand": "Mercadona"
-          },
-          {
-            "name": "Tusuper",
-            "brand": "",
-            "lat": 37.1649385,
-            "lon": -3.6024323,
-            "distance_meters": 229,
-            "walk_minutes": 2.9,
+=======
+            "lat": 36.7481576,
+            "lon": -3.8836943,
+            "distance_meters": 292,
+            "walk_minutes": 3.6,
             "address": "",
             "priority_brand": null
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
           },
           {
-            "name": "El Jamón",
-            "brand": "El Jamón",
-            "lat": 37.1689135,
-            "lon": -3.6026971,
-            "distance_meters": 294,
-            "walk_minutes": 3.7,
-            "address": "Calle Alhamar",
-            "priority_brand": null
-          },
-          {
-            "name": "Family Market",
+            "name": "MAS",
             "brand": "",
-            "lat": 37.1689106,
-            "lon": -3.6021238,
-            "distance_meters": 318,
-            "walk_minutes": 4.0,
-            "address": "Calle Alhamar 27",
+            "lat": 36.7454878,
+            "lon": -3.8833694,
+            "distance_meters": 306,
+            "walk_minutes": 3.8,
+            "address": "",
             "priority_brand": null
           }
         ],
         "gym": [
+<<<<<<< HEAD
           {
             "name": "Nature Yoga",
             "brand": "",
@@ -948,10 +982,20 @@
             "lon": -3.6048096,
             "distance_meters": 202,
             "walk_minutes": 2.5,
+=======
+          {
+            "name": "Time Sport",
+            "brand": "",
+            "lat": 36.7541638,
+            "lon": -3.8748318,
+            "distance_meters": 935,
+            "walk_minutes": 11.7,
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
             "address": "",
             "priority_brand": null
           }
         ],
+<<<<<<< HEAD
         "green_space": [
           {
             "name": "Sem nome",
@@ -1404,21 +1448,74 @@
             "lon": -0.4862453,
             "distance_meters": 36,
             "walk_minutes": 0.4,
+=======
+        "pharmacy": [],
+        "public_transport": [],
+        "green_space": [],
+        "restaurant": [
+          {
+            "name": "Cafe Paris",
+            "brand": "",
+            "lat": 36.7472293,
+            "lon": -3.8798283,
+            "distance_meters": 74,
+            "walk_minutes": 0.9,
             "address": "",
             "priority_brand": null
           },
           {
+            "name": "Restaurante El Patanegra",
+            "brand": "",
+            "lat": 36.7463998,
+            "lon": -3.8802142,
+            "distance_meters": 95,
+            "walk_minutes": 1.2,
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
+            "address": "",
+            "priority_brand": null
+          },
+          {
+<<<<<<< HEAD
             "name": "Pizzaitalia",
             "brand": "",
             "lat": 38.3455358,
             "lon": -0.4858699,
             "distance_meters": 64,
             "walk_minutes": 0.8,
+=======
+            "name": "La Marina Marisqueria",
+            "brand": "",
+            "lat": 36.7457998,
+            "lon": -3.8799619,
+            "distance_meters": 165,
+            "walk_minutes": 2.1,
+            "address": "Calle Castilla Pérez 20",
+            "priority_brand": null
+          },
+          {
+            "name": "El Puente",
+            "brand": "",
+            "lat": 36.748371,
+            "lon": -3.8820203,
+            "distance_meters": 180,
+            "walk_minutes": 2.3,
+            "address": "",
+            "priority_brand": null
+          },
+          {
+            "name": "conect@.t",
+            "brand": "",
+            "lat": 36.7453913,
+            "lon": -3.8813136,
+            "distance_meters": 207,
+            "walk_minutes": 2.6,
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
             "address": "",
             "priority_brand": null
           }
         ]
       },
+<<<<<<< HEAD
       "nearest_supermarket_m": 76,
       "nearest_supermarket_name": "MINI MARKET 3",
       "nearest_supermarket_walk_min": 1.0,
@@ -5098,50 +5195,114 @@
         "penalty": 0,
         "total": 47.2
       },
+=======
+      "nearest_supermarket_m": 53,
+      "nearest_supermarket_name": "Carrefour Market",
+      "nearest_supermarket_walk_min": 0.7,
+      "nearest_gym_m": 935,
+      "nearest_gym_name": "Time Sport",
+      "nearest_gym_walk_min": 11.7,
+      "nearest_pharmacy_m": null,
+      "nearest_pharmacy_name": null,
+      "nearest_pharmacy_walk_min": null,
+      "nearest_public_transport_m": null,
+      "nearest_public_transport_name": null,
+      "nearest_public_transport_walk_min": null,
+      "nearest_green_space_m": null,
+      "nearest_green_space_name": null,
+      "nearest_green_space_walk_min": null,
+      "nearest_restaurant_m": 74,
+      "nearest_restaurant_name": "Cafe Paris",
+      "nearest_restaurant_walk_min": 0.9,
+      "scores": {
+        "price": 4.7,
+        "supermarket": 25,
+        "gym": 10.0,
+        "other_pois": 0,
+        "priority_brands": 5.0,
+        "penalty": 0,
+        "total": 44.7
+      },
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "grade": "C — OK",
       "alerts": []
     },
     {
       "source": "pisos.com",
-      "city": "granada",
-      "title": "Apartamento en calle de la Castañeda",
-      "url": "https://www.pisos.com/alquilar/apartamento-realejo-65027865555_104700/",
-      "price": 700,
-      "location": "Realejo (Granada Capital)",
-      "location_raw": "Realejo (Granada Capital)",
-      "rooms": 1,
+      "city": "nerja",
+      "title": "Piso en Centro",
+      "url": "https://www.pisos.com/alquilar/piso-nerja_centro-64249667411_106400/",
+      "price": 750,
+      "location": "Centro (Nerja)",
+      "location_raw": "Centro (Nerja)",
+      "rooms": 2,
       "m2": null,
+<<<<<<< HEAD
       "raw_details": "1 /58 premium 700 € /mes apartamento en calle de la castañeda realejo (granada capital) 1 hab. 1 baño 40 m² ¿buscas un inmueble exclusivo en una ubicación inmejorable? te presentamos este magnífico apartamento situado junto a la virgen de... llamar contactar avísame si baja whatsapp",
+=======
+      "raw_details": "2 habs. apartamento en playa de los cangrejos, con 54 m² construidos, 634 m² metros de parcela, 2 dormitorios, 1 baños, reformado, exterio...",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "kitchen_type": "unknown",
       "has_cooktop_only": false,
       "is_seasonal": false,
       "_geocoded": true,
-      "_geocoded_from": "Realejo (Granada Capital)",
-      "lat": 37.1736743,
-      "lon": -3.586021,
+      "_geocoded_from": "Centro (Nerja)",
+      "lat": 36.7471737,
+      "lon": -3.88066,
       "pois": {
         "supermarket": [
           {
+            "name": "Carrefour Market",
+            "brand": "Carrefour Market",
+            "lat": 36.7476456,
+            "lon": -3.8807393,
+            "distance_meters": 53,
+            "walk_minutes": 0.7,
+            "address": "Calle Antonio Ferrandis Chanquete",
+            "priority_brand": "Carrefour"
+          },
+          {
+            "name": "Naturisma",
+            "brand": "",
+            "lat": 36.7477063,
+            "lon": -3.8801188,
+            "distance_meters": 76,
+            "walk_minutes": 1.0,
+            "address": "Calle Carretera 1",
+            "priority_brand": null
+          },
+          {
             "name": "Covirán",
             "brand": "Covirán",
-            "lat": 37.1732444,
-            "lon": -3.5929959,
-            "distance_meters": 620,
-            "walk_minutes": 7.7,
+            "lat": 36.7457328,
+            "lon": -3.8810292,
+            "distance_meters": 164,
+            "walk_minutes": 2.0,
             "address": "",
             "priority_brand": "Covirán"
           },
           {
-            "name": "Rapid",
+            "name": "Sem nome",
             "brand": "",
-            "lat": 37.1753717,
-            "lon": -3.596225,
-            "distance_meters": 924,
-            "walk_minutes": 11.5,
+            "lat": 36.7481576,
+            "lon": -3.8836943,
+            "distance_meters": 292,
+            "walk_minutes": 3.6,
+            "address": "",
+            "priority_brand": null
+          },
+          {
+            "name": "MAS",
+            "brand": "",
+            "lat": 36.7454878,
+            "lon": -3.8833694,
+            "distance_meters": 306,
+            "walk_minutes": 3.8,
             "address": "",
             "priority_brand": null
           }
         ],
+<<<<<<< HEAD
         "gym": [
           {
             "name": "Gimnasio \"Sierra Nevada\"",
@@ -5223,11 +5384,80 @@
             "distance_meters": 854,
             "walk_minutes": 10.7,
             "address": "",
+=======
+        "gym": [],
+        "pharmacy": [],
+        "public_transport": [],
+        "green_space": [],
+        "restaurant": []
+      },
+      "nearest_supermarket_m": 53,
+      "nearest_supermarket_name": "Carrefour Market",
+      "nearest_supermarket_walk_min": 0.7,
+      "nearest_gym_m": null,
+      "nearest_gym_name": null,
+      "nearest_gym_walk_min": null,
+      "nearest_pharmacy_m": null,
+      "nearest_pharmacy_name": null,
+      "nearest_pharmacy_walk_min": null,
+      "nearest_public_transport_m": null,
+      "nearest_public_transport_name": null,
+      "nearest_public_transport_walk_min": null,
+      "nearest_green_space_m": null,
+      "nearest_green_space_name": null,
+      "nearest_green_space_walk_min": null,
+      "nearest_restaurant_m": null,
+      "nearest_restaurant_name": null,
+      "nearest_restaurant_walk_min": null,
+      "scores": {
+        "price": 6.3,
+        "supermarket": 25,
+        "gym": 0,
+        "other_pois": 0,
+        "priority_brands": 5.0,
+        "penalty": 0,
+        "total": 36.3
+      },
+      "grade": "C — OK",
+      "alerts": []
+    },
+    {
+      "source": "pisos.com",
+      "city": "granada",
+      "title": "Piso en calle Pérez Galdós",
+      "url": "https://www.pisos.com/alquilar/piso-camino_de_ronda18003-65857321648_100500/",
+      "price": 350,
+      "location": "Camino de Ronda (Distrito Ronda. Granada Capital)",
+      "location_raw": "Camino de Ronda (Distrito Ronda. Granada Capital)",
+      "rooms": 3,
+      "m2": null,
+      "raw_details": "3 habs. habitacion disponible en piso de estudiantes reformado situado en la calle recoletos, una de las mejores zonas de granada, tanto p...",
+      "kitchen_type": "unknown",
+      "is_seasonal": false,
+      "has_cooktop_only": false,
+      "_geocoded": true,
+      "_geocoded_from": "Piso en calle Pérez Galdós",
+      "lat": 37.1817676,
+      "lon": -3.6136412,
+      "pois": {
+        "supermarket": [],
+        "gym": [],
+        "pharmacy": [
+          {
+            "name": "Farmacia Óptica Paredes",
+            "brand": "",
+            "lat": 37.1814642,
+            "lon": -3.6125216,
+            "distance_meters": 105,
+            "walk_minutes": 1.3,
+            "address": "Camino de Ronda 176",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
             "priority_brand": null
           },
           {
-            "name": "Farmacia Eloína Pérez de Andrade",
+            "name": "Farmacia Rosa María Pérez Ávila",
             "brand": "",
+<<<<<<< HEAD
             "lat": 37.1740751,
             "lon": -3.5962074,
             "distance_meters": 904,
@@ -5254,50 +5484,356 @@
             "lon": -3.5869268,
             "distance_meters": 95,
             "walk_minutes": 1.2,
+=======
+            "lat": 37.1812239,
+            "lon": -3.6148288,
+            "distance_meters": 121,
+            "walk_minutes": 1.5,
+            "address": "Calle Artesano Molero 4",
+            "priority_brand": null
+          },
+          {
+            "name": "Farmacia Pablo Fernández Sánchez",
+            "brand": "",
+            "lat": 37.1797639,
+            "lon": -3.6133267,
+            "distance_meters": 225,
+            "walk_minutes": 2.8,
+            "address": "Calle Arabial 109",
+            "priority_brand": null
+          },
+          {
+            "name": "Farmacia La Redonda",
+            "brand": "",
+            "lat": 37.1838593,
+            "lon": -3.614365,
+            "distance_meters": 241,
+            "walk_minutes": 3.0,
+            "address": "Camino de Ronda 159",
+            "priority_brand": null
+          },
+          {
+            "name": "Farmacia San Vicente",
+            "brand": "",
+            "lat": 37.1792275,
+            "lon": -3.6111546,
+            "distance_meters": 358,
+            "walk_minutes": 4.5,
+            "address": "Camino de Ronda 158",
+            "priority_brand": null
+          }
+        ],
+        "public_transport": [],
+        "green_space": [],
+        "restaurant": []
+      },
+      "nearest_supermarket_m": null,
+      "nearest_supermarket_name": null,
+      "nearest_supermarket_walk_min": null,
+      "nearest_gym_m": null,
+      "nearest_gym_name": null,
+      "nearest_gym_walk_min": null,
+      "nearest_pharmacy_m": 105,
+      "nearest_pharmacy_name": "Farmacia Óptica Paredes",
+      "nearest_pharmacy_walk_min": 1.3,
+      "nearest_public_transport_m": null,
+      "nearest_public_transport_name": null,
+      "nearest_public_transport_walk_min": null,
+      "nearest_green_space_m": null,
+      "nearest_green_space_name": null,
+      "nearest_green_space_walk_min": null,
+      "nearest_restaurant_m": null,
+      "nearest_restaurant_name": null,
+      "nearest_restaurant_walk_min": null,
+      "scores": {
+        "price": 16.0,
+        "supermarket": 0,
+        "gym": 0,
+        "other_pois": 5,
+        "priority_brands": 0.0,
+        "penalty": 0,
+        "total": 21.0
+      },
+      "grade": "D — Fraco",
+      "alerts": []
+    },
+    {
+      "source": "pisos.com",
+      "city": "granada",
+      "title": "Estudio en Avenida de Madrid",
+      "url": "https://www.pisos.com/alquilar/estudio-san_ildefonso_hospital_real18012-36720703564_100500/",
+      "price": 550,
+      "location": "San Ildefonso Hospital Real (Distrito Beiro. Granada Capital)",
+      "location_raw": "San Ildefonso Hospital Real (Distrito Beiro. Granada Capital)",
+      "rooms": null,
+      "m2": null,
+      "raw_details": "1 baño ¡hola futuros inquilinos! ¿buscas un espacio cómodo donde vivir sin sorpresas en tus cuentas? este estudio en ancha de capuchinos ...",
+      "kitchen_type": "unknown",
+      "is_seasonal": false,
+      "has_cooktop_only": false,
+      "_geocoded": true,
+      "_geocoded_from": "San Ildefonso Hospital Real (Distrito Beiro. Granada Capital",
+      "lat": 37.194328,
+      "lon": -3.6052172,
+      "pois": {
+        "supermarket": [],
+        "gym": [],
+        "pharmacy": [],
+        "public_transport": [],
+        "green_space": [
+          {
+            "name": "Sem nome",
+            "brand": "",
+            "lat": 37.1970266,
+            "lon": -3.6071224,
+            "distance_meters": 344,
+            "walk_minutes": 4.3,
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
             "address": "",
             "priority_brand": null
           },
           {
+<<<<<<< HEAD
             "name": "Alhambra Generalife - Taquillas",
             "brand": "",
             "lat": 37.1743068,
             "lon": -3.5850002,
             "distance_meters": 115,
             "walk_minutes": 1.4,
+=======
+            "name": "Sem nome",
+            "brand": "",
+            "lat": 37.1911717,
+            "lon": -3.6069099,
+            "distance_meters": 382,
+            "walk_minutes": 4.8,
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
             "address": "",
             "priority_brand": null
           },
           {
+<<<<<<< HEAD
             "name": "Alhambra - Generalife 2",
             "brand": "",
             "lat": 37.1743716,
             "lon": -3.5850135,
             "distance_meters": 118,
             "walk_minutes": 1.5,
+=======
+            "name": "Plaza del Ceramista Agustín Morales Alguacil",
+            "brand": "",
+            "lat": 37.1963457,
+            "lon": -3.6087602,
+            "distance_meters": 386,
+            "walk_minutes": 4.8,
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
             "address": "",
             "priority_brand": null
           },
           {
+<<<<<<< HEAD
             "name": "Paseo de la Sabica 38 - Parque Alixares",
             "brand": "",
             "lat": 37.1730056,
             "lon": -3.5833497,
             "distance_meters": 248,
             "walk_minutes": 3.1,
+=======
+            "name": "Sem nome",
+            "brand": "",
+            "lat": 37.1975264,
+            "lon": -3.6086726,
+            "distance_meters": 469,
+            "walk_minutes": 5.9,
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
             "address": "",
             "priority_brand": null
           },
           {
+<<<<<<< HEAD
             "name": "Camino Nuevo del Cementerio",
             "brand": "",
             "lat": 37.1725794,
             "lon": -3.5886944,
             "distance_meters": 266,
             "walk_minutes": 3.3,
+=======
+            "name": "Sem nome",
+            "brand": "",
+            "lat": 37.1937797,
+            "lon": -3.6106247,
+            "distance_meters": 483,
+            "walk_minutes": 6.0,
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
             "address": "",
             "priority_brand": null
           }
         ],
+<<<<<<< HEAD
+=======
+        "restaurant": []
+      },
+      "nearest_supermarket_m": null,
+      "nearest_supermarket_name": null,
+      "nearest_supermarket_walk_min": null,
+      "nearest_gym_m": null,
+      "nearest_gym_name": null,
+      "nearest_gym_walk_min": null,
+      "nearest_pharmacy_m": null,
+      "nearest_pharmacy_name": null,
+      "nearest_pharmacy_walk_min": null,
+      "nearest_public_transport_m": null,
+      "nearest_public_transport_name": null,
+      "nearest_public_transport_walk_min": null,
+      "nearest_green_space_m": 344,
+      "nearest_green_space_name": "Sem nome",
+      "nearest_green_space_walk_min": 4.3,
+      "nearest_restaurant_m": null,
+      "nearest_restaurant_name": null,
+      "nearest_restaurant_walk_min": null,
+      "scores": {
+        "price": 8.0,
+        "supermarket": 0,
+        "gym": 0,
+        "other_pois": 3.8,
+        "priority_brands": 0.0,
+        "penalty": 0,
+        "total": 11.8
+      },
+      "grade": "D — Fraco",
+      "alerts": []
+    },
+    {
+      "source": "pisos.com",
+      "city": "granada",
+      "title": "Piso en Avenida de la Ilustración",
+      "url": "https://www.pisos.com/alquilar/piso-campus_de_la_salud_palacio_de_los_deportes18016-65881191741_106100/",
+      "price": 650,
+      "location": "Campus de la Salud-Palacio de los Deportes (Distrito Zaidín. Granada Capital)",
+      "location_raw": "Campus de la Salud-Palacio de los Deportes (Distrito Zaidín. Granada Capital)",
+      "rooms": null,
+      "m2": null,
+      "raw_details": "1 baño sin comisión inmobiliaria para el arrendatario.\nespectacular estudio totalmente reformado muy luminoso con todo exterior a estrena...",
+      "kitchen_type": "unknown",
+      "is_seasonal": false,
+      "has_cooktop_only": false,
+      "_geocoded": true,
+      "_geocoded_from": "Campus de la Salud-Palacio de los Deportes (Distrito Zaidín.",
+      "lat": 37.1512811,
+      "lon": -3.599239,
+      "pois": {
+        "supermarket": [],
+        "gym": [],
+        "pharmacy": [],
+        "public_transport": [],
+        "green_space": [
+          {
+            "name": "Sem nome",
+            "brand": "",
+            "lat": 37.1503607,
+            "lon": -3.5981918,
+            "distance_meters": 138,
+            "walk_minutes": 1.7,
+            "address": "",
+            "priority_brand": null
+          },
+          {
+            "name": "Sem nome",
+            "brand": "",
+            "lat": 37.1507415,
+            "lon": -3.6008705,
+            "distance_meters": 157,
+            "walk_minutes": 2.0,
+            "address": "",
+            "priority_brand": null
+          },
+          {
+            "name": "Plaza Catedrática Asunción Linares",
+            "brand": "",
+            "lat": 37.150977,
+            "lon": -3.6021659,
+            "distance_meters": 262,
+            "walk_minutes": 3.3,
+            "address": "",
+            "priority_brand": null
+          },
+          {
+            "name": "Sem nome",
+            "brand": "",
+            "lat": 37.153752,
+            "lon": -3.5972479,
+            "distance_meters": 327,
+            "walk_minutes": 4.1,
+            "address": "",
+            "priority_brand": null
+          },
+          {
+            "name": "Sem nome",
+            "brand": "",
+            "lat": 37.1542309,
+            "lon": -3.5997264,
+            "distance_meters": 331,
+            "walk_minutes": 4.1,
+            "address": "",
+            "priority_brand": null
+          }
+        ],
+        "restaurant": []
+      },
+      "nearest_supermarket_m": null,
+      "nearest_supermarket_name": null,
+      "nearest_supermarket_walk_min": null,
+      "nearest_gym_m": null,
+      "nearest_gym_name": null,
+      "nearest_gym_walk_min": null,
+      "nearest_pharmacy_m": null,
+      "nearest_pharmacy_name": null,
+      "nearest_pharmacy_walk_min": null,
+      "nearest_public_transport_m": null,
+      "nearest_public_transport_name": null,
+      "nearest_public_transport_walk_min": null,
+      "nearest_green_space_m": 138,
+      "nearest_green_space_name": "Sem nome",
+      "nearest_green_space_walk_min": 1.7,
+      "nearest_restaurant_m": null,
+      "nearest_restaurant_name": null,
+      "nearest_restaurant_walk_min": null,
+      "scores": {
+        "price": 4.0,
+        "supermarket": 0,
+        "gym": 0,
+        "other_pois": 5,
+        "priority_brands": 0.0,
+        "penalty": 0,
+        "total": 9.0
+      },
+      "grade": "D — Fraco",
+      "alerts": []
+    },
+    {
+      "source": "pisos.com",
+      "city": "granada",
+      "title": "Piso en calle Lavadero de Zafra",
+      "url": "https://www.pisos.com/alquilar/piso-granada_capital_centro_catedral18001-64242942782_100500/",
+      "price": 695,
+      "location": "Centro-Catedral (Granada Capital)",
+      "location_raw": "Centro-Catedral (Granada Capital)",
+      "rooms": 2,
+      "m2": null,
+      "raw_details": "2 habs. ¡reserva este piso para el próximo curso 26/27!\n\npiso de 2 habitaciones junto a la gran vía, en una ubicación inmejorable y rodead...",
+      "kitchen_type": "unknown",
+      "is_seasonal": false,
+      "has_cooktop_only": false,
+      "_geocoded": true,
+      "_geocoded_from": "Centro-Catedral (Granada Capital)",
+      "lat": 37.1750402,
+      "lon": -3.5906528,
+      "pois": {
+        "supermarket": [],
+        "gym": [],
+        "pharmacy": [],
+        "public_transport": [],
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
         "green_space": [
           {
             "name": "Sem nome",
@@ -5350,6 +5886,7 @@
             "priority_brand": null
           }
         ],
+<<<<<<< HEAD
         "restaurant": [
           {
             "name": "Jardines Alberto",
@@ -5622,10 +6159,14 @@
             "priority_brand": null
           }
         ]
+=======
+        "restaurant": []
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       },
       "nearest_supermarket_m": null,
       "nearest_supermarket_name": null,
       "nearest_supermarket_walk_min": null,
+<<<<<<< HEAD
       "nearest_gym_m": 600,
       "nearest_gym_name": "Gym Pola Max",
       "nearest_gym_walk_min": 7.5,
@@ -5649,6 +6190,31 @@
         "priority_brands": 0.0,
         "penalty": 0,
         "total": 22.5
+=======
+      "nearest_gym_m": null,
+      "nearest_gym_name": null,
+      "nearest_gym_walk_min": null,
+      "nearest_pharmacy_m": null,
+      "nearest_pharmacy_name": null,
+      "nearest_pharmacy_walk_min": null,
+      "nearest_public_transport_m": null,
+      "nearest_public_transport_name": null,
+      "nearest_public_transport_walk_min": null,
+      "nearest_green_space_m": 258,
+      "nearest_green_space_name": "Plaza Campo del Príncipe",
+      "nearest_green_space_walk_min": 3.2,
+      "nearest_restaurant_m": null,
+      "nearest_restaurant_name": null,
+      "nearest_restaurant_walk_min": null,
+      "scores": {
+        "price": 2.2,
+        "supermarket": 0,
+        "gym": 0,
+        "other_pois": 5,
+        "priority_brands": 0.0,
+        "penalty": 0,
+        "total": 7.2
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       },
       "grade": "D — Fraco",
       "alerts": []
@@ -5657,6 +6223,7 @@
       "source": "pisos.com",
       "city": "granada",
       "title": "Piso en Camino de Ronda",
+<<<<<<< HEAD
       "url": "https://www.pisos.com/alquilar/piso-camino_de_ronda18004-65875176023_106400/",
       "price": 890,
       "location": "Camino de Ronda (Distrito Ronda. Granada Capital)",
@@ -5667,10 +6234,94 @@
       "kitchen_type": "unknown",
       "has_cooktop_only": false,
       "is_seasonal": false,
+=======
+      "url": "https://www.pisos.com/alquilar/piso-camino_de_ronda-65081714138_100500/",
+      "price": 325,
+      "location": "Camino de Ronda (Distrito Ronda. Granada Capital)",
+      "location_raw": "Camino de Ronda (Distrito Ronda. Granada Capital)",
+      "rooms": 4,
+      "m2": null,
+      "raw_details": "4 habs. se buscan chicos estudiantes para completar amplio y luminoso piso, ubicado en una excelente zona de granada, ideal para universitarios.\r\n\r\nactualmente la vivienda cuenta con 4 dormitorios y están disponibles 2 habitaciones.\r\n\r\n✨ precio por estudiante\r\n🔥 calefacción y agua caliente mediante ",
+      "kitchen_type": "cooktop_only",
+      "is_seasonal": false,
+      "has_cooktop_only": true,
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "_geocoded": true,
       "_geocoded_from": "Piso en Camino de Ronda",
       "lat": 37.1701666,
       "lon": -3.631428,
+<<<<<<< HEAD
+=======
+      "pois": {
+        "supermarket": [],
+        "gym": [],
+        "pharmacy": [],
+        "public_transport": [],
+        "green_space": [
+          {
+            "name": "Parque de las Alquerías",
+            "brand": "",
+            "lat": 37.1852843,
+            "lon": -3.6278495,
+            "distance_meters": 1711,
+            "walk_minutes": 21.4,
+            "address": "",
+            "priority_brand": null
+          }
+        ],
+        "restaurant": []
+      },
+      "nearest_supermarket_m": null,
+      "nearest_supermarket_name": null,
+      "nearest_supermarket_walk_min": null,
+      "nearest_gym_m": null,
+      "nearest_gym_name": null,
+      "nearest_gym_walk_min": null,
+      "nearest_pharmacy_m": null,
+      "nearest_pharmacy_name": null,
+      "nearest_pharmacy_walk_min": null,
+      "nearest_public_transport_m": null,
+      "nearest_public_transport_name": null,
+      "nearest_public_transport_walk_min": null,
+      "nearest_green_space_m": 1711,
+      "nearest_green_space_name": "Parque de las Alquerías",
+      "nearest_green_space_walk_min": 21.4,
+      "nearest_restaurant_m": null,
+      "nearest_restaurant_name": null,
+      "nearest_restaurant_walk_min": null,
+      "scores": {
+        "price": 17.0,
+        "supermarket": 0,
+        "gym": 0,
+        "other_pois": 1.2,
+        "priority_brands": 0.0,
+        "penalty": -15,
+        "total": 3.2
+      },
+      "grade": "D — Fraco",
+      "alerts": [
+        "🍳 Só cooktop"
+      ]
+    },
+    {
+      "source": "pisos.com",
+      "city": "nerja",
+      "title": "Apartamento en calle del Mirto",
+      "url": "https://www.pisos.com/alquilar/apartamento-almijara-64193531998_525502/",
+      "price": 950,
+      "location": "Almijara (Nerja)",
+      "location_raw": "Almijara (Nerja)",
+      "rooms": 2,
+      "m2": null,
+      "raw_details": "2 habs. ático de alquiler en nerja calle flamingo , tiene unos 60 m², compuesta de 2 dormitorios, baño, salón-comedor, cocina equipada, am...",
+      "kitchen_type": "gas_or_full",
+      "is_seasonal": false,
+      "has_cooktop_only": false,
+      "_geocoded": true,
+      "_geocoded_from": "Almijara (Nerja)",
+      "lat": 36.7659358,
+      "lon": -3.8477231,
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "pois": {
         "supermarket": [],
         "gym": [],
@@ -5718,7 +6369,9 @@
         "total": 1.2
       },
       "grade": "D — Fraco",
-      "alerts": []
+      "alerts": [
+        "✅ Fogão real"
+      ]
     }
   ],
   "prices": [
@@ -5737,7 +6390,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/56652",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -5758,7 +6415,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/21647",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -5779,7 +6440,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/31312",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -5800,7 +6465,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/31309",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -5821,7 +6490,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/31592",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -5842,7 +6515,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/18071",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -5863,7 +6540,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/18011",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -5884,7 +6565,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/5184",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -5905,7 +6590,11 @@
       "unit_size": "2",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/22281",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -5926,7 +6615,11 @@
       "unit_size": "2",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/22245",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -5947,7 +6640,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/69166",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -5968,7 +6665,11 @@
       "unit_size": "1",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/12049.2",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -5989,7 +6690,11 @@
       "unit_size": "1",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/21596.2",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6010,7 +6715,11 @@
       "unit_size": "10",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/23155",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6031,7 +6740,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/14283",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6052,7 +6765,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/4740",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6073,7 +6790,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/4717",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6094,7 +6815,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/20716",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6115,7 +6840,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/60622",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6136,7 +6865,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/13451",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6157,7 +6890,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/34031",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6178,7 +6915,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/15430",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6199,7 +6940,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/15436",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6220,7 +6965,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/11178",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6241,7 +6990,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/15922",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6262,7 +7015,11 @@
       "unit_size": "6",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/10379",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6283,7 +7040,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/10380",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6304,7 +7065,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/10414",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6325,7 +7090,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/9407",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6346,7 +7115,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/17362",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6367,7 +7140,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/23579",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6388,7 +7165,11 @@
       "unit_size": "12",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/67586",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6409,7 +7190,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/13738",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6430,7 +7215,11 @@
       "unit_size": "6",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/10676",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6451,7 +7240,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/7942",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6472,7 +7265,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/7943",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6493,7 +7290,11 @@
       "unit_size": "30",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/79621",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6514,7 +7315,11 @@
       "unit_size": "20",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/35620",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6535,7 +7340,11 @@
       "unit_size": "60",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/22986",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6556,7 +7365,11 @@
       "unit_size": "6",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/10146",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6577,7 +7390,11 @@
       "unit_size": "20",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/79594",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6598,7 +7415,11 @@
       "unit_size": "1",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/42295",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6619,7 +7440,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/20955",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6640,7 +7465,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/20956",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6661,7 +7490,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/74044",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6682,7 +7515,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/46724",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6703,7 +7540,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/20930",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6724,7 +7565,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/46567",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6745,7 +7590,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/60670",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6766,7 +7615,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/46028",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6787,7 +7640,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/15986",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6807,8 +7664,13 @@
       "unit": null,
       "unit_size": "None",
       "price_per_unit": null,
+<<<<<<< HEAD
       "url": "https://tienda.mercadona.es/product/15987",
       "scraped_date": "2026-07-25",
+=======
+      "url": "https://tienda.mercadona.es/product/15560",
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6829,7 +7691,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/13658",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6850,7 +7716,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/56652",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6871,7 +7741,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/21647",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6892,7 +7766,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/31312",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6913,7 +7791,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/31309",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6934,7 +7816,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/31592",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6955,7 +7841,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/18071",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6976,7 +7866,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/18011",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -6997,7 +7891,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/5184",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7018,7 +7916,11 @@
       "unit_size": "2",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/22281",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7039,7 +7941,11 @@
       "unit_size": "2",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/22245",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7060,7 +7966,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/69166",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7081,7 +7991,11 @@
       "unit_size": "1",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/12049.2",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7102,7 +8016,11 @@
       "unit_size": "1",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/21596.2",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7123,7 +8041,11 @@
       "unit_size": "10",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/23155",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7144,7 +8066,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/14283",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7165,7 +8091,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/4740",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7186,7 +8116,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/4717",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7207,7 +8141,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/20716",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7228,7 +8166,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/60622",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7249,7 +8191,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/13451",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7270,7 +8216,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/34031",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7291,7 +8241,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/15430",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7312,7 +8266,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/15436",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7333,7 +8291,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/11178",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7354,7 +8316,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/15922",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7375,7 +8341,11 @@
       "unit_size": "6",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/10379",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7396,7 +8366,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/10380",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7417,7 +8391,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/10414",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7438,7 +8416,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/9407",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7459,7 +8441,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/17362",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7480,7 +8466,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/23579",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7501,7 +8491,11 @@
       "unit_size": "12",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/67586",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7522,7 +8516,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/13738",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7543,7 +8541,11 @@
       "unit_size": "6",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/10676",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7564,7 +8566,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/17732",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7585,7 +8591,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/7942",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7606,7 +8616,11 @@
       "unit_size": "30",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/79621",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7627,7 +8641,11 @@
       "unit_size": "20",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/35620",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7648,7 +8666,11 @@
       "unit_size": "60",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/22986",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7669,7 +8691,11 @@
       "unit_size": "6",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/10146",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7690,7 +8716,11 @@
       "unit_size": "20",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/79594",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7711,7 +8741,11 @@
       "unit_size": "1",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/42295",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7732,7 +8766,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/20955",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7753,7 +8791,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/20956",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7774,7 +8816,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/74044",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7795,7 +8841,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/46724",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7816,7 +8866,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/20930",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7837,7 +8891,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/46567",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7858,7 +8916,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/60670",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7879,7 +8941,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/46028",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7900,7 +8966,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/15986",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7920,8 +8990,13 @@
       "unit": null,
       "unit_size": "None",
       "price_per_unit": null,
+<<<<<<< HEAD
       "url": "https://tienda.mercadona.es/product/15987",
       "scraped_date": "2026-07-25",
+=======
+      "url": "https://tienda.mercadona.es/product/15560",
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7942,7 +9017,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/13658",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7963,7 +9042,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/56652",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -7984,7 +9067,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/21647",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8005,7 +9092,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/31312",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8026,7 +9117,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/31309",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8047,7 +9142,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/31592",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8068,7 +9167,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/18071",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8089,7 +9192,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/18011",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8110,7 +9217,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/5184",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8131,7 +9242,11 @@
       "unit_size": "2",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/22281",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8152,7 +9267,11 @@
       "unit_size": "2",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/22245",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8173,7 +9292,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/69166",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8194,7 +9317,11 @@
       "unit_size": "1",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/12049.2",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8215,7 +9342,11 @@
       "unit_size": "1",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/21596.2",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8236,7 +9367,11 @@
       "unit_size": "10",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/23155",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8257,7 +9392,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/14283",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8278,7 +9417,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/4740",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8299,7 +9442,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/4717",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8320,7 +9467,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/20716",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8341,7 +9492,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/60622",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8362,7 +9517,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/13451",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8383,7 +9542,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/34031",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8404,7 +9567,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/15430",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8425,7 +9592,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/15436",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8446,7 +9617,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/11178",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8467,7 +9642,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/15922",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8488,7 +9667,11 @@
       "unit_size": "6",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/10379",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8509,7 +9692,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/10380",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8530,7 +9717,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/10414",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8551,7 +9742,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/9407",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8572,7 +9767,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/17362",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8593,7 +9792,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/23579",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8614,7 +9817,11 @@
       "unit_size": "12",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/67586",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8635,7 +9842,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/13738",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8656,7 +9867,11 @@
       "unit_size": "6",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/10676",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8677,7 +9892,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/7942",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8698,7 +9917,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/7943",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8719,7 +9942,11 @@
       "unit_size": "30",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/79621",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8740,7 +9967,11 @@
       "unit_size": "20",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/35620",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8761,7 +9992,11 @@
       "unit_size": "60",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/22986",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8782,7 +10017,11 @@
       "unit_size": "6",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/10146",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8803,7 +10042,11 @@
       "unit_size": "20",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/79594",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8824,7 +10067,11 @@
       "unit_size": "1",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/42295",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8845,7 +10092,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/20955",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8866,7 +10117,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/20956",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8887,7 +10142,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/74044",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8908,7 +10167,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/46724",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8929,7 +10192,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/20930",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8950,7 +10217,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/46567",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8971,7 +10242,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/60670",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -8992,7 +10267,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/46028",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -9013,7 +10292,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/15986",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -9033,8 +10316,13 @@
       "unit": null,
       "unit_size": "None",
       "price_per_unit": null,
+<<<<<<< HEAD
       "url": "https://tienda.mercadona.es/product/15987",
       "scraped_date": "2026-07-25",
+=======
+      "url": "https://tienda.mercadona.es/product/15560",
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
@@ -9055,7 +10343,11 @@
       "unit_size": "None",
       "price_per_unit": null,
       "url": "https://tienda.mercadona.es/product/13658",
+<<<<<<< HEAD
       "scraped_date": "2026-07-25",
+=======
+      "scraped_date": "2026-07-26",
+>>>>>>> dfb4a94fd76579515052d0d2f9cc9d9c299c7b1f
       "market": "Mercadona",
       "price_change_pct": null,
       "price_trend": "—",
