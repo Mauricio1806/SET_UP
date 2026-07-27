@@ -97,12 +97,18 @@ class CitySyncNotion:
         r.raise_for_status()
         return r.json()
 
-    def _delete(self, block_id: str):
+    def _delete(self, block_id: str) -> bool:
+        """Deleta bloco e retorna True se bem-sucedido."""
         try:
-            requests.delete(f"{NOTION_API_BASE}/blocks/{block_id}",
-                            headers=self.headers, timeout=10)
-        except Exception:
-            pass
+            r = requests.delete(f"{NOTION_API_BASE}/blocks/{block_id}",
+                                headers=self.headers, timeout=10)
+            if r.status_code not in (200, 204):
+                print(f"    [delete {r.status_code}] {block_id[:8]}: {r.text[:80]}")
+                return False
+            return True
+        except Exception as e:
+            print(f"    [delete erro] {block_id[:8]}: {e}")
+            return False
 
     # ------------------------------------------------------------------
     # REMOÇÃO DE BLOCOS LIVE ANTIGOS — API REST DIRETA
@@ -110,57 +116,63 @@ class CitySyncNotion:
 
     def _remove_old_live_blocks(self, page_id: str) -> int:
         """
-        Remove blocos LIVE antigos da página via API REST direta.
-        Estratégia: pega os primeiros 50 blocos, deleta os que fazem parte do LIVE anterior.
-        Para quando encontra um bloco que NÃO é parte do LIVE (heading_1, heading_2, toggle, etc.)
+        Remove TODOS os blocos LIVE de qualquer posição na página.
+        Varre com paginação completa — coleta IDs de tudo que é LIVE
+        (callout com marcador + heading_3/bullets/divider imediatamente após),
+        depois deleta em lote.
         """
-        try:
-            resp    = self._get(f"/blocks/{page_id}/children?page_size=50")
-            blocks  = resp.get("results", [])
-        except Exception as e:
-            print(f"    [warn] Não conseguiu listar blocos: {e}")
-            return 0
+        # 1. Coletar todos os blocos da página com paginação
+        all_blocks = []
+        cursor = None
+        for _ in range(10):  # max 10 páginas = 500 blocos
+            path = f"/blocks/{page_id}/children?page_size=50"
+            if cursor:
+                path += f"&start_cursor={cursor}"
+            try:
+                resp = self._get(path)
+            except Exception as e:
+                print(f"    [warn] GET blocos falhou: {e}")
+                break
+            all_blocks.extend(resp.get("results", []))
+            if not resp.get("has_more"):
+                break
+            cursor = resp.get("next_cursor")
 
-        removed = 0
-        in_live = False
+        print(f"    [remove] {len(all_blocks)} blocos encontrados na página")
 
-        for block in blocks:
+        # 2. Identificar IDs a deletar — qualquer bloco dentro de um grupo LIVE
+        to_delete = []
+        in_live   = False
+
+        for block in all_blocks:
             b_type = block.get("type", "")
             b_id   = block.get("id", "")
 
-            # Detectar início do LIVE — callout com o marcador
             if b_type == "callout":
                 texts = block.get("callout", {}).get("rich_text", [])
                 text  = "".join(t.get("text", {}).get("content", "") for t in texts)
                 if LIVE_START_MARKER in text:
                     in_live = True
-                    self._delete(b_id)
-                    removed += 1
+                    to_delete.append(b_id)
                     continue
-                elif in_live:
-                    # Outro callout após o LIVE — parar
-                    break
+                else:
+                    in_live = False  # callout que não é LIVE encerra o grupo
 
-            if not in_live:
-                continue
+            if in_live:
+                if b_type in ("heading_3", "bulleted_list_item", "divider",
+                              "paragraph", "table"):
+                    to_delete.append(b_id)
+                else:
+                    in_live = False  # bloco desconhecido encerra o grupo
 
-            # Blocos que fazem parte do LIVE
-            if b_type in ("heading_3", "bulleted_list_item", "divider", "paragraph", "table"):
-                # Verifica se é heading_3 de seção diferente que já não é LIVE
-                if b_type == "heading_3":
-                    texts = block.get("heading_3", {}).get("rich_text", [])
-                    text  = "".join(t.get("text", {}).get("content", "") for t in texts)
-                    # Se for heading_3 de seção permanente da página, parar
-                    if not any(marker in text for marker in [
-                        "🏠 Melhores", "🛒 Preços Mercadona", "🔍 Buscar agora"
-                    ]):
-                        break
-                self._delete(b_id)
+        print(f"    [remove] {len(to_delete)} blocos LIVE para deletar")
+
+        # 3. Deletar em sequência com delay
+        removed = 0
+        for block_id in to_delete:
+            if self._delete(block_id):
                 removed += 1
-                time.sleep(0.1)
-            else:
-                # Qualquer outro tipo encerra o LIVE
-                break
+            time.sleep(0.15)
 
         return removed
 
