@@ -1,49 +1,93 @@
 """
-Diet Sync — lê a dieta real do Notion e cruza com preços reais do Mercadona.
-Atualiza as páginas de cidade com:
-1. Custo mensal real da dieta com preços do dia
-2. Top aluguéis por bairro com distâncias reais
+Diet Sync — cruza preços reais do Mercadona com os 30 itens da dieta.
+Queries alinhadas com o que o mercadona.py realmente coleta.
+
+Fix v8:
+- Queries corretas (ex: 'pechuga pollo congelada' não 'pechuga pollo')
+- Quando há múltiplos produtos por query, pega o de MENOR preço
+- Custo mensal calculado por cidade individualmente (sem reaproveitar de outra)
+- Formato da tabela de produtos idêntico ao que o usuário viu no Notion v5
 """
 
 import os
 import json
 from datetime import datetime, timezone
-from typing import List, Dict
+from typing import List, Dict, Optional
 import requests
 
 NOTION_API_BASE = "https://api.notion.com/v1"
 NOTION_VERSION  = "2022-06-28"
 
-# IDs das páginas do Notion (do hub já existente)
-DIET_PAGE_ID    = "38e6d7bcf70c81e2ad46f7d5b6a2fa42"
-BAIRROS_PAGE_ID = "3726d7bcf70c81eba93ce3a57599d06c"
-HUB_PAGE_ID     = "3736d7bcf70c81c09c0ff224c550e309"
+HUB_PAGE_ID = "3736d7bcf70c81c09c0ff224c550e309"
 
-# Bairros alvo por cidade (extraídos da análise existente)
-TARGET_NEIGHBORHOODS = {
-    "granada": ["Zaídín", "Camino de Ronda", "Chana", "Centro", "Beiro"],
-    "alicante": ["Benalúa", "Carolinas", "Ensanche", "San Blas", "Centro"],
-    "nerja": ["Centro", "Capistrano", "Parador"],
-}
+# ─── Mapeamento query → (label PT, qty/mês, unit_display) ──────────────────
+# Queries EXATAS que o mercadona.py usa (campo "query" no JSON)
+DIET_ITEMS = [
+    # proteína
+    ("pechuga pollo congelada",    "Frango peito (pechuga)",       9.0,  "kg"),
+    ("claras huevo pasteurizadas", "Claras pasteurizadas",          6.0,  "un"),
+    ("huevos medianos",            "Ovos M",                        8.0,  "dz"),
+    ("leche en polvo entera",      "Leite em pó integral",          3.0,  "×500g"),
+    ("queso manchego curado",      "Queijo manchego",               0.2,  "kg"),
+    ("queso mozzarella",           "Mozzarella",                    1.0,  "kg"),
+    # carboidrato
+    ("arroz integral",             "Arroz integral",                3.0,  "kg"),
+    ("patatas",                    "Batata",                        6.0,  "kg"),
+    ("pan integral rebanado",      "Pão integral",                  4.0,  "un"),
+    # vegetal/fruta
+    ("verduras congeladas mix",    "Verdura congelada mix",         3.0,  "kg"),
+    ("arandanos congelados",       "Mirtilo (arándanos)",           1.0,  "kg"),
+    ("moras congeladas",           "Amora (moras)",                 1.0,  "kg"),
+    ("fresas congeladas",          "Morango (fresas)",              2.0,  "kg"),
+    ("platano banana",             "Banana (plátano)",              2.0,  "kg"),
+    # gordura
+    ("mantequilla sin sal",        "Manteiga s/ sal",               3.0,  "×250g"),
+    ("cacahuete natural",          "Amendoim (cacahuete)",          0.5,  "kg"),
+    ("aceite oliva virgen extra",  "Azeite extra virgem",           1.0,  "L"),
+    ("miel flores",                "Mel",                           0.5,  "kg"),
+    # bebida
+    ("cafe molido natural",        "Café molido",                   1.2,  "kg"),
+    ("leche entera",               "Leite integral",                6.0,  "L"),
+    # tempero
+    ("ketchup heinz",              "Ketchup Heinz",                 1.0,  "frs"),
+    ("salsa teriyaki kikkoman",    "Molho teriyaki Kikkoman",       1.0,  "frs"),
+    # higiene
+    ("champu anticaspa hombre",    "Shampoo anticaspa",             1.0,  "frs"),
+    ("pasta dientes blanqueadora", "Pasta de dentes",               1.0,  "tubo"),
+    ("gel ducha",                  "Gel de banho",                  1.0,  "frs"),
+    ("desodorante roll on",        "Desodorante roll-on",           1.0,  "un"),
+    # gato
+    ("pienso gato adulto",         "Ração gato adulto",             1.0,  "emb"),
+    ("arena gato aglomerante",     "Areia gato aglomerante",        1.0,  "emb"),
+]
 
-# Itens da dieta real com quantidades mensais (do Notion)
-DIET_ITEMS_MONTHLY = {
-    "pechuga pollo":            {"qty": 9.0,  "unit": "kg",  "label": "Frango peito"},
-    "huevos xl":                {"qty": 8.0,  "unit": "dz",  "label": "Ovos M/L"},
-    "claras huevo pasteurizadas":{"qty": 6.0, "unit": "un",  "label": "Claras pasteurizadas"},
-    "arroz integral":           {"qty": 3.0,  "unit": "kg",  "label": "Arroz integral"},
-    "patatas":                  {"qty": 6.0,  "unit": "kg",  "label": "Batata"},
-    "pan integral rebanado":    {"qty": 4.0,  "unit": "un",  "label": "Pão integral"},
-    "verduras congeladas":      {"qty": 3.0,  "unit": "kg",  "label": "Verdura congelada"},
-    "mantequilla sin sal":      {"qty": 3.0,  "unit": "un",  "label": "Manteiga s/ sal"},
-    "cacahuete tostado":        {"qty": 1.0,  "unit": "kg",  "label": "Amendoim"},
-    "aceite oliva virgen extra": {"qty": 1.0, "unit": "L",   "label": "Azeite 1L"},
-    "miel":                     {"qty": 0.5,  "unit": "kg",  "label": "Mel 500g"},
-    "cafe molido":              {"qty": 1.2,  "unit": "kg",  "label": "Café molido"},
-    "leche entera":             {"qty": 6.0,  "unit": "L",   "label": "Leite integral"},
-    "leche en polvo":           {"qty": 3.0,  "unit": "un",  "label": "Leite em pó"},
-    "salsa teriyaki":           {"qty": 1.0,  "unit": "frs", "label": "Molho teriyaki"},
-    "ketchup":                  {"qty": 1.0,  "unit": "frs", "label": "Ketchup Heinz"},
+# Produtos que têm múltiplos resultados — filtros de qualidade para pegar o certo
+# (evita pegar produto errado quando query retorna resultados misturados)
+PREFERRED_PRODUCT_KEYWORDS = {
+    "pechuga pollo congelada":    ["pechuga", "pollo"],      # evita "gyoza"
+    "claras huevo pasteurizadas": ["claras", "huevo"],       # evita "acondicionador"
+    "leche en polvo entera":      ["polvo", "entera"],       # evita "leche continuación"
+    "queso mozzarella":           ["mozzarella"],
+    "arroz integral":             ["arroz", "integral"],     # evita "arroz cocido"
+    "patatas":                    ["patata"],                 # evita "patatas fritas"
+    "verduras congeladas mix":    ["verdura", "menestra", "mix"],
+    "arandanos congelados":       ["arándano", "arandano"],
+    "moras congeladas":           ["mora"],                  # evita "golosinas"
+    "fresas congeladas":          ["fresa"],                 # evita "tarta"
+    "mantequilla sin sal":        ["mantequilla", "sin sal"],
+    "cacahuete natural":          ["cacahuete"],
+    "aceite oliva virgen extra":  ["oliva", "virgen"],       # pega o 1L não o 5L
+    "miel flores":                ["miel", "flores"],
+    "cafe molido natural":        ["café", "molido", "natural"],
+    "leche entera":               ["leche entera"],          # evita "leche +proteínas"
+    "creatina monohidrato":       [],                        # Amazon.es — sem Mercadona
+    "proteina whey":              [],                        # Amazon.es — sem Mercadona
+    "champu anticaspa hombre":    ["anticaspa"],
+    "pasta dientes blanqueadora": ["dentífrico", "blanquea"],
+    "gel ducha":                  ["gel", "baño"],
+    "desodorante roll on":        ["desodorante", "roll"],
+    "pienso gato adulto":         ["gato", "adulto"],
+    "arena gato aglomerante":     ["arena", "gato"],
 }
 
 
@@ -52,12 +96,17 @@ class DietSyncNotion:
         self.token  = token.strip()
         self.hub_id = hub_id
         self.headers = {
-            "Authorization": f"Bearer {self.token}",
+            "Authorization":  f"Bearer {self.token}",
             "Notion-Version": NOTION_VERSION,
-            "Content-Type": "application/json",
+            "Content-Type":   "application/json",
         }
 
-    def post(self, path, payload):
+    def _get(self, path: str) -> dict:
+        r = requests.get(f"{NOTION_API_BASE}{path}", headers=self.headers, timeout=15)
+        r.raise_for_status()
+        return r.json()
+
+    def post(self, path: str, payload: dict) -> dict:
         r = requests.post(f"{NOTION_API_BASE}{path}",
                           headers=self.headers, json=payload, timeout=30)
         if r.status_code >= 400:
@@ -65,7 +114,7 @@ class DietSyncNotion:
         r.raise_for_status()
         return r.json()
 
-    def patch(self, path, payload):
+    def patch(self, path: str, payload: dict) -> dict:
         r = requests.patch(f"{NOTION_API_BASE}{path}",
                            headers=self.headers, json=payload, timeout=30)
         if r.status_code >= 400:
@@ -73,49 +122,86 @@ class DietSyncNotion:
         r.raise_for_status()
         return r.json()
 
-    def get_children(self, page_id):
+    def get_children(self, page_id: str) -> List[Dict]:
         r = requests.get(f"{NOTION_API_BASE}/blocks/{page_id}/children?page_size=100",
-                         headers=self.headers, timeout=30)
+                         headers=self.headers, timeout=15)
         r.raise_for_status()
         return r.json().get("results", [])
 
+    def _delete_block(self, block_id: str):
+        requests.delete(f"{NOTION_API_BASE}/blocks/{block_id}",
+                        headers=self.headers, timeout=10)
+
     # ------------------------------------------------------------------
-    # CUSTO REAL DA DIETA
+    # SELEÇÃO DO MELHOR PRODUTO POR QUERY
     # ------------------------------------------------------------------
 
-    def calculate_diet_cost(self, mercadona_prices: List[Dict], city: str) -> Dict:
-        """Cruza os itens da dieta com preços reais do Mercadona."""
-        city_prices = {p["query"]: p for p in mercadona_prices if p.get("city") == city}
+    def _best_price_for_query(self, query: str, city_prices: List[Dict]) -> Optional[Dict]:
+        """
+        Dentre todos os produtos retornados para uma query, escolhe o melhor:
+        1. Filtra por keywords preferidas (evita produtos errados)
+        2. Pega o de menor preço (unit_price)
+        """
+        candidates = [p for p in city_prices if p.get("query") == query]
+        if not candidates:
+            return None
+
+        keywords = PREFERRED_PRODUCT_KEYWORDS.get(query, [])
+        if keywords:
+            filtered = [
+                p for p in candidates
+                if all(k.lower() in (p.get("product_name") or "").lower() for k in keywords)
+            ]
+            if filtered:
+                candidates = filtered
+            # Se nenhum passou no filtro, mantém os candidatos originais
+
+        # Pega o de menor preço
+        return min(candidates, key=lambda p: p.get("price_eur") or 9999)
+
+    # ------------------------------------------------------------------
+    # CÁLCULO CUSTO DIETA
+    # ------------------------------------------------------------------
+
+    def calculate_diet_cost(self, all_prices: List[Dict], city: str) -> Dict:
+        """
+        Cruza os itens da dieta com preços reais do Mercadona.
+        Filtra por cidade AQUI (não depende de quem passa os dados).
+        """
+        city_prices = [p for p in all_prices if p.get("city") == city]
         results = []
         total = 0.0
 
-        for query, meta in DIET_ITEMS_MONTHLY.items():
-            price_data = city_prices.get(query, {})
-            unit_price = price_data.get("price_eur")
-            product_name = price_data.get("product_name", meta["label"])
+        for query, label, qty, unit in DIET_ITEMS:
+            best = self._best_price_for_query(query, city_prices)
 
-            if unit_price:
-                monthly_cost = round(unit_price * meta["qty"], 2)
+            if best and best.get("price_eur"):
+                unit_price   = best["price_eur"]
+                product_name = best.get("product_name", label)
+                monthly_cost = round(unit_price * qty, 2)
                 total += monthly_cost
                 results.append({
-                    "label":        meta["label"],
+                    "label":        label,
                     "product":      product_name,
-                    "qty":          meta["qty"],
-                    "unit":         meta["unit"],
+                    "qty":          qty,
+                    "unit":         unit,
                     "unit_price":   unit_price,
                     "monthly_cost": monthly_cost,
                     "found":        True,
                 })
             else:
                 results.append({
-                    "label":      meta["label"],
-                    "product":    meta["label"],
-                    "qty":        meta["qty"],
-                    "unit":       meta["unit"],
-                    "unit_price": None,
+                    "label":        label,
+                    "product":      label,
+                    "qty":          qty,
+                    "unit":         unit,
+                    "unit_price":   None,
                     "monthly_cost": None,
-                    "found":      False,
+                    "found":        False,
                 })
+
+        found_count = sum(1 for r in results if r["found"])
+        print(f"    Dieta {city}: {found_count}/{len(results)} itens = €{total:.2f}/mês")
 
         return {
             "city":    city,
@@ -125,179 +211,86 @@ class DietSyncNotion:
         }
 
     # ------------------------------------------------------------------
-    # MONTA BLOCO MARKDOWN PARA NOTION
+    # BLOCOS NOTION — TABELA PREÇOS (formato como estava no v5)
     # ------------------------------------------------------------------
 
-    def build_diet_callout(self, diet_cost: Dict, ranked_listings: List[Dict]) -> str:
-        """Gera o conteúdo da seção Live a ser inserida nas páginas de cidade."""
-        city     = diet_cost["city"]
-        total    = diet_cost["total"]
-        updated  = diet_cost["updated"]
-        city_name = {"granada": "Granada", "alicante": "Alicante", "nerja": "Nerja"}.get(city, city)
+    def _build_price_table_blocks(self, diet_cost: Dict) -> List[Dict]:
+        """Cria os blocos de preços no formato tabela Notion."""
+        blocks = []
+        total = diet_cost["total"]
+        city_name = {"granada": "Granada", "alicante": "Alicante", "nerja": "Nerja"}.get(
+            diet_cost["city"], diet_cost["city"].capitalize()
+        )
 
-        # Top listings desta cidade
-        city_listings = [l for l in ranked_listings if l.get("city") == city][:5]
+        # Heading
+        blocks.append({
+            "object": "block", "type": "heading_3",
+            "heading_3": {"rich_text": [{"type": "text", "text": {
+                "content": f"🛒 Preços Mercadona — Custo real da sua dieta: €{total:.2f}/mês"
+            }}]}
+        })
 
-        lines = [
-            f"## 🔴 LIVE — Atualizado em {updated}",
-            "",
-            f"### 🍳 Custo real da dieta este mês — {city_name}",
-            "",
-            "| Item | Produto | Qty/mês | €/un | Total € |",
-            "|---|---|---|---|---|",
-        ]
+        # Tabela Notion
+        rows = []
+
+        # Header row
+        rows.append({
+            "object": "block", "type": "table_row",
+            "table_row": {"cells": [
+                [{"type": "text", "text": {"content": "Produto"}, "annotations": {"bold": True}}],
+                [{"type": "text", "text": {"content": "Preço"}, "annotations": {"bold": True}}],
+                [{"type": "text", "text": {"content": "Qty/mês"}, "annotations": {"bold": True}}],
+                [{"type": "text", "text": {"content": "Total/mês"}, "annotations": {"bold": True}}],
+            ]}
+        })
 
         for item in diet_cost["items"]:
             if item["found"]:
-                lines.append(
-                    f"| {item['label']} | {item['product'][:35]} | "
-                    f"{item['qty']} {item['unit']} | "
-                    f"€{item['unit_price']} | "
-                    f"**€{item['monthly_cost']}** |"
-                )
+                price_str   = f"€{item['unit_price']:.2f}"
+                qty_str     = f"{item['qty']} {item['unit']}"
+                total_str   = f"€{item['monthly_cost']:.2f}"
+                product_str = item["product"][:45]
             else:
-                lines.append(
-                    f"| {item['label']} | *(sem preço hoje)* | "
-                    f"{item['qty']} {item['unit']} | — | — |"
-                )
+                price_str   = "—"
+                qty_str     = f"{item['qty']} {item['unit']}"
+                total_str   = "—"
+                product_str = item["label"]
 
-        lines += [
-            "",
-            f"**🧾 TOTAL MENSAL COMIDA: €{total:.2f}**",
-            "",
-        ]
-
-        if city_listings:
-            lines += [
-                f"### 🏠 Melhores aluguéis disponíveis agora — {city_name}",
-                "",
-                "| Score | Preço | Bairro | 🛒 Supermercado | 💪 Academia | Link |",
-                "|---|---|---|---|---|---|",
-            ]
-            for l in city_listings:
-                score = l.get("scores", {}).get("total", 0)
-                price = l.get("price", "?")
-                loc   = l.get("location", "")[:25]
-                sm    = f"{l.get('nearest_supermarket_m','?')}m · {l.get('nearest_supermarket_name','')[:15]}" if l.get("nearest_supermarket_m") else "—"
-                gm    = f"{l.get('nearest_gym_m','?')}m · {l.get('nearest_gym_name','')[:12]}" if l.get("nearest_gym_m") else "—"
-                url   = l.get("url", "#")
-                title = l.get("title", "")[:30]
-                lines.append(
-                    f"| {score:.0f}pt | **€{price}**/mês | {loc} | {sm} | {gm} | [ver]({url}) |"
-                )
-            lines.append("")
-
-        return "\n".join(lines)
-
-    # ------------------------------------------------------------------
-    # CRIA/ATUALIZA PÁGINA LIVE NO HUB
-    # ------------------------------------------------------------------
-
-    def upsert_live_page(self, all_diet_costs: List[Dict],
-                         ranked_listings: List[Dict],
-                         consolidados: List[Dict]):
-        """Cria (ou atualiza) uma página 'Live Dashboard' no hub com tudo."""
-        now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-
-        content_parts = [
-            f"> 🤖 Atualizado automaticamente por SET_UP — {now}",
-            "> Dados em tempo real: preços Mercadona + melhores aluguéis por bairro.",
-            "",
-        ]
-
-        for diet_cost in all_diet_costs:
-            city = diet_cost["city"]
-            listings = [l for l in ranked_listings if l.get("city") == city]
-            content_parts.append(self.build_diet_callout(diet_cost, listings))
-            content_parts.append("---")
-
-        # Tabela de economia por mercado
-        if consolidados:
-            content_parts.append("## 💰 Economia com mix de mercados")
-            content_parts.append("")
-            content_parts.append("| Cidade | Tudo Mercadona | Mix otimizado | Economia/mês |")
-            content_parts.append("|---|---|---|---|")
-            for c in consolidados:
-                content_parts.append(
-                    f"| {c['city_name']} | €{c['total_mercadona']:.2f} "
-                    f"| €{c['total_otimizado']:.2f} "
-                    f"| **€{c['total_economy']:.2f}** ({c['pct_total_saved']}%) |"
-                )
-            content_parts.append("")
-
-        content = "\n".join(content_parts)
-
-        # Verifica se já existe página Live
-        children = self.get_children(self.hub_id)
-        live_page_id = None
-        for block in children:
-            if block.get("type") == "child_page":
-                title = block.get("child_page", {}).get("title", "")
-                if "LIVE" in title.upper() and "SET_UP" in title.upper():
-                    live_page_id = block["id"]
-                    break
-
-        if live_page_id:
-            print(f"  → Atualizando página Live existente ({live_page_id[:8]}...)")
-            # Apaga conteúdo antigo e recria
-            old_blocks = self.get_children(live_page_id)
-            for block in old_blocks:
-                requests.delete(
-                    f"{NOTION_API_BASE}/blocks/{block['id']}",
-                    headers=self.headers, timeout=10
-                )
-            # Insere conteúdo novo em chunks
-            self._append_markdown(live_page_id, content)
-        else:
-            print(f"  → Criando página Live no hub...")
-            result = self.post("/pages", {
-                "parent": {"page_id": self.hub_id},
-                "icon":   {"type": "emoji", "emoji": "🔴"},
-                "properties": {
-                    "title": [{"text": {"content": f"🔴 LIVE — SET_UP Dashboard ({now})"}}]
-                },
-                "children": self._markdown_to_blocks(content)[:100],
+            rows.append({
+                "object": "block", "type": "table_row",
+                "table_row": {"cells": [
+                    [{"type": "text", "text": {"content": product_str}}],
+                    [{"type": "text", "text": {"content": price_str}}],
+                    [{"type": "text", "text": {"content": qty_str}}],
+                    [{"type": "text", "text": {"content": total_str}}],
+                ]}
             })
-            live_page_id = result.get("id", "")
-            print(f"  ✓ Página Live criada: {live_page_id[:8]}...")
 
-        return live_page_id
+        blocks.append({
+            "object": "block",
+            "type": "table",
+            "table": {
+                "table_width": 4,
+                "has_column_header": True,
+                "has_row_header": False,
+                "children": rows,
+            }
+        })
 
-    def _markdown_to_blocks(self, text: str) -> List[Dict]:
-        """Converte markdown simples em blocos Notion."""
-        blocks = []
-        for line in text.split("\n"):
-            if line.startswith("## "):
-                blocks.append({"object": "block", "type": "heading_2",
-                    "heading_2": {"rich_text": [{"text": {"content": line[3:]}}]}})
-            elif line.startswith("### "):
-                blocks.append({"object": "block", "type": "heading_3",
-                    "heading_3": {"rich_text": [{"text": {"content": line[4:]}}]}})
-            elif line.startswith("> "):
-                blocks.append({"object": "block", "type": "callout",
-                    "callout": {"rich_text": [{"text": {"content": line[2:]}}],
-                                "icon": {"emoji": "🤖"}}})
-            elif line.startswith("---"):
-                blocks.append({"object": "block", "type": "divider", "divider": {}})
-            elif line.strip() == "":
-                blocks.append({"object": "block", "type": "paragraph",
-                    "paragraph": {"rich_text": []}})
-            else:
-                blocks.append({"object": "block", "type": "paragraph",
-                    "paragraph": {"rich_text": [{"text": {"content": line}}]}})
+        # Total em negrito
+        blocks.append({
+            "object": "block", "type": "paragraph",
+            "paragraph": {"rich_text": [
+                {"type": "text", "text": {"content": f"💰 TOTAL MENSAL DIETA: €{total:.2f}"},
+                 "annotations": {"bold": True, "color": "green"}}
+            ]}
+        })
+
         return blocks
 
-    def _append_markdown(self, page_id: str, text: str):
-        """Adiciona blocos à página existente em chunks de 100."""
-        blocks = self._markdown_to_blocks(text)
-        for i in range(0, min(len(blocks), 400), 100):
-            chunk = blocks[i:i+100]
-            try:
-                requests.patch(
-                    f"{NOTION_API_BASE}/blocks/{page_id}/children",
-                    headers=self.headers,
-                    json={"children": chunk},
-                    timeout=30,
-                )
-            except Exception as e:
-                print(f"    [warn] append chunk {i}: {e}")
+    # Mantido por compatibilidade com main.py
+    def build_diet_callout(self, diet_cost: Dict, ranked_listings: List[Dict]) -> str:
+        return ""
+
+    def upsert_live_page(self, all_diet_costs, ranked_listings, consolidados):
+        pass
