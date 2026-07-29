@@ -31,11 +31,11 @@
         "category": "proteína",
         "qty": 8.0,
         "best_market": "DIA",
-        "best_price": 2.4,
-        "merc_price": 3.0,
-        "opt_monthly": 19.2,
-        "merc_monthly": 24.0,
-        "savings_eur": 4.8,
+        "best_price": 2.28,
+        "merc_price": 2.85,
+        "opt_monthly": 18.24,
+        "merc_monthly": 22.8,
+        "savings_eur": 4.56,
         "is_real_price": false
       },
       {
@@ -363,16 +363,16 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 187.85,
-    "total_otimizado": 150.3,
-    "total_economy": 37.55,
+    "total_mercadona": 186.65,
+    "total_otimizado": 149.34,
+    "total_economy": 37.31,
     "pct_saved": 20.0,
     "by_market": {
-      "DIA": 150.30000000000004
+      "DIA": 149.34000000000003
     },
     "city_name": "Granada",
     "pct_total_saved": 20.0,
-    "updated": "2026-07-29 00:15 UTC"
+    "updated": "2026-07-29 13:22 UTC"
   },
   "alicante": {
     "city": "alicante",
@@ -406,11 +406,11 @@
         "category": "proteína",
         "qty": 8.0,
         "best_market": "DIA",
-        "best_price": 2.4,
-        "merc_price": 3.0,
-        "opt_monthly": 19.2,
-        "merc_monthly": 24.0,
-        "savings_eur": 4.8,
+        "best_price": 2.28,
+        "merc_price": 2.85,
+        "opt_monthly": 18.24,
+        "merc_monthly": 22.8,
+        "savings_eur": 4.56,
         "is_real_price": false
       },
       {
@@ -738,16 +738,16 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 191.01,
-    "total_otimizado": 152.85,
-    "total_economy": 38.16,
+    "total_mercadona": 189.81,
+    "total_otimizado": 151.89,
+    "total_economy": 37.92,
     "pct_saved": 20.0,
     "by_market": {
-      "DIA": 152.85000000000002
+      "DIA": 151.89000000000001
     },
     "city_name": "Alicante",
     "pct_total_saved": 20.0,
-    "updated": "2026-07-29 00:15 UTC"
+    "updated": "2026-07-29 13:22 UTC"
   },
   "nerja": {
     "city": "nerja",
@@ -781,11 +781,11 @@
         "category": "proteína",
         "qty": 8.0,
         "best_market": "DIA",
-        "best_price": 2.4,
-        "merc_price": 3.0,
-        "opt_monthly": 19.2,
-        "merc_monthly": 24.0,
-        "savings_eur": 4.8,
+        "best_price": 2.28,
+        "merc_price": 2.85,
+        "opt_monthly": 18.24,
+        "merc_monthly": 22.8,
+        "savings_eur": 4.56,
         "is_real_price": false
       },
       {
@@ -1113,15 +1113,15 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 187.85,
-    "total_otimizado": 150.3,
-    "total_economy": 37.55,
+    "total_mercadona": 186.65,
+    "total_otimizado": 149.34,
+    "total_economy": 37.31,
     "pct_saved": 20.0,
     "by_market": {
-      "DIA": 150.30000000000004
+      "DIA": 149.34000000000003
     },
     "city_name": "Nerja",
     "pct_total_saved": 20.0,
-    "updated": "2026-07-29 00:15 UTC"
+    "updated": "2026-07-29 13:22 UTC"
   }
 }
