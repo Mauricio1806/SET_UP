@@ -271,9 +271,9 @@
         "category": "suplemento",
         "qty": 0.5,
         "best_market": "Amazon.es",
-        "best_price": 21.0,
+        "best_price": 12.0,
         "merc_price": null,
-        "opt_monthly": 10.5,
+        "opt_monthly": 6.0,
         "merc_monthly": null,
         "savings_eur": null,
         "is_real_price": true
@@ -283,9 +283,9 @@
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": 50.0,
+        "best_price": 81.0,
         "merc_price": null,
-        "opt_monthly": 50.0,
+        "opt_monthly": 81.0,
         "merc_monthly": null,
         "savings_eur": null,
         "is_real_price": true
@@ -364,16 +364,16 @@
       }
     ],
     "total_mercadona": 186.15,
-    "total_otimizado": 209.44,
-    "total_economy": -23.29,
-    "pct_saved": -12.5,
+    "total_otimizado": 235.94,
+    "total_economy": -49.79,
+    "pct_saved": -26.7,
     "by_market": {
       "DIA": 148.94000000000003,
-      "Amazon.es": 60.5
+      "Amazon.es": 87.0
     },
     "city_name": "Granada",
-    "pct_total_saved": -12.5,
-    "updated": "2026-08-02 00:09 UTC"
+    "pct_total_saved": -26.7,
+    "updated": "2026-08-02 12:22 UTC"
   },
   "alicante": {
     "city": "alicante",
@@ -647,9 +647,9 @@
         "category": "suplemento",
         "qty": 0.5,
         "best_market": "Amazon.es",
-        "best_price": 21.0,
+        "best_price": 12.0,
         "merc_price": null,
-        "opt_monthly": 10.5,
+        "opt_monthly": 6.0,
         "merc_monthly": null,
         "savings_eur": null,
         "is_real_price": true
@@ -659,9 +659,9 @@
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": 50.0,
+        "best_price": 81.0,
         "merc_price": null,
-        "opt_monthly": 50.0,
+        "opt_monthly": 81.0,
         "merc_monthly": null,
         "savings_eur": null,
         "is_real_price": true
@@ -740,16 +740,16 @@
       }
     ],
     "total_mercadona": 189.29,
-    "total_otimizado": 211.97,
-    "total_economy": -22.68,
-    "pct_saved": -12.0,
+    "total_otimizado": 238.47,
+    "total_economy": -49.18,
+    "pct_saved": -26.0,
     "by_market": {
       "DIA": 151.47000000000003,
-      "Amazon.es": 60.5
+      "Amazon.es": 87.0
     },
     "city_name": "Alicante",
-    "pct_total_saved": -12.0,
-    "updated": "2026-08-02 00:09 UTC"
+    "pct_total_saved": -26.0,
+    "updated": "2026-08-02 12:22 UTC"
   },
   "nerja": {
     "city": "nerja",
@@ -1023,9 +1023,9 @@
         "category": "suplemento",
         "qty": 0.5,
         "best_market": "Amazon.es",
-        "best_price": 21.0,
+        "best_price": 12.0,
         "merc_price": null,
-        "opt_monthly": 10.5,
+        "opt_monthly": 6.0,
         "merc_monthly": null,
         "savings_eur": null,
         "is_real_price": true
@@ -1035,9 +1035,9 @@
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": 50.0,
+        "best_price": 81.0,
         "merc_price": null,
-        "opt_monthly": 50.0,
+        "opt_monthly": 81.0,
         "merc_monthly": null,
         "savings_eur": null,
         "is_real_price": true
@@ -1116,15 +1116,15 @@
       }
     ],
     "total_mercadona": 186.15,
-    "total_otimizado": 209.44,
-    "total_economy": -23.29,
-    "pct_saved": -12.5,
+    "total_otimizado": 235.94,
+    "total_economy": -49.79,
+    "pct_saved": -26.7,
     "by_market": {
       "DIA": 148.94000000000003,
-      "Amazon.es": 60.5
+      "Amazon.es": 87.0
     },
     "city_name": "Nerja",
-    "pct_total_saved": -12.5,
-    "updated": "2026-08-02 00:09 UTC"
+    "pct_total_saved": -26.7,
+    "updated": "2026-08-02 12:22 UTC"
   }
 }
