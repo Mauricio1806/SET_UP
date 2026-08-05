@@ -163,10 +163,10 @@
         "category": "vegetal",
         "qty": 2.0,
         "best_market": "DIA",
-        "best_price": 0.22,
-        "merc_price": 0.28,
-        "opt_monthly": 0.44,
-        "merc_monthly": 0.56,
+        "best_price": 0.23,
+        "merc_price": 0.29,
+        "opt_monthly": 0.46,
+        "merc_monthly": 0.58,
         "savings_eur": 0.12,
         "is_real_price": false
       },
@@ -363,16 +363,16 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 186.13,
-    "total_otimizado": 148.92,
+    "total_mercadona": 186.15,
+    "total_otimizado": 148.94,
     "total_economy": 37.21,
     "pct_saved": 20.0,
     "by_market": {
-      "DIA": 148.92000000000004
+      "DIA": 148.94000000000003
     },
     "city_name": "Granada",
     "pct_total_saved": 20.0,
-    "updated": "2026-08-04 13:23 UTC"
+    "updated": "2026-08-05 00:19 UTC"
   },
   "alicante": {
     "city": "alicante",
@@ -747,7 +747,7 @@
     },
     "city_name": "Alicante",
     "pct_total_saved": 20.0,
-    "updated": "2026-08-04 13:23 UTC"
+    "updated": "2026-08-05 00:19 UTC"
   },
   "nerja": {
     "city": "nerja",
@@ -913,10 +913,10 @@
         "category": "vegetal",
         "qty": 2.0,
         "best_market": "DIA",
-        "best_price": 0.22,
-        "merc_price": 0.28,
-        "opt_monthly": 0.44,
-        "merc_monthly": 0.56,
+        "best_price": 0.23,
+        "merc_price": 0.29,
+        "opt_monthly": 0.46,
+        "merc_monthly": 0.58,
         "savings_eur": 0.12,
         "is_real_price": false
       },
@@ -1113,15 +1113,15 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 186.13,
-    "total_otimizado": 148.92,
+    "total_mercadona": 186.15,
+    "total_otimizado": 148.94,
     "total_economy": 37.21,
     "pct_saved": 20.0,
     "by_market": {
-      "DIA": 148.92000000000004
+      "DIA": 148.94000000000003
     },
     "city_name": "Nerja",
     "pct_total_saved": 20.0,
-    "updated": "2026-08-04 13:23 UTC"
+    "updated": "2026-08-05 00:19 UTC"
   }
 }
