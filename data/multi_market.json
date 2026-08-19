@@ -283,12 +283,12 @@
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": null,
+        "best_price": 48.0,
         "merc_price": null,
-        "opt_monthly": null,
+        "opt_monthly": 48.0,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": false
+        "is_real_price": true
       },
       {
         "query": "champu anticaspa hombre",
@@ -355,24 +355,25 @@
         "category": "gato",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 2.88,
-        "merc_price": 3.6,
-        "opt_monthly": 2.88,
-        "merc_monthly": 3.6,
-        "savings_eur": 0.72,
+        "best_price": 2.96,
+        "merc_price": 3.7,
+        "opt_monthly": 2.96,
+        "merc_monthly": 3.7,
+        "savings_eur": 0.74,
         "is_real_price": false
       }
     ],
-    "total_mercadona": 186.01,
-    "total_otimizado": 148.84,
-    "total_economy": 37.17,
-    "pct_saved": 20.0,
+    "total_mercadona": 186.11,
+    "total_otimizado": 196.92,
+    "total_economy": -10.81,
+    "pct_saved": -5.8,
     "by_market": {
-      "DIA": 148.84000000000003
+      "DIA": 148.92000000000004,
+      "Amazon.es": 48.0
     },
     "city_name": "Granada",
-    "pct_total_saved": 20.0,
-    "updated": "2026-08-18 23:50 UTC"
+    "pct_total_saved": -5.8,
+    "updated": "2026-08-19 12:05 UTC"
   },
   "alicante": {
     "city": "alicante",
@@ -658,12 +659,12 @@
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": null,
+        "best_price": 48.0,
         "merc_price": null,
-        "opt_monthly": null,
+        "opt_monthly": 48.0,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": false
+        "is_real_price": true
       },
       {
         "query": "champu anticaspa hombre",
@@ -730,24 +731,25 @@
         "category": "gato",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 2.88,
-        "merc_price": 3.6,
-        "opt_monthly": 2.88,
-        "merc_monthly": 3.6,
-        "savings_eur": 0.72,
+        "best_price": 2.96,
+        "merc_price": 3.7,
+        "opt_monthly": 2.96,
+        "merc_monthly": 3.7,
+        "savings_eur": 0.74,
         "is_real_price": false
       }
     ],
-    "total_mercadona": 185.91,
-    "total_otimizado": 148.76,
-    "total_economy": 37.15,
-    "pct_saved": 20.0,
+    "total_mercadona": 186.01,
+    "total_otimizado": 196.84,
+    "total_economy": -10.83,
+    "pct_saved": -5.8,
     "by_market": {
-      "DIA": 148.76000000000005
+      "DIA": 148.84000000000006,
+      "Amazon.es": 48.0
     },
     "city_name": "Alicante",
-    "pct_total_saved": 20.0,
-    "updated": "2026-08-18 23:50 UTC"
+    "pct_total_saved": -5.8,
+    "updated": "2026-08-19 12:05 UTC"
   },
   "nerja": {
     "city": "nerja",
@@ -1033,12 +1035,12 @@
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": null,
+        "best_price": 48.0,
         "merc_price": null,
-        "opt_monthly": null,
+        "opt_monthly": 48.0,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": false
+        "is_real_price": true
       },
       {
         "query": "champu anticaspa hombre",
@@ -1105,23 +1107,24 @@
         "category": "gato",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 2.88,
-        "merc_price": 3.6,
-        "opt_monthly": 2.88,
-        "merc_monthly": 3.6,
-        "savings_eur": 0.72,
+        "best_price": 2.96,
+        "merc_price": 3.7,
+        "opt_monthly": 2.96,
+        "merc_monthly": 3.7,
+        "savings_eur": 0.74,
         "is_real_price": false
       }
     ],
-    "total_mercadona": 186.01,
-    "total_otimizado": 148.84,
-    "total_economy": 37.17,
-    "pct_saved": 20.0,
+    "total_mercadona": 186.11,
+    "total_otimizado": 196.92,
+    "total_economy": -10.81,
+    "pct_saved": -5.8,
     "by_market": {
-      "DIA": 148.84000000000003
+      "DIA": 148.92000000000004,
+      "Amazon.es": 48.0
     },
     "city_name": "Nerja",
-    "pct_total_saved": 20.0,
-    "updated": "2026-08-18 23:50 UTC"
+    "pct_total_saved": -5.8,
+    "updated": "2026-08-19 12:05 UTC"
   }
 }
