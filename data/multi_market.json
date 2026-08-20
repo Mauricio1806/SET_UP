@@ -271,24 +271,24 @@
         "category": "suplemento",
         "qty": 0.5,
         "best_market": "Amazon.es",
-        "best_price": 21.0,
+        "best_price": null,
         "merc_price": null,
-        "opt_monthly": 10.5,
+        "opt_monthly": null,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": true
+        "is_real_price": false
       },
       {
         "query": "proteina whey",
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": 39.0,
+        "best_price": null,
         "merc_price": null,
-        "opt_monthly": 39.0,
+        "opt_monthly": null,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": true
+        "is_real_price": false
       },
       {
         "query": "champu anticaspa hombre",
@@ -364,16 +364,15 @@
       }
     ],
     "total_mercadona": 186.11,
-    "total_otimizado": 198.42,
-    "total_economy": -12.31,
-    "pct_saved": -6.6,
+    "total_otimizado": 148.92,
+    "total_economy": 37.19,
+    "pct_saved": 20.0,
     "by_market": {
-      "DIA": 148.92000000000004,
-      "Amazon.es": 49.5
+      "DIA": 148.92000000000004
     },
     "city_name": "Granada",
-    "pct_total_saved": -6.6,
-    "updated": "2026-08-20 11:56 UTC"
+    "pct_total_saved": 20.0,
+    "updated": "2026-08-20 23:45 UTC"
   },
   "alicante": {
     "city": "alicante",
@@ -647,24 +646,24 @@
         "category": "suplemento",
         "qty": 0.5,
         "best_market": "Amazon.es",
-        "best_price": 21.0,
+        "best_price": null,
         "merc_price": null,
-        "opt_monthly": 10.5,
+        "opt_monthly": null,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": true
+        "is_real_price": false
       },
       {
         "query": "proteina whey",
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": 39.0,
+        "best_price": null,
         "merc_price": null,
-        "opt_monthly": 39.0,
+        "opt_monthly": null,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": true
+        "is_real_price": false
       },
       {
         "query": "champu anticaspa hombre",
@@ -740,16 +739,15 @@
       }
     ],
     "total_mercadona": 186.01,
-    "total_otimizado": 198.34,
-    "total_economy": -12.33,
-    "pct_saved": -6.6,
+    "total_otimizado": 148.84,
+    "total_economy": 37.17,
+    "pct_saved": 20.0,
     "by_market": {
-      "DIA": 148.84000000000006,
-      "Amazon.es": 49.5
+      "DIA": 148.84000000000006
     },
     "city_name": "Alicante",
-    "pct_total_saved": -6.6,
-    "updated": "2026-08-20 11:56 UTC"
+    "pct_total_saved": 20.0,
+    "updated": "2026-08-20 23:45 UTC"
   },
   "nerja": {
     "city": "nerja",
@@ -1023,24 +1021,24 @@
         "category": "suplemento",
         "qty": 0.5,
         "best_market": "Amazon.es",
-        "best_price": 21.0,
+        "best_price": null,
         "merc_price": null,
-        "opt_monthly": 10.5,
+        "opt_monthly": null,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": true
+        "is_real_price": false
       },
       {
         "query": "proteina whey",
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": 39.0,
+        "best_price": null,
         "merc_price": null,
-        "opt_monthly": 39.0,
+        "opt_monthly": null,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": true
+        "is_real_price": false
       },
       {
         "query": "champu anticaspa hombre",
@@ -1116,15 +1114,14 @@
       }
     ],
     "total_mercadona": 186.11,
-    "total_otimizado": 198.42,
-    "total_economy": -12.31,
-    "pct_saved": -6.6,
+    "total_otimizado": 148.92,
+    "total_economy": 37.19,
+    "pct_saved": 20.0,
     "by_market": {
-      "DIA": 148.92000000000004,
-      "Amazon.es": 49.5
+      "DIA": 148.92000000000004
     },
     "city_name": "Nerja",
-    "pct_total_saved": -6.6,
-    "updated": "2026-08-20 11:56 UTC"
+    "pct_total_saved": 20.0,
+    "updated": "2026-08-20 23:45 UTC"
   }
 }
