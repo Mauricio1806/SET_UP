@@ -163,11 +163,11 @@
         "category": "vegetal",
         "qty": 2.0,
         "best_market": "DIA",
-        "best_price": 0.3,
-        "merc_price": 0.37,
-        "opt_monthly": 0.6,
-        "merc_monthly": 0.74,
-        "savings_eur": 0.14,
+        "best_price": 0.21,
+        "merc_price": 0.26,
+        "opt_monthly": 0.42,
+        "merc_monthly": 0.52,
+        "savings_eur": 0.1,
         "is_real_price": false
       },
       {
@@ -271,24 +271,24 @@
         "category": "suplemento",
         "qty": 0.5,
         "best_market": "Amazon.es",
-        "best_price": null,
+        "best_price": 29.0,
         "merc_price": null,
-        "opt_monthly": null,
+        "opt_monthly": 14.5,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": false
+        "is_real_price": true
       },
       {
         "query": "proteina whey",
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": null,
+        "best_price": 81.0,
         "merc_price": null,
-        "opt_monthly": null,
+        "opt_monthly": 81.0,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": false
+        "is_real_price": true
       },
       {
         "query": "champu anticaspa hombre",
@@ -363,16 +363,17 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 186.31,
-    "total_otimizado": 149.08,
-    "total_economy": 37.23,
-    "pct_saved": 20.0,
+    "total_mercadona": 186.09,
+    "total_otimizado": 244.4,
+    "total_economy": -58.31,
+    "pct_saved": -31.3,
     "by_market": {
-      "DIA": 149.08000000000004
+      "DIA": 148.90000000000006,
+      "Amazon.es": 95.5
     },
     "city_name": "Granada",
-    "pct_total_saved": 20.0,
-    "updated": "2026-08-24 23:58 UTC"
+    "pct_total_saved": -31.3,
+    "updated": "2026-08-25 12:11 UTC"
   },
   "alicante": {
     "city": "alicante",
@@ -646,24 +647,24 @@
         "category": "suplemento",
         "qty": 0.5,
         "best_market": "Amazon.es",
-        "best_price": null,
+        "best_price": 29.0,
         "merc_price": null,
-        "opt_monthly": null,
+        "opt_monthly": 14.5,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": false
+        "is_real_price": true
       },
       {
         "query": "proteina whey",
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": null,
+        "best_price": 81.0,
         "merc_price": null,
-        "opt_monthly": null,
+        "opt_monthly": 81.0,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": false
+        "is_real_price": true
       },
       {
         "query": "champu anticaspa hombre",
@@ -739,15 +740,16 @@
       }
     ],
     "total_mercadona": 186.01,
-    "total_otimizado": 148.84,
-    "total_economy": 37.17,
-    "pct_saved": 20.0,
+    "total_otimizado": 244.34,
+    "total_economy": -58.33,
+    "pct_saved": -31.4,
     "by_market": {
-      "DIA": 148.84000000000006
+      "DIA": 148.84000000000006,
+      "Amazon.es": 95.5
     },
     "city_name": "Alicante",
-    "pct_total_saved": 20.0,
-    "updated": "2026-08-24 23:58 UTC"
+    "pct_total_saved": -31.4,
+    "updated": "2026-08-25 12:11 UTC"
   },
   "nerja": {
     "city": "nerja",
@@ -913,11 +915,11 @@
         "category": "vegetal",
         "qty": 2.0,
         "best_market": "DIA",
-        "best_price": 0.3,
-        "merc_price": 0.37,
-        "opt_monthly": 0.6,
-        "merc_monthly": 0.74,
-        "savings_eur": 0.14,
+        "best_price": 0.21,
+        "merc_price": 0.26,
+        "opt_monthly": 0.42,
+        "merc_monthly": 0.52,
+        "savings_eur": 0.1,
         "is_real_price": false
       },
       {
@@ -1021,24 +1023,24 @@
         "category": "suplemento",
         "qty": 0.5,
         "best_market": "Amazon.es",
-        "best_price": null,
+        "best_price": 29.0,
         "merc_price": null,
-        "opt_monthly": null,
+        "opt_monthly": 14.5,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": false
+        "is_real_price": true
       },
       {
         "query": "proteina whey",
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": null,
+        "best_price": 81.0,
         "merc_price": null,
-        "opt_monthly": null,
+        "opt_monthly": 81.0,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": false
+        "is_real_price": true
       },
       {
         "query": "champu anticaspa hombre",
@@ -1113,15 +1115,16 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 186.31,
-    "total_otimizado": 149.08,
-    "total_economy": 37.23,
-    "pct_saved": 20.0,
+    "total_mercadona": 186.09,
+    "total_otimizado": 244.4,
+    "total_economy": -58.31,
+    "pct_saved": -31.3,
     "by_market": {
-      "DIA": 149.08000000000004
+      "DIA": 148.90000000000006,
+      "Amazon.es": 95.5
     },
     "city_name": "Nerja",
-    "pct_total_saved": 20.0,
-    "updated": "2026-08-24 23:58 UTC"
+    "pct_total_saved": -31.3,
+    "updated": "2026-08-25 12:11 UTC"
   }
 }
