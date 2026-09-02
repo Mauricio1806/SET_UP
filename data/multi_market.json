@@ -199,11 +199,11 @@
         "category": "gordura",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 3.76,
-        "merc_price": 4.7,
-        "opt_monthly": 3.76,
-        "merc_monthly": 4.7,
-        "savings_eur": 0.94,
+        "best_price": 2.08,
+        "merc_price": 2.6,
+        "opt_monthly": 2.08,
+        "merc_monthly": 2.6,
+        "savings_eur": 0.52,
         "is_real_price": false
       },
       {
@@ -283,12 +283,12 @@
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": 29.0,
+        "best_price": null,
         "merc_price": null,
-        "opt_monthly": 29.0,
+        "opt_monthly": null,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": true
+        "is_real_price": false
       },
       {
         "query": "champu anticaspa hombre",
@@ -363,17 +363,16 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 191.09,
-    "total_otimizado": 181.9,
-    "total_economy": 9.19,
-    "pct_saved": 4.8,
+    "total_mercadona": 188.99,
+    "total_otimizado": 151.22,
+    "total_economy": 37.77,
+    "pct_saved": 20.0,
     "by_market": {
-      "DIA": 152.90000000000006,
-      "Amazon.es": 29.0
+      "DIA": 151.22000000000006
     },
     "city_name": "Granada",
-    "pct_total_saved": 4.8,
-    "updated": "2026-09-02 01:20 UTC"
+    "pct_total_saved": 20.0,
+    "updated": "2026-09-02 15:34 UTC"
   },
   "alicante": {
     "city": "alicante",
@@ -659,12 +658,12 @@
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": 29.0,
+        "best_price": null,
         "merc_price": null,
-        "opt_monthly": 29.0,
+        "opt_monthly": null,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": true
+        "is_real_price": false
       },
       {
         "query": "champu anticaspa hombre",
@@ -740,16 +739,15 @@
       }
     ],
     "total_mercadona": 191.01,
-    "total_otimizado": 181.84,
-    "total_economy": 9.17,
-    "pct_saved": 4.8,
+    "total_otimizado": 152.84,
+    "total_economy": 38.17,
+    "pct_saved": 20.0,
     "by_market": {
-      "DIA": 152.84000000000006,
-      "Amazon.es": 29.0
+      "DIA": 152.84000000000006
     },
     "city_name": "Alicante",
-    "pct_total_saved": 4.8,
-    "updated": "2026-09-02 01:20 UTC"
+    "pct_total_saved": 20.0,
+    "updated": "2026-09-02 15:34 UTC"
   },
   "nerja": {
     "city": "nerja",
@@ -951,11 +949,11 @@
         "category": "gordura",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 3.76,
-        "merc_price": 4.7,
-        "opt_monthly": 3.76,
-        "merc_monthly": 4.7,
-        "savings_eur": 0.94,
+        "best_price": 2.08,
+        "merc_price": 2.6,
+        "opt_monthly": 2.08,
+        "merc_monthly": 2.6,
+        "savings_eur": 0.52,
         "is_real_price": false
       },
       {
@@ -1035,12 +1033,12 @@
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": 29.0,
+        "best_price": null,
         "merc_price": null,
-        "opt_monthly": 29.0,
+        "opt_monthly": null,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": true
+        "is_real_price": false
       },
       {
         "query": "champu anticaspa hombre",
@@ -1115,16 +1113,15 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 191.09,
-    "total_otimizado": 181.9,
-    "total_economy": 9.19,
-    "pct_saved": 4.8,
+    "total_mercadona": 188.99,
+    "total_otimizado": 151.22,
+    "total_economy": 37.77,
+    "pct_saved": 20.0,
     "by_market": {
-      "DIA": 152.90000000000006,
-      "Amazon.es": 29.0
+      "DIA": 151.22000000000006
     },
     "city_name": "Nerja",
-    "pct_total_saved": 4.8,
-    "updated": "2026-09-02 01:20 UTC"
+    "pct_total_saved": 20.0,
+    "updated": "2026-09-02 15:34 UTC"
   }
 }
