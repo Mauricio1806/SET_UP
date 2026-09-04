@@ -372,7 +372,7 @@
     },
     "city_name": "Granada",
     "pct_total_saved": 20.0,
-    "updated": "2026-09-04 01:08 UTC"
+    "updated": "2026-09-04 15:38 UTC"
   },
   "alicante": {
     "city": "alicante",
@@ -442,11 +442,11 @@
         "category": "proteína",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 1.28,
-        "merc_price": 1.6,
-        "opt_monthly": 1.28,
-        "merc_monthly": 1.6,
-        "savings_eur": 0.32,
+        "best_price": 1.44,
+        "merc_price": 1.8,
+        "opt_monthly": 1.44,
+        "merc_monthly": 1.8,
+        "savings_eur": 0.36,
         "is_real_price": false
       },
       {
@@ -538,11 +538,11 @@
         "category": "vegetal",
         "qty": 2.0,
         "best_market": "DIA",
-        "best_price": 0.33,
-        "merc_price": 0.41,
-        "opt_monthly": 0.66,
-        "merc_monthly": 0.82,
-        "savings_eur": 0.16,
+        "best_price": 0.22,
+        "merc_price": 0.27,
+        "opt_monthly": 0.44,
+        "merc_monthly": 0.54,
+        "savings_eur": 0.1,
         "is_real_price": false
       },
       {
@@ -738,16 +738,16 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 206.06,
-    "total_otimizado": 164.88,
-    "total_economy": 41.18,
+    "total_mercadona": 205.98,
+    "total_otimizado": 164.82,
+    "total_economy": 41.16,
     "pct_saved": 20.0,
     "by_market": {
-      "DIA": 164.88000000000005
+      "DIA": 164.82000000000005
     },
     "city_name": "Alicante",
     "pct_total_saved": 20.0,
-    "updated": "2026-09-04 01:08 UTC"
+    "updated": "2026-09-04 15:38 UTC"
   },
   "nerja": {
     "city": "nerja",
@@ -1122,6 +1122,6 @@
     },
     "city_name": "Nerja",
     "pct_total_saved": 20.0,
-    "updated": "2026-09-04 01:08 UTC"
+    "updated": "2026-09-04 15:38 UTC"
   }
 }
