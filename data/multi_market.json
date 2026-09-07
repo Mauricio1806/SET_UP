@@ -91,11 +91,11 @@
         "category": "carboidrato",
         "qty": 6.0,
         "best_market": "DIA",
-        "best_price": 3.44,
-        "merc_price": 4.3,
-        "opt_monthly": 20.64,
-        "merc_monthly": 25.8,
-        "savings_eur": 5.16,
+        "best_price": 3.72,
+        "merc_price": 4.65,
+        "opt_monthly": 22.32,
+        "merc_monthly": 27.9,
+        "savings_eur": 5.58,
         "is_real_price": false
       },
       {
@@ -363,16 +363,16 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 205.84,
-    "total_otimizado": 164.7,
-    "total_economy": 41.14,
+    "total_mercadona": 207.94,
+    "total_otimizado": 166.38,
+    "total_economy": 41.56,
     "pct_saved": 20.0,
     "by_market": {
-      "DIA": 164.70000000000005
+      "DIA": 166.38000000000005
     },
     "city_name": "Granada",
     "pct_total_saved": 20.0,
-    "updated": "2026-09-06 14:31 UTC"
+    "updated": "2026-09-07 16:57 UTC"
   },
   "alicante": {
     "city": "alicante",
@@ -466,11 +466,11 @@
         "category": "carboidrato",
         "qty": 6.0,
         "best_market": "DIA",
-        "best_price": 3.44,
-        "merc_price": 4.3,
-        "opt_monthly": 20.64,
-        "merc_monthly": 25.8,
-        "savings_eur": 5.16,
+        "best_price": 3.72,
+        "merc_price": 4.65,
+        "opt_monthly": 22.32,
+        "merc_monthly": 27.9,
+        "savings_eur": 5.58,
         "is_real_price": false
       },
       {
@@ -738,16 +738,16 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 205.78,
-    "total_otimizado": 164.66,
-    "total_economy": 41.12,
+    "total_mercadona": 207.88,
+    "total_otimizado": 166.34,
+    "total_economy": 41.54,
     "pct_saved": 20.0,
     "by_market": {
-      "DIA": 164.66000000000005
+      "DIA": 166.34000000000006
     },
     "city_name": "Alicante",
     "pct_total_saved": 20.0,
-    "updated": "2026-09-06 14:31 UTC"
+    "updated": "2026-09-07 16:57 UTC"
   },
   "nerja": {
     "city": "nerja",
@@ -841,11 +841,11 @@
         "category": "carboidrato",
         "qty": 6.0,
         "best_market": "DIA",
-        "best_price": 3.44,
-        "merc_price": 4.3,
-        "opt_monthly": 20.64,
-        "merc_monthly": 25.8,
-        "savings_eur": 5.16,
+        "best_price": 3.72,
+        "merc_price": 4.65,
+        "opt_monthly": 22.32,
+        "merc_monthly": 27.9,
+        "savings_eur": 5.58,
         "is_real_price": false
       },
       {
@@ -1113,15 +1113,15 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 205.84,
-    "total_otimizado": 164.7,
-    "total_economy": 41.14,
+    "total_mercadona": 207.94,
+    "total_otimizado": 166.38,
+    "total_economy": 41.56,
     "pct_saved": 20.0,
     "by_market": {
-      "DIA": 164.70000000000005
+      "DIA": 166.38000000000005
     },
     "city_name": "Nerja",
     "pct_total_saved": 20.0,
-    "updated": "2026-09-06 14:31 UTC"
+    "updated": "2026-09-07 16:57 UTC"
   }
 }
