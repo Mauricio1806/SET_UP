@@ -163,11 +163,11 @@
         "category": "vegetal",
         "qty": 2.0,
         "best_market": "DIA",
-        "best_price": 0.21,
-        "merc_price": 0.26,
-        "opt_monthly": 0.42,
-        "merc_monthly": 0.52,
-        "savings_eur": 0.1,
+        "best_price": 0.3,
+        "merc_price": 0.37,
+        "opt_monthly": 0.6,
+        "merc_monthly": 0.74,
+        "savings_eur": 0.14,
         "is_real_price": false
       },
       {
@@ -363,16 +363,16 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 207.94,
-    "total_otimizado": 166.38,
-    "total_economy": 41.56,
+    "total_mercadona": 208.16,
+    "total_otimizado": 166.56,
+    "total_economy": 41.6,
     "pct_saved": 20.0,
     "by_market": {
-      "DIA": 166.38000000000005
+      "DIA": 166.56000000000006
     },
     "city_name": "Granada",
     "pct_total_saved": 20.0,
-    "updated": "2026-09-09 15:43 UTC"
+    "updated": "2026-09-10 01:29 UTC"
   },
   "alicante": {
     "city": "alicante",
@@ -747,7 +747,7 @@
     },
     "city_name": "Alicante",
     "pct_total_saved": 20.0,
-    "updated": "2026-09-09 15:43 UTC"
+    "updated": "2026-09-10 01:29 UTC"
   },
   "nerja": {
     "city": "nerja",
@@ -913,11 +913,11 @@
         "category": "vegetal",
         "qty": 2.0,
         "best_market": "DIA",
-        "best_price": 0.21,
-        "merc_price": 0.26,
-        "opt_monthly": 0.42,
-        "merc_monthly": 0.52,
-        "savings_eur": 0.1,
+        "best_price": 0.3,
+        "merc_price": 0.37,
+        "opt_monthly": 0.6,
+        "merc_monthly": 0.74,
+        "savings_eur": 0.14,
         "is_real_price": false
       },
       {
@@ -1113,15 +1113,15 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 207.94,
-    "total_otimizado": 166.38,
-    "total_economy": 41.56,
+    "total_mercadona": 208.16,
+    "total_otimizado": 166.56,
+    "total_economy": 41.6,
     "pct_saved": 20.0,
     "by_market": {
-      "DIA": 166.38000000000005
+      "DIA": 166.56000000000006
     },
     "city_name": "Nerja",
     "pct_total_saved": 20.0,
-    "updated": "2026-09-09 15:43 UTC"
+    "updated": "2026-09-10 01:29 UTC"
   }
 }
