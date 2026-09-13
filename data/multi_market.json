@@ -271,12 +271,12 @@
         "category": "suplemento",
         "qty": 0.5,
         "best_market": "Amazon.es",
-        "best_price": 13.0,
+        "best_price": null,
         "merc_price": null,
-        "opt_monthly": 6.5,
+        "opt_monthly": null,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": true
+        "is_real_price": false
       },
       {
         "query": "proteina whey",
@@ -364,16 +364,16 @@
       }
     ],
     "total_mercadona": 206.81,
-    "total_otimizado": 254.98,
-    "total_economy": -48.17,
-    "pct_saved": -23.3,
+    "total_otimizado": 248.48,
+    "total_economy": -41.67,
+    "pct_saved": -20.1,
     "by_market": {
       "DIA": 165.48000000000008,
-      "Amazon.es": 89.5
+      "Amazon.es": 83.0
     },
     "city_name": "Granada",
-    "pct_total_saved": -23.3,
-    "updated": "2026-09-12 14:31 UTC"
+    "pct_total_saved": -20.1,
+    "updated": "2026-09-13 01:11 UTC"
   },
   "alicante": {
     "city": "alicante",
@@ -647,12 +647,12 @@
         "category": "suplemento",
         "qty": 0.5,
         "best_market": "Amazon.es",
-        "best_price": 13.0,
+        "best_price": null,
         "merc_price": null,
-        "opt_monthly": 6.5,
+        "opt_monthly": null,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": true
+        "is_real_price": false
       },
       {
         "query": "proteina whey",
@@ -740,16 +740,16 @@
       }
     ],
     "total_mercadona": 206.73,
-    "total_otimizado": 254.92,
-    "total_economy": -48.19,
-    "pct_saved": -23.3,
+    "total_otimizado": 248.42,
+    "total_economy": -41.69,
+    "pct_saved": -20.2,
     "by_market": {
       "DIA": 165.42000000000007,
-      "Amazon.es": 89.5
+      "Amazon.es": 83.0
     },
     "city_name": "Alicante",
-    "pct_total_saved": -23.3,
-    "updated": "2026-09-12 14:31 UTC"
+    "pct_total_saved": -20.2,
+    "updated": "2026-09-13 01:11 UTC"
   },
   "nerja": {
     "city": "nerja",
@@ -1023,12 +1023,12 @@
         "category": "suplemento",
         "qty": 0.5,
         "best_market": "Amazon.es",
-        "best_price": 13.0,
+        "best_price": null,
         "merc_price": null,
-        "opt_monthly": 6.5,
+        "opt_monthly": null,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": true
+        "is_real_price": false
       },
       {
         "query": "proteina whey",
@@ -1116,15 +1116,15 @@
       }
     ],
     "total_mercadona": 206.81,
-    "total_otimizado": 254.98,
-    "total_economy": -48.17,
-    "pct_saved": -23.3,
+    "total_otimizado": 248.48,
+    "total_economy": -41.67,
+    "pct_saved": -20.1,
     "by_market": {
       "DIA": 165.48000000000008,
-      "Amazon.es": 89.5
+      "Amazon.es": 83.0
     },
     "city_name": "Nerja",
-    "pct_total_saved": -23.3,
-    "updated": "2026-09-12 14:31 UTC"
+    "pct_total_saved": -20.1,
+    "updated": "2026-09-13 01:11 UTC"
   }
 }
