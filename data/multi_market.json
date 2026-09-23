@@ -127,11 +127,11 @@
         "category": "vegetal",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 1.72,
-        "merc_price": 2.15,
-        "opt_monthly": 1.72,
-        "merc_monthly": 2.15,
-        "savings_eur": 0.43,
+        "best_price": 2.68,
+        "merc_price": 3.35,
+        "opt_monthly": 2.68,
+        "merc_monthly": 3.35,
+        "savings_eur": 0.67,
         "is_real_price": false
       },
       {
@@ -164,10 +164,10 @@
         "qty": 2.0,
         "best_market": "DIA",
         "best_price": 0.22,
-        "merc_price": 0.27,
+        "merc_price": 0.28,
         "opt_monthly": 0.44,
-        "merc_monthly": 0.54,
-        "savings_eur": 0.1,
+        "merc_monthly": 0.56,
+        "savings_eur": 0.12,
         "is_real_price": false
       },
       {
@@ -235,11 +235,11 @@
         "category": "bebida",
         "qty": 6.0,
         "best_market": "DIA",
-        "best_price": 1.37,
-        "merc_price": 1.71,
-        "opt_monthly": 8.22,
-        "merc_monthly": 10.26,
-        "savings_eur": 2.04,
+        "best_price": 0.77,
+        "merc_price": 0.96,
+        "opt_monthly": 4.62,
+        "merc_monthly": 5.76,
+        "savings_eur": 1.14,
         "is_real_price": false
       },
       {
@@ -283,12 +283,12 @@
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": 29.0,
+        "best_price": null,
         "merc_price": null,
-        "opt_monthly": 29.0,
+        "opt_monthly": null,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": true
+        "is_real_price": false
       },
       {
         "query": "champu anticaspa hombre",
@@ -343,11 +343,11 @@
         "category": "gato",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 2.36,
-        "merc_price": 2.95,
-        "opt_monthly": 2.36,
-        "merc_monthly": 2.95,
-        "savings_eur": 0.59,
+        "best_price": 9.84,
+        "merc_price": 12.3,
+        "opt_monthly": 9.84,
+        "merc_monthly": 12.3,
+        "savings_eur": 2.46,
         "is_real_price": false
       },
       {
@@ -363,17 +363,16 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 189.71,
-    "total_otimizado": 180.8,
-    "total_economy": 8.91,
-    "pct_saved": 4.7,
+    "total_mercadona": 195.78,
+    "total_otimizado": 156.64,
+    "total_economy": 39.14,
+    "pct_saved": 20.0,
     "by_market": {
-      "DIA": 151.80000000000007,
-      "Amazon.es": 29.0
+      "DIA": 156.64000000000007
     },
     "city_name": "Granada",
-    "pct_total_saved": 4.7,
-    "updated": "2026-09-15 01:58 UTC"
+    "pct_total_saved": 20.0,
+    "updated": "2026-09-23 01:38 UTC"
   },
   "alicante": {
     "city": "alicante",
@@ -503,11 +502,11 @@
         "category": "vegetal",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 1.72,
-        "merc_price": 2.15,
-        "opt_monthly": 1.72,
-        "merc_monthly": 2.15,
-        "savings_eur": 0.43,
+        "best_price": 2.68,
+        "merc_price": 3.35,
+        "opt_monthly": 2.68,
+        "merc_monthly": 3.35,
+        "savings_eur": 0.67,
         "is_real_price": false
       },
       {
@@ -540,10 +539,10 @@
         "qty": 2.0,
         "best_market": "DIA",
         "best_price": 0.22,
-        "merc_price": 0.27,
+        "merc_price": 0.28,
         "opt_monthly": 0.44,
-        "merc_monthly": 0.54,
-        "savings_eur": 0.1,
+        "merc_monthly": 0.56,
+        "savings_eur": 0.12,
         "is_real_price": false
       },
       {
@@ -611,11 +610,11 @@
         "category": "bebida",
         "qty": 6.0,
         "best_market": "DIA",
-        "best_price": 1.37,
-        "merc_price": 1.71,
-        "opt_monthly": 8.22,
-        "merc_monthly": 10.26,
-        "savings_eur": 2.04,
+        "best_price": 0.77,
+        "merc_price": 0.96,
+        "opt_monthly": 4.62,
+        "merc_monthly": 5.76,
+        "savings_eur": 1.14,
         "is_real_price": false
       },
       {
@@ -659,12 +658,12 @@
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": 29.0,
+        "best_price": null,
         "merc_price": null,
-        "opt_monthly": 29.0,
+        "opt_monthly": null,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": true
+        "is_real_price": false
       },
       {
         "query": "champu anticaspa hombre",
@@ -719,11 +718,11 @@
         "category": "gato",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 2.36,
-        "merc_price": 2.95,
-        "opt_monthly": 2.36,
-        "merc_monthly": 2.95,
-        "savings_eur": 0.59,
+        "best_price": 4.4,
+        "merc_price": 5.5,
+        "opt_monthly": 4.4,
+        "merc_monthly": 5.5,
+        "savings_eur": 1.1,
         "is_real_price": false
       },
       {
@@ -739,17 +738,16 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 189.63,
-    "total_otimizado": 180.74,
-    "total_economy": 8.89,
-    "pct_saved": 4.7,
+    "total_mercadona": 188.9,
+    "total_otimizado": 151.14,
+    "total_economy": 37.76,
+    "pct_saved": 20.0,
     "by_market": {
-      "DIA": 151.74000000000007,
-      "Amazon.es": 29.0
+      "DIA": 151.14000000000007
     },
     "city_name": "Alicante",
-    "pct_total_saved": 4.7,
-    "updated": "2026-09-15 01:58 UTC"
+    "pct_total_saved": 20.0,
+    "updated": "2026-09-23 01:38 UTC"
   },
   "nerja": {
     "city": "nerja",
@@ -879,11 +877,11 @@
         "category": "vegetal",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 1.72,
-        "merc_price": 2.15,
-        "opt_monthly": 1.72,
-        "merc_monthly": 2.15,
-        "savings_eur": 0.43,
+        "best_price": 2.68,
+        "merc_price": 3.35,
+        "opt_monthly": 2.68,
+        "merc_monthly": 3.35,
+        "savings_eur": 0.67,
         "is_real_price": false
       },
       {
@@ -916,10 +914,10 @@
         "qty": 2.0,
         "best_market": "DIA",
         "best_price": 0.22,
-        "merc_price": 0.27,
+        "merc_price": 0.28,
         "opt_monthly": 0.44,
-        "merc_monthly": 0.54,
-        "savings_eur": 0.1,
+        "merc_monthly": 0.56,
+        "savings_eur": 0.12,
         "is_real_price": false
       },
       {
@@ -987,11 +985,11 @@
         "category": "bebida",
         "qty": 6.0,
         "best_market": "DIA",
-        "best_price": 1.37,
-        "merc_price": 1.71,
-        "opt_monthly": 8.22,
-        "merc_monthly": 10.26,
-        "savings_eur": 2.04,
+        "best_price": 0.77,
+        "merc_price": 0.96,
+        "opt_monthly": 4.62,
+        "merc_monthly": 5.76,
+        "savings_eur": 1.14,
         "is_real_price": false
       },
       {
@@ -1035,12 +1033,12 @@
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": 29.0,
+        "best_price": null,
         "merc_price": null,
-        "opt_monthly": 29.0,
+        "opt_monthly": null,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": true
+        "is_real_price": false
       },
       {
         "query": "champu anticaspa hombre",
@@ -1095,11 +1093,11 @@
         "category": "gato",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 2.36,
-        "merc_price": 2.95,
-        "opt_monthly": 2.36,
-        "merc_monthly": 2.95,
-        "savings_eur": 0.59,
+        "best_price": 9.84,
+        "merc_price": 12.3,
+        "opt_monthly": 9.84,
+        "merc_monthly": 12.3,
+        "savings_eur": 2.46,
         "is_real_price": false
       },
       {
@@ -1115,16 +1113,15 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 189.71,
-    "total_otimizado": 180.8,
-    "total_economy": 8.91,
-    "pct_saved": 4.7,
+    "total_mercadona": 195.78,
+    "total_otimizado": 156.64,
+    "total_economy": 39.14,
+    "pct_saved": 20.0,
     "by_market": {
-      "DIA": 151.80000000000007,
-      "Amazon.es": 29.0
+      "DIA": 156.64000000000007
     },
     "city_name": "Nerja",
-    "pct_total_saved": 4.7,
-    "updated": "2026-09-15 01:58 UTC"
+    "pct_total_saved": 20.0,
+    "updated": "2026-09-23 01:38 UTC"
   }
 }
