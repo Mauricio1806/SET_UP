@@ -235,11 +235,11 @@
         "category": "bebida",
         "qty": 6.0,
         "best_market": "DIA",
-        "best_price": 0.77,
-        "merc_price": 0.96,
-        "opt_monthly": 4.62,
-        "merc_monthly": 5.76,
-        "savings_eur": 1.14,
+        "best_price": 1.37,
+        "merc_price": 1.71,
+        "opt_monthly": 8.22,
+        "merc_monthly": 10.26,
+        "savings_eur": 2.04,
         "is_real_price": false
       },
       {
@@ -319,11 +319,11 @@
         "category": "higiene",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 0.96,
-        "merc_price": 1.2,
-        "opt_monthly": 0.96,
-        "merc_monthly": 1.2,
-        "savings_eur": 0.24,
+        "best_price": 0.76,
+        "merc_price": 0.95,
+        "opt_monthly": 0.76,
+        "merc_monthly": 0.95,
+        "savings_eur": 0.19,
         "is_real_price": false
       },
       {
@@ -363,16 +363,16 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 194.58,
-    "total_otimizado": 155.68,
-    "total_economy": 38.9,
+    "total_mercadona": 198.83,
+    "total_otimizado": 159.08,
+    "total_economy": 39.75,
     "pct_saved": 20.0,
     "by_market": {
-      "DIA": 155.68000000000006
+      "DIA": 159.08000000000004
     },
     "city_name": "Granada",
     "pct_total_saved": 20.0,
-    "updated": "2026-09-24 01:33 UTC"
+    "updated": "2026-09-24 16:34 UTC"
   },
   "alicante": {
     "city": "alicante",
@@ -610,11 +610,11 @@
         "category": "bebida",
         "qty": 6.0,
         "best_market": "DIA",
-        "best_price": 0.77,
-        "merc_price": 0.96,
-        "opt_monthly": 4.62,
-        "merc_monthly": 5.76,
-        "savings_eur": 1.14,
+        "best_price": 1.37,
+        "merc_price": 1.71,
+        "opt_monthly": 8.22,
+        "merc_monthly": 10.26,
+        "savings_eur": 2.04,
         "is_real_price": false
       },
       {
@@ -694,11 +694,11 @@
         "category": "higiene",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 0.96,
-        "merc_price": 1.2,
-        "opt_monthly": 0.96,
-        "merc_monthly": 1.2,
-        "savings_eur": 0.24,
+        "best_price": 0.76,
+        "merc_price": 0.95,
+        "opt_monthly": 0.76,
+        "merc_monthly": 0.95,
+        "savings_eur": 0.19,
         "is_real_price": false
       },
       {
@@ -738,16 +738,16 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 187.7,
-    "total_otimizado": 150.18,
-    "total_economy": 37.52,
+    "total_mercadona": 191.95,
+    "total_otimizado": 153.58,
+    "total_economy": 38.37,
     "pct_saved": 20.0,
     "by_market": {
-      "DIA": 150.18000000000006
+      "DIA": 153.58000000000004
     },
     "city_name": "Alicante",
     "pct_total_saved": 20.0,
-    "updated": "2026-09-24 01:33 UTC"
+    "updated": "2026-09-24 16:34 UTC"
   },
   "nerja": {
     "city": "nerja",
@@ -985,11 +985,11 @@
         "category": "bebida",
         "qty": 6.0,
         "best_market": "DIA",
-        "best_price": 0.77,
-        "merc_price": 0.96,
-        "opt_monthly": 4.62,
-        "merc_monthly": 5.76,
-        "savings_eur": 1.14,
+        "best_price": 1.37,
+        "merc_price": 1.71,
+        "opt_monthly": 8.22,
+        "merc_monthly": 10.26,
+        "savings_eur": 2.04,
         "is_real_price": false
       },
       {
@@ -1069,11 +1069,11 @@
         "category": "higiene",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 0.96,
-        "merc_price": 1.2,
-        "opt_monthly": 0.96,
-        "merc_monthly": 1.2,
-        "savings_eur": 0.24,
+        "best_price": 0.76,
+        "merc_price": 0.95,
+        "opt_monthly": 0.76,
+        "merc_monthly": 0.95,
+        "savings_eur": 0.19,
         "is_real_price": false
       },
       {
@@ -1113,15 +1113,15 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 194.58,
-    "total_otimizado": 155.68,
-    "total_economy": 38.9,
+    "total_mercadona": 198.83,
+    "total_otimizado": 159.08,
+    "total_economy": 39.75,
     "pct_saved": 20.0,
     "by_market": {
-      "DIA": 155.68000000000006
+      "DIA": 159.08000000000004
     },
     "city_name": "Nerja",
     "pct_total_saved": 20.0,
-    "updated": "2026-09-24 01:33 UTC"
+    "updated": "2026-09-24 16:34 UTC"
   }
 }
