@@ -7,11 +7,11 @@
         "category": "proteína",
         "qty": 9.0,
         "best_market": "DIA",
-        "best_price": 5.57,
-        "merc_price": 6.96,
-        "opt_monthly": 50.13,
-        "merc_monthly": 62.64,
-        "savings_eur": 12.51,
+        "best_price": 5.86,
+        "merc_price": 7.32,
+        "opt_monthly": 52.74,
+        "merc_monthly": 65.88,
+        "savings_eur": 13.14,
         "is_real_price": false
       },
       {
@@ -91,11 +91,11 @@
         "category": "carboidrato",
         "qty": 6.0,
         "best_market": "DIA",
-        "best_price": 1.44,
-        "merc_price": 1.8,
-        "opt_monthly": 8.64,
-        "merc_monthly": 10.8,
-        "savings_eur": 2.16,
+        "best_price": 3.72,
+        "merc_price": 4.65,
+        "opt_monthly": 22.32,
+        "merc_monthly": 27.9,
+        "savings_eur": 5.58,
         "is_real_price": false
       },
       {
@@ -163,11 +163,11 @@
         "category": "vegetal",
         "qty": 2.0,
         "best_market": "DIA",
-        "best_price": 0.21,
-        "merc_price": 0.26,
-        "opt_monthly": 0.42,
-        "merc_monthly": 0.52,
-        "savings_eur": 0.1,
+        "best_price": 0.17,
+        "merc_price": 0.21,
+        "opt_monthly": 0.34,
+        "merc_monthly": 0.42,
+        "savings_eur": 0.08,
         "is_real_price": false
       },
       {
@@ -199,11 +199,11 @@
         "category": "gordura",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 3.56,
-        "merc_price": 4.45,
-        "opt_monthly": 3.56,
-        "merc_monthly": 4.45,
-        "savings_eur": 0.89,
+        "best_price": 3.48,
+        "merc_price": 4.35,
+        "opt_monthly": 3.48,
+        "merc_monthly": 4.35,
+        "savings_eur": 0.87,
         "is_real_price": false
       },
       {
@@ -235,11 +235,11 @@
         "category": "bebida",
         "qty": 6.0,
         "best_market": "DIA",
-        "best_price": 1.37,
-        "merc_price": 1.71,
-        "opt_monthly": 8.22,
-        "merc_monthly": 10.26,
-        "savings_eur": 2.04,
+        "best_price": 0.77,
+        "merc_price": 0.96,
+        "opt_monthly": 4.62,
+        "merc_monthly": 5.76,
+        "savings_eur": 1.14,
         "is_real_price": false
       },
       {
@@ -271,9 +271,9 @@
         "category": "suplemento",
         "qty": 0.5,
         "best_market": "Amazon.es",
-        "best_price": 19.0,
+        "best_price": 39.0,
         "merc_price": null,
-        "opt_monthly": 9.5,
+        "opt_monthly": 19.5,
         "merc_monthly": null,
         "savings_eur": null,
         "is_real_price": true
@@ -283,9 +283,9 @@
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": 29.0,
+        "best_price": 21.0,
         "merc_price": null,
-        "opt_monthly": 29.0,
+        "opt_monthly": 21.0,
         "merc_monthly": null,
         "savings_eur": null,
         "is_real_price": true
@@ -295,11 +295,11 @@
         "category": "higiene",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 1.6,
-        "merc_price": 2.0,
-        "opt_monthly": 1.6,
-        "merc_monthly": 2.0,
-        "savings_eur": 0.4,
+        "best_price": 2.72,
+        "merc_price": 3.4,
+        "opt_monthly": 2.72,
+        "merc_monthly": 3.4,
+        "savings_eur": 0.68,
         "is_real_price": false
       },
       {
@@ -319,11 +319,11 @@
         "category": "higiene",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 0.76,
-        "merc_price": 0.95,
-        "opt_monthly": 0.76,
-        "merc_monthly": 0.95,
-        "savings_eur": 0.19,
+        "best_price": 0.96,
+        "merc_price": 1.2,
+        "opt_monthly": 0.96,
+        "merc_monthly": 1.2,
+        "savings_eur": 0.24,
         "is_real_price": false
       },
       {
@@ -363,17 +363,17 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 196.89,
-    "total_otimizado": 196.04,
-    "total_economy": 0.85,
-    "pct_saved": 0.4,
+    "total_mercadona": 214.18,
+    "total_otimizado": 211.89,
+    "total_economy": 2.29,
+    "pct_saved": 1.1,
     "by_market": {
-      "DIA": 157.54000000000002,
-      "Amazon.es": 38.5
+      "DIA": 171.39000000000004,
+      "Amazon.es": 40.5
     },
     "city_name": "Granada",
-    "pct_total_saved": 0.4,
-    "updated": "2026-09-29 03:18 UTC"
+    "pct_total_saved": 1.1,
+    "updated": "2026-10-14 16:26 UTC"
   },
   "alicante": {
     "city": "alicante",
@@ -383,11 +383,11 @@
         "category": "proteína",
         "qty": 9.0,
         "best_market": "DIA",
-        "best_price": 5.57,
-        "merc_price": 6.96,
-        "opt_monthly": 50.13,
-        "merc_monthly": 62.64,
-        "savings_eur": 12.51,
+        "best_price": 5.86,
+        "merc_price": 7.32,
+        "opt_monthly": 52.74,
+        "merc_monthly": 65.88,
+        "savings_eur": 13.14,
         "is_real_price": false
       },
       {
@@ -467,11 +467,11 @@
         "category": "carboidrato",
         "qty": 6.0,
         "best_market": "DIA",
-        "best_price": 1.44,
-        "merc_price": 1.8,
-        "opt_monthly": 8.64,
-        "merc_monthly": 10.8,
-        "savings_eur": 2.16,
+        "best_price": 3.72,
+        "merc_price": 4.65,
+        "opt_monthly": 22.32,
+        "merc_monthly": 27.9,
+        "savings_eur": 5.58,
         "is_real_price": false
       },
       {
@@ -539,11 +539,11 @@
         "category": "vegetal",
         "qty": 2.0,
         "best_market": "DIA",
-        "best_price": 0.21,
-        "merc_price": 0.26,
-        "opt_monthly": 0.42,
-        "merc_monthly": 0.52,
-        "savings_eur": 0.1,
+        "best_price": 0.17,
+        "merc_price": 0.21,
+        "opt_monthly": 0.34,
+        "merc_monthly": 0.42,
+        "savings_eur": 0.08,
         "is_real_price": false
       },
       {
@@ -575,11 +575,11 @@
         "category": "gordura",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 3.56,
-        "merc_price": 4.45,
-        "opt_monthly": 3.56,
-        "merc_monthly": 4.45,
-        "savings_eur": 0.89,
+        "best_price": 3.48,
+        "merc_price": 4.35,
+        "opt_monthly": 3.48,
+        "merc_monthly": 4.35,
+        "savings_eur": 0.87,
         "is_real_price": false
       },
       {
@@ -611,11 +611,11 @@
         "category": "bebida",
         "qty": 6.0,
         "best_market": "DIA",
-        "best_price": 1.37,
-        "merc_price": 1.71,
-        "opt_monthly": 8.22,
-        "merc_monthly": 10.26,
-        "savings_eur": 2.04,
+        "best_price": 0.77,
+        "merc_price": 0.96,
+        "opt_monthly": 4.62,
+        "merc_monthly": 5.76,
+        "savings_eur": 1.14,
         "is_real_price": false
       },
       {
@@ -647,9 +647,9 @@
         "category": "suplemento",
         "qty": 0.5,
         "best_market": "Amazon.es",
-        "best_price": 19.0,
+        "best_price": 39.0,
         "merc_price": null,
-        "opt_monthly": 9.5,
+        "opt_monthly": 19.5,
         "merc_monthly": null,
         "savings_eur": null,
         "is_real_price": true
@@ -659,9 +659,9 @@
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": 29.0,
+        "best_price": 21.0,
         "merc_price": null,
-        "opt_monthly": 29.0,
+        "opt_monthly": 21.0,
         "merc_monthly": null,
         "savings_eur": null,
         "is_real_price": true
@@ -671,11 +671,11 @@
         "category": "higiene",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 1.6,
-        "merc_price": 2.0,
-        "opt_monthly": 1.6,
-        "merc_monthly": 2.0,
-        "savings_eur": 0.4,
+        "best_price": 2.72,
+        "merc_price": 3.4,
+        "opt_monthly": 2.72,
+        "merc_monthly": 3.4,
+        "savings_eur": 0.68,
         "is_real_price": false
       },
       {
@@ -695,11 +695,11 @@
         "category": "higiene",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 0.76,
-        "merc_price": 0.95,
-        "opt_monthly": 0.76,
-        "merc_monthly": 0.95,
-        "savings_eur": 0.19,
+        "best_price": 0.96,
+        "merc_price": 1.2,
+        "opt_monthly": 0.96,
+        "merc_monthly": 1.2,
+        "savings_eur": 0.24,
         "is_real_price": false
       },
       {
@@ -739,17 +739,17 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 192.41,
-    "total_otimizado": 192.46,
-    "total_economy": -0.05,
-    "pct_saved": -0.0,
+    "total_mercadona": 209.7,
+    "total_otimizado": 208.31,
+    "total_economy": 1.39,
+    "pct_saved": 0.7,
     "by_market": {
-      "DIA": 153.96,
-      "Amazon.es": 38.5
+      "DIA": 167.81000000000003,
+      "Amazon.es": 40.5
     },
     "city_name": "Alicante",
-    "pct_total_saved": -0.0,
-    "updated": "2026-09-29 03:18 UTC"
+    "pct_total_saved": 0.7,
+    "updated": "2026-10-14 16:26 UTC"
   },
   "nerja": {
     "city": "nerja",
@@ -759,11 +759,11 @@
         "category": "proteína",
         "qty": 9.0,
         "best_market": "DIA",
-        "best_price": 5.57,
-        "merc_price": 6.96,
-        "opt_monthly": 50.13,
-        "merc_monthly": 62.64,
-        "savings_eur": 12.51,
+        "best_price": 5.86,
+        "merc_price": 7.32,
+        "opt_monthly": 52.74,
+        "merc_monthly": 65.88,
+        "savings_eur": 13.14,
         "is_real_price": false
       },
       {
@@ -843,11 +843,11 @@
         "category": "carboidrato",
         "qty": 6.0,
         "best_market": "DIA",
-        "best_price": 1.44,
-        "merc_price": 1.8,
-        "opt_monthly": 8.64,
-        "merc_monthly": 10.8,
-        "savings_eur": 2.16,
+        "best_price": 3.72,
+        "merc_price": 4.65,
+        "opt_monthly": 22.32,
+        "merc_monthly": 27.9,
+        "savings_eur": 5.58,
         "is_real_price": false
       },
       {
@@ -915,11 +915,11 @@
         "category": "vegetal",
         "qty": 2.0,
         "best_market": "DIA",
-        "best_price": 0.21,
-        "merc_price": 0.26,
-        "opt_monthly": 0.42,
-        "merc_monthly": 0.52,
-        "savings_eur": 0.1,
+        "best_price": 0.17,
+        "merc_price": 0.21,
+        "opt_monthly": 0.34,
+        "merc_monthly": 0.42,
+        "savings_eur": 0.08,
         "is_real_price": false
       },
       {
@@ -951,11 +951,11 @@
         "category": "gordura",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 3.56,
-        "merc_price": 4.45,
-        "opt_monthly": 3.56,
-        "merc_monthly": 4.45,
-        "savings_eur": 0.89,
+        "best_price": 3.48,
+        "merc_price": 4.35,
+        "opt_monthly": 3.48,
+        "merc_monthly": 4.35,
+        "savings_eur": 0.87,
         "is_real_price": false
       },
       {
@@ -987,11 +987,11 @@
         "category": "bebida",
         "qty": 6.0,
         "best_market": "DIA",
-        "best_price": 1.37,
-        "merc_price": 1.71,
-        "opt_monthly": 8.22,
-        "merc_monthly": 10.26,
-        "savings_eur": 2.04,
+        "best_price": 0.77,
+        "merc_price": 0.96,
+        "opt_monthly": 4.62,
+        "merc_monthly": 5.76,
+        "savings_eur": 1.14,
         "is_real_price": false
       },
       {
@@ -1023,9 +1023,9 @@
         "category": "suplemento",
         "qty": 0.5,
         "best_market": "Amazon.es",
-        "best_price": 19.0,
+        "best_price": 39.0,
         "merc_price": null,
-        "opt_monthly": 9.5,
+        "opt_monthly": 19.5,
         "merc_monthly": null,
         "savings_eur": null,
         "is_real_price": true
@@ -1035,9 +1035,9 @@
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": 29.0,
+        "best_price": 21.0,
         "merc_price": null,
-        "opt_monthly": 29.0,
+        "opt_monthly": 21.0,
         "merc_monthly": null,
         "savings_eur": null,
         "is_real_price": true
@@ -1047,11 +1047,11 @@
         "category": "higiene",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 1.6,
-        "merc_price": 2.0,
-        "opt_monthly": 1.6,
-        "merc_monthly": 2.0,
-        "savings_eur": 0.4,
+        "best_price": 2.72,
+        "merc_price": 3.4,
+        "opt_monthly": 2.72,
+        "merc_monthly": 3.4,
+        "savings_eur": 0.68,
         "is_real_price": false
       },
       {
@@ -1071,11 +1071,11 @@
         "category": "higiene",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 0.76,
-        "merc_price": 0.95,
-        "opt_monthly": 0.76,
-        "merc_monthly": 0.95,
-        "savings_eur": 0.19,
+        "best_price": 0.96,
+        "merc_price": 1.2,
+        "opt_monthly": 0.96,
+        "merc_monthly": 1.2,
+        "savings_eur": 0.24,
         "is_real_price": false
       },
       {
@@ -1115,16 +1115,16 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 196.89,
-    "total_otimizado": 196.04,
-    "total_economy": 0.85,
-    "pct_saved": 0.4,
+    "total_mercadona": 214.18,
+    "total_otimizado": 211.89,
+    "total_economy": 2.29,
+    "pct_saved": 1.1,
     "by_market": {
-      "DIA": 157.54000000000002,
-      "Amazon.es": 38.5
+      "DIA": 171.39000000000004,
+      "Amazon.es": 40.5
     },
     "city_name": "Nerja",
-    "pct_total_saved": 0.4,
-    "updated": "2026-09-29 03:18 UTC"
+    "pct_total_saved": 1.1,
+    "updated": "2026-10-14 16:26 UTC"
   }
 }
