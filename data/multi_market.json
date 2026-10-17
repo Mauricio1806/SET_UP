@@ -163,11 +163,11 @@
         "category": "vegetal",
         "qty": 2.0,
         "best_market": "DIA",
-        "best_price": 0.17,
-        "merc_price": 0.21,
-        "opt_monthly": 0.34,
-        "merc_monthly": 0.42,
-        "savings_eur": 0.08,
+        "best_price": 0.18,
+        "merc_price": 0.23,
+        "opt_monthly": 0.36,
+        "merc_monthly": 0.46,
+        "savings_eur": 0.1,
         "is_real_price": false
       },
       {
@@ -363,17 +363,17 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 197.08,
-    "total_otimizado": 181.21,
-    "total_economy": 15.87,
+    "total_mercadona": 197.12,
+    "total_otimizado": 181.23,
+    "total_economy": 15.89,
     "pct_saved": 8.1,
     "by_market": {
-      "DIA": 157.71000000000004,
+      "DIA": 157.73000000000005,
       "Amazon.es": 23.5
     },
     "city_name": "Granada",
     "pct_total_saved": 8.1,
-    "updated": "2026-10-16 15:35 UTC"
+    "updated": "2026-10-17 01:48 UTC"
   },
   "alicante": {
     "city": "alicante",
@@ -539,11 +539,11 @@
         "category": "vegetal",
         "qty": 2.0,
         "best_market": "DIA",
-        "best_price": 0.16,
-        "merc_price": 0.2,
-        "opt_monthly": 0.32,
-        "merc_monthly": 0.4,
-        "savings_eur": 0.08,
+        "best_price": 0.36,
+        "merc_price": 0.45,
+        "opt_monthly": 0.72,
+        "merc_monthly": 0.9,
+        "savings_eur": 0.18,
         "is_real_price": false
       },
       {
@@ -739,17 +739,17 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 192.58,
-    "total_otimizado": 177.61,
-    "total_economy": 14.97,
+    "total_mercadona": 193.08,
+    "total_otimizado": 178.01,
+    "total_economy": 15.07,
     "pct_saved": 7.8,
     "by_market": {
-      "DIA": 154.11,
+      "DIA": 154.51000000000002,
       "Amazon.es": 23.5
     },
     "city_name": "Alicante",
     "pct_total_saved": 7.8,
-    "updated": "2026-10-16 15:35 UTC"
+    "updated": "2026-10-17 01:48 UTC"
   },
   "nerja": {
     "city": "nerja",
@@ -915,11 +915,11 @@
         "category": "vegetal",
         "qty": 2.0,
         "best_market": "DIA",
-        "best_price": 0.17,
-        "merc_price": 0.21,
-        "opt_monthly": 0.34,
-        "merc_monthly": 0.42,
-        "savings_eur": 0.08,
+        "best_price": 0.18,
+        "merc_price": 0.23,
+        "opt_monthly": 0.36,
+        "merc_monthly": 0.46,
+        "savings_eur": 0.1,
         "is_real_price": false
       },
       {
@@ -1115,16 +1115,16 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 197.08,
-    "total_otimizado": 181.21,
-    "total_economy": 15.87,
+    "total_mercadona": 197.12,
+    "total_otimizado": 181.23,
+    "total_economy": 15.89,
     "pct_saved": 8.1,
     "by_market": {
-      "DIA": 157.71000000000004,
+      "DIA": 157.73000000000005,
       "Amazon.es": 23.5
     },
     "city_name": "Nerja",
     "pct_total_saved": 8.1,
-    "updated": "2026-10-16 15:35 UTC"
+    "updated": "2026-10-17 01:48 UTC"
   }
 }
