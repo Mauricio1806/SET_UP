@@ -139,11 +139,11 @@
         "category": "vegetal",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 0.88,
-        "merc_price": 1.1,
-        "opt_monthly": 0.88,
-        "merc_monthly": 1.1,
-        "savings_eur": 0.22,
+        "best_price": 2.3,
+        "merc_price": 2.88,
+        "opt_monthly": 2.3,
+        "merc_monthly": 2.88,
+        "savings_eur": 0.58,
         "is_real_price": false
       },
       {
@@ -163,11 +163,11 @@
         "category": "vegetal",
         "qty": 2.0,
         "best_market": "DIA",
-        "best_price": 0.18,
-        "merc_price": 0.23,
-        "opt_monthly": 0.36,
-        "merc_monthly": 0.46,
-        "savings_eur": 0.1,
+        "best_price": 0.38,
+        "merc_price": 0.48,
+        "opt_monthly": 0.76,
+        "merc_monthly": 0.96,
+        "savings_eur": 0.2,
         "is_real_price": false
       },
       {
@@ -235,11 +235,11 @@
         "category": "bebida",
         "qty": 6.0,
         "best_market": "DIA",
-        "best_price": 1.37,
-        "merc_price": 1.71,
-        "opt_monthly": 8.22,
-        "merc_monthly": 10.26,
-        "savings_eur": 2.04,
+        "best_price": 0.77,
+        "merc_price": 0.96,
+        "opt_monthly": 4.62,
+        "merc_monthly": 5.76,
+        "savings_eur": 1.14,
         "is_real_price": false
       },
       {
@@ -271,9 +271,9 @@
         "category": "suplemento",
         "qty": 0.5,
         "best_market": "Amazon.es",
-        "best_price": 16.0,
+        "best_price": 9.0,
         "merc_price": null,
-        "opt_monthly": 8.0,
+        "opt_monthly": 4.5,
         "merc_monthly": null,
         "savings_eur": null,
         "is_real_price": true
@@ -363,17 +363,17 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 201.62,
-    "total_otimizado": 188.33,
-    "total_economy": 13.29,
-    "pct_saved": 6.6,
+    "total_mercadona": 199.4,
+    "total_otimizado": 183.05,
+    "total_economy": 16.35,
+    "pct_saved": 8.2,
     "by_market": {
-      "DIA": 161.33000000000004,
-      "Amazon.es": 27.0
+      "DIA": 159.55000000000004,
+      "Amazon.es": 23.5
     },
     "city_name": "Granada",
-    "pct_total_saved": 6.6,
-    "updated": "2026-10-21 01:32 UTC"
+    "pct_total_saved": 8.2,
+    "updated": "2026-10-21 16:13 UTC"
   },
   "alicante": {
     "city": "alicante",
@@ -611,11 +611,11 @@
         "category": "bebida",
         "qty": 6.0,
         "best_market": "DIA",
-        "best_price": 1.37,
-        "merc_price": 1.71,
-        "opt_monthly": 8.22,
-        "merc_monthly": 10.26,
-        "savings_eur": 2.04,
+        "best_price": 0.77,
+        "merc_price": 0.96,
+        "opt_monthly": 4.62,
+        "merc_monthly": 5.76,
+        "savings_eur": 1.14,
         "is_real_price": false
       },
       {
@@ -647,9 +647,9 @@
         "category": "suplemento",
         "qty": 0.5,
         "best_market": "Amazon.es",
-        "best_price": 16.0,
+        "best_price": 9.0,
         "merc_price": null,
-        "opt_monthly": 8.0,
+        "opt_monthly": 4.5,
         "merc_monthly": null,
         "savings_eur": null,
         "is_real_price": true
@@ -739,17 +739,17 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 197.1,
-    "total_otimizado": 184.73,
-    "total_economy": 12.37,
-    "pct_saved": 6.3,
+    "total_mercadona": 192.6,
+    "total_otimizado": 177.63,
+    "total_economy": 14.97,
+    "pct_saved": 7.8,
     "by_market": {
-      "DIA": 157.73000000000002,
-      "Amazon.es": 27.0
+      "DIA": 154.13000000000002,
+      "Amazon.es": 23.5
     },
     "city_name": "Alicante",
-    "pct_total_saved": 6.3,
-    "updated": "2026-10-21 01:32 UTC"
+    "pct_total_saved": 7.8,
+    "updated": "2026-10-21 16:13 UTC"
   },
   "nerja": {
     "city": "nerja",
@@ -891,11 +891,11 @@
         "category": "vegetal",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 0.88,
-        "merc_price": 1.1,
-        "opt_monthly": 0.88,
-        "merc_monthly": 1.1,
-        "savings_eur": 0.22,
+        "best_price": 2.3,
+        "merc_price": 2.88,
+        "opt_monthly": 2.3,
+        "merc_monthly": 2.88,
+        "savings_eur": 0.58,
         "is_real_price": false
       },
       {
@@ -915,11 +915,11 @@
         "category": "vegetal",
         "qty": 2.0,
         "best_market": "DIA",
-        "best_price": 0.18,
-        "merc_price": 0.23,
-        "opt_monthly": 0.36,
-        "merc_monthly": 0.46,
-        "savings_eur": 0.1,
+        "best_price": 0.38,
+        "merc_price": 0.48,
+        "opt_monthly": 0.76,
+        "merc_monthly": 0.96,
+        "savings_eur": 0.2,
         "is_real_price": false
       },
       {
@@ -987,11 +987,11 @@
         "category": "bebida",
         "qty": 6.0,
         "best_market": "DIA",
-        "best_price": 1.37,
-        "merc_price": 1.71,
-        "opt_monthly": 8.22,
-        "merc_monthly": 10.26,
-        "savings_eur": 2.04,
+        "best_price": 0.77,
+        "merc_price": 0.96,
+        "opt_monthly": 4.62,
+        "merc_monthly": 5.76,
+        "savings_eur": 1.14,
         "is_real_price": false
       },
       {
@@ -1023,9 +1023,9 @@
         "category": "suplemento",
         "qty": 0.5,
         "best_market": "Amazon.es",
-        "best_price": 16.0,
+        "best_price": 9.0,
         "merc_price": null,
-        "opt_monthly": 8.0,
+        "opt_monthly": 4.5,
         "merc_monthly": null,
         "savings_eur": null,
         "is_real_price": true
@@ -1115,16 +1115,16 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 201.62,
-    "total_otimizado": 188.33,
-    "total_economy": 13.29,
-    "pct_saved": 6.6,
+    "total_mercadona": 199.4,
+    "total_otimizado": 183.05,
+    "total_economy": 16.35,
+    "pct_saved": 8.2,
     "by_market": {
-      "DIA": 161.33000000000004,
-      "Amazon.es": 27.0
+      "DIA": 159.55000000000004,
+      "Amazon.es": 23.5
     },
     "city_name": "Nerja",
-    "pct_total_saved": 6.6,
-    "updated": "2026-10-21 01:32 UTC"
+    "pct_total_saved": 8.2,
+    "updated": "2026-10-21 16:13 UTC"
   }
 }
