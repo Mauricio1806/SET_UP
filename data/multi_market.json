@@ -235,11 +235,11 @@
         "category": "bebida",
         "qty": 6.0,
         "best_market": "DIA",
-        "best_price": 1.37,
-        "merc_price": 1.71,
-        "opt_monthly": 8.22,
-        "merc_monthly": 10.26,
-        "savings_eur": 2.04,
+        "best_price": 0.77,
+        "merc_price": 0.96,
+        "opt_monthly": 4.62,
+        "merc_monthly": 5.76,
+        "savings_eur": 1.14,
         "is_real_price": false
       },
       {
@@ -363,16 +363,16 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 201.58,
-    "total_otimizado": 161.31,
-    "total_economy": 40.27,
+    "total_mercadona": 197.08,
+    "total_otimizado": 157.71,
+    "total_economy": 39.37,
     "pct_saved": 20.0,
     "by_market": {
-      "DIA": 161.31000000000003
+      "DIA": 157.71000000000004
     },
     "city_name": "Granada",
     "pct_total_saved": 20.0,
-    "updated": "2026-10-23 01:30 UTC"
+    "updated": "2026-10-23 16:02 UTC"
   },
   "alicante": {
     "city": "alicante",
@@ -610,11 +610,11 @@
         "category": "bebida",
         "qty": 6.0,
         "best_market": "DIA",
-        "best_price": 1.37,
-        "merc_price": 1.71,
-        "opt_monthly": 8.22,
-        "merc_monthly": 10.26,
-        "savings_eur": 2.04,
+        "best_price": 0.77,
+        "merc_price": 0.96,
+        "opt_monthly": 4.62,
+        "merc_monthly": 5.76,
+        "savings_eur": 1.14,
         "is_real_price": false
       },
       {
@@ -738,16 +738,16 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 197.1,
-    "total_otimizado": 157.73,
-    "total_economy": 39.37,
+    "total_mercadona": 192.6,
+    "total_otimizado": 154.13,
+    "total_economy": 38.47,
     "pct_saved": 20.0,
     "by_market": {
-      "DIA": 157.73000000000002
+      "DIA": 154.13000000000002
     },
     "city_name": "Alicante",
     "pct_total_saved": 20.0,
-    "updated": "2026-10-23 01:30 UTC"
+    "updated": "2026-10-23 16:02 UTC"
   },
   "nerja": {
     "city": "nerja",
@@ -985,11 +985,11 @@
         "category": "bebida",
         "qty": 6.0,
         "best_market": "DIA",
-        "best_price": 1.37,
-        "merc_price": 1.71,
-        "opt_monthly": 8.22,
-        "merc_monthly": 10.26,
-        "savings_eur": 2.04,
+        "best_price": 0.77,
+        "merc_price": 0.96,
+        "opt_monthly": 4.62,
+        "merc_monthly": 5.76,
+        "savings_eur": 1.14,
         "is_real_price": false
       },
       {
@@ -1113,15 +1113,15 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 201.58,
-    "total_otimizado": 161.31,
-    "total_economy": 40.27,
+    "total_mercadona": 197.08,
+    "total_otimizado": 157.71,
+    "total_economy": 39.37,
     "pct_saved": 20.0,
     "by_market": {
-      "DIA": 161.31000000000003
+      "DIA": 157.71000000000004
     },
     "city_name": "Nerja",
     "pct_total_saved": 20.0,
-    "updated": "2026-10-23 01:30 UTC"
+    "updated": "2026-10-23 16:02 UTC"
   }
 }
