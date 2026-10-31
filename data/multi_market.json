@@ -295,11 +295,11 @@
         "category": "higiene",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 2.72,
-        "merc_price": 3.4,
-        "opt_monthly": 2.72,
-        "merc_monthly": 3.4,
-        "savings_eur": 0.68,
+        "best_price": 3.12,
+        "merc_price": 3.9,
+        "opt_monthly": 3.12,
+        "merc_monthly": 3.9,
+        "savings_eur": 0.78,
         "is_real_price": false
       },
       {
@@ -363,17 +363,17 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 193.28,
-    "total_otimizado": 179.17,
-    "total_economy": 14.11,
+    "total_mercadona": 193.78,
+    "total_otimizado": 179.57,
+    "total_economy": 14.21,
     "pct_saved": 7.3,
     "by_market": {
-      "DIA": 154.67000000000002,
+      "DIA": 155.07000000000002,
       "Amazon.es": 24.5
     },
     "city_name": "Granada",
     "pct_total_saved": 7.3,
-    "updated": "2026-10-31 02:22 UTC"
+    "updated": "2026-10-31 16:21 UTC"
   },
   "alicante": {
     "city": "alicante",
@@ -671,11 +671,11 @@
         "category": "higiene",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 2.72,
-        "merc_price": 3.4,
-        "opt_monthly": 2.72,
-        "merc_monthly": 3.4,
-        "savings_eur": 0.68,
+        "best_price": 3.12,
+        "merc_price": 3.9,
+        "opt_monthly": 3.12,
+        "merc_monthly": 3.9,
+        "savings_eur": 0.78,
         "is_real_price": false
       },
       {
@@ -739,17 +739,17 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 195.6,
-    "total_otimizado": 181.03,
-    "total_economy": 14.57,
-    "pct_saved": 7.4,
+    "total_mercadona": 196.1,
+    "total_otimizado": 181.43,
+    "total_economy": 14.67,
+    "pct_saved": 7.5,
     "by_market": {
-      "DIA": 156.53,
+      "DIA": 156.93,
       "Amazon.es": 24.5
     },
     "city_name": "Alicante",
-    "pct_total_saved": 7.4,
-    "updated": "2026-10-31 02:22 UTC"
+    "pct_total_saved": 7.5,
+    "updated": "2026-10-31 16:21 UTC"
   },
   "nerja": {
     "city": "nerja",
@@ -1047,11 +1047,11 @@
         "category": "higiene",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 2.72,
-        "merc_price": 3.4,
-        "opt_monthly": 2.72,
-        "merc_monthly": 3.4,
-        "savings_eur": 0.68,
+        "best_price": 3.12,
+        "merc_price": 3.9,
+        "opt_monthly": 3.12,
+        "merc_monthly": 3.9,
+        "savings_eur": 0.78,
         "is_real_price": false
       },
       {
@@ -1115,16 +1115,16 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 193.28,
-    "total_otimizado": 179.17,
-    "total_economy": 14.11,
+    "total_mercadona": 193.78,
+    "total_otimizado": 179.57,
+    "total_economy": 14.21,
     "pct_saved": 7.3,
     "by_market": {
-      "DIA": 154.67000000000002,
+      "DIA": 155.07000000000002,
       "Amazon.es": 24.5
     },
     "city_name": "Nerja",
     "pct_total_saved": 7.3,
-    "updated": "2026-10-31 02:22 UTC"
+    "updated": "2026-10-31 16:21 UTC"
   }
 }
