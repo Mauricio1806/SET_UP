@@ -373,7 +373,7 @@
     },
     "city_name": "Granada",
     "pct_total_saved": -12.7,
-    "updated": "2026-11-07 02:51 UTC"
+    "updated": "2026-11-07 17:11 UTC"
   },
   "alicante": {
     "city": "alicante",
@@ -719,11 +719,11 @@
         "category": "gato",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 3.4,
-        "merc_price": 4.25,
-        "opt_monthly": 3.4,
-        "merc_monthly": 4.25,
-        "savings_eur": 0.85,
+        "best_price": 4.64,
+        "merc_price": 5.8,
+        "opt_monthly": 4.64,
+        "merc_monthly": 5.8,
+        "savings_eur": 1.16,
         "is_real_price": false
       },
       {
@@ -739,17 +739,17 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 196.59,
-    "total_otimizado": 220.81,
-    "total_economy": -24.22,
-    "pct_saved": -12.3,
+    "total_mercadona": 198.14,
+    "total_otimizado": 222.05,
+    "total_economy": -23.91,
+    "pct_saved": -12.1,
     "by_market": {
-      "DIA": 157.31000000000003,
+      "DIA": 158.55,
       "Amazon.es": 63.5
     },
     "city_name": "Alicante",
-    "pct_total_saved": -12.3,
-    "updated": "2026-11-07 02:51 UTC"
+    "pct_total_saved": -12.1,
+    "updated": "2026-11-07 17:11 UTC"
   },
   "nerja": {
     "city": "nerja",
@@ -1125,6 +1125,6 @@
     },
     "city_name": "Nerja",
     "pct_total_saved": -12.7,
-    "updated": "2026-11-07 02:51 UTC"
+    "updated": "2026-11-07 17:11 UTC"
   }
 }
