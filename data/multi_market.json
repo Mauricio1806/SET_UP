@@ -373,7 +373,7 @@
     },
     "city_name": "Granada",
     "pct_total_saved": -12.7,
-    "updated": "2026-11-07 17:11 UTC"
+    "updated": "2026-11-08 02:23 UTC"
   },
   "alicante": {
     "city": "alicante",
@@ -749,7 +749,7 @@
     },
     "city_name": "Alicante",
     "pct_total_saved": -12.1,
-    "updated": "2026-11-07 17:11 UTC"
+    "updated": "2026-11-08 02:23 UTC"
   },
   "nerja": {
     "city": "nerja",
@@ -1125,6 +1125,6 @@
     },
     "city_name": "Nerja",
     "pct_total_saved": -12.7,
-    "updated": "2026-11-07 17:11 UTC"
+    "updated": "2026-11-08 02:23 UTC"
   }
 }
