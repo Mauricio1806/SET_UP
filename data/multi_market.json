@@ -199,11 +199,11 @@
         "category": "gordura",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 3.48,
-        "merc_price": 4.35,
-        "opt_monthly": 3.48,
-        "merc_monthly": 4.35,
-        "savings_eur": 0.87,
+        "best_price": 3.28,
+        "merc_price": 4.1,
+        "opt_monthly": 3.28,
+        "merc_monthly": 4.1,
+        "savings_eur": 0.82,
         "is_real_price": false
       },
       {
@@ -271,12 +271,12 @@
         "category": "suplemento",
         "qty": 0.5,
         "best_market": "Amazon.es",
-        "best_price": null,
+        "best_price": 27.0,
         "merc_price": null,
-        "opt_monthly": null,
+        "opt_monthly": 13.5,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": false
+        "is_real_price": true
       },
       {
         "query": "proteina whey",
@@ -363,16 +363,17 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 194.27,
-    "total_otimizado": 155.45,
-    "total_economy": 38.82,
-    "pct_saved": 20.0,
+    "total_mercadona": 194.02,
+    "total_otimizado": 168.75,
+    "total_economy": 25.27,
+    "pct_saved": 13.0,
     "by_market": {
-      "DIA": 155.45000000000005
+      "DIA": 155.25000000000003,
+      "Amazon.es": 13.5
     },
     "city_name": "Granada",
-    "pct_total_saved": 20.0,
-    "updated": "2026-11-09 02:39 UTC"
+    "pct_total_saved": 13.0,
+    "updated": "2026-11-09 21:42 UTC"
   },
   "alicante": {
     "city": "alicante",
@@ -574,11 +575,11 @@
         "category": "gordura",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 3.48,
-        "merc_price": 4.35,
-        "opt_monthly": 3.48,
-        "merc_monthly": 4.35,
-        "savings_eur": 0.87,
+        "best_price": 3.28,
+        "merc_price": 4.1,
+        "opt_monthly": 3.28,
+        "merc_monthly": 4.1,
+        "savings_eur": 0.82,
         "is_real_price": false
       },
       {
@@ -646,12 +647,12 @@
         "category": "suplemento",
         "qty": 0.5,
         "best_market": "Amazon.es",
-        "best_price": null,
+        "best_price": 27.0,
         "merc_price": null,
-        "opt_monthly": null,
+        "opt_monthly": 13.5,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": false
+        "is_real_price": true
       },
       {
         "query": "proteina whey",
@@ -738,16 +739,17 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 198.14,
-    "total_otimizado": 158.55,
-    "total_economy": 39.59,
-    "pct_saved": 20.0,
+    "total_mercadona": 197.89,
+    "total_otimizado": 171.85,
+    "total_economy": 26.04,
+    "pct_saved": 13.2,
     "by_market": {
-      "DIA": 158.55
+      "DIA": 158.35,
+      "Amazon.es": 13.5
     },
     "city_name": "Alicante",
-    "pct_total_saved": 20.0,
-    "updated": "2026-11-09 02:39 UTC"
+    "pct_total_saved": 13.2,
+    "updated": "2026-11-09 21:42 UTC"
   },
   "nerja": {
     "city": "nerja",
@@ -949,11 +951,11 @@
         "category": "gordura",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 3.48,
-        "merc_price": 4.35,
-        "opt_monthly": 3.48,
-        "merc_monthly": 4.35,
-        "savings_eur": 0.87,
+        "best_price": 3.28,
+        "merc_price": 4.1,
+        "opt_monthly": 3.28,
+        "merc_monthly": 4.1,
+        "savings_eur": 0.82,
         "is_real_price": false
       },
       {
@@ -1021,12 +1023,12 @@
         "category": "suplemento",
         "qty": 0.5,
         "best_market": "Amazon.es",
-        "best_price": null,
+        "best_price": 27.0,
         "merc_price": null,
-        "opt_monthly": null,
+        "opt_monthly": 13.5,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": false
+        "is_real_price": true
       },
       {
         "query": "proteina whey",
@@ -1113,15 +1115,16 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 194.27,
-    "total_otimizado": 155.45,
-    "total_economy": 38.82,
-    "pct_saved": 20.0,
+    "total_mercadona": 194.02,
+    "total_otimizado": 168.75,
+    "total_economy": 25.27,
+    "pct_saved": 13.0,
     "by_market": {
-      "DIA": 155.45000000000005
+      "DIA": 155.25000000000003,
+      "Amazon.es": 13.5
     },
     "city_name": "Nerja",
-    "pct_total_saved": 20.0,
-    "updated": "2026-11-09 02:39 UTC"
+    "pct_total_saved": 13.0,
+    "updated": "2026-11-09 21:42 UTC"
   }
 }
