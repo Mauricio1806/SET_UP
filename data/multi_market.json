@@ -235,11 +235,11 @@
         "category": "bebida",
         "qty": 6.0,
         "best_market": "DIA",
-        "best_price": 1.37,
-        "merc_price": 1.71,
-        "opt_monthly": 8.22,
-        "merc_monthly": 10.26,
-        "savings_eur": 2.04,
+        "best_price": 0.77,
+        "merc_price": 0.96,
+        "opt_monthly": 4.62,
+        "merc_monthly": 5.76,
+        "savings_eur": 1.14,
         "is_real_price": false
       },
       {
@@ -283,9 +283,9 @@
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": 59.0,
+        "best_price": 46.0,
         "merc_price": null,
-        "opt_monthly": 59.0,
+        "opt_monthly": 46.0,
         "merc_monthly": null,
         "savings_eur": null,
         "is_real_price": true
@@ -363,17 +363,17 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 194.02,
-    "total_otimizado": 217.75,
-    "total_economy": -23.73,
-    "pct_saved": -12.2,
+    "total_mercadona": 189.52,
+    "total_otimizado": 201.15,
+    "total_economy": -11.63,
+    "pct_saved": -6.1,
     "by_market": {
-      "DIA": 155.25000000000003,
-      "Amazon.es": 62.5
+      "DIA": 151.65000000000003,
+      "Amazon.es": 49.5
     },
     "city_name": "Granada",
-    "pct_total_saved": -12.2,
-    "updated": "2026-11-10 04:49 UTC"
+    "pct_total_saved": -6.1,
+    "updated": "2026-11-10 18:57 UTC"
   },
   "alicante": {
     "city": "alicante",
@@ -611,11 +611,11 @@
         "category": "bebida",
         "qty": 6.0,
         "best_market": "DIA",
-        "best_price": 1.37,
-        "merc_price": 1.71,
-        "opt_monthly": 8.22,
-        "merc_monthly": 10.26,
-        "savings_eur": 2.04,
+        "best_price": 0.77,
+        "merc_price": 0.96,
+        "opt_monthly": 4.62,
+        "merc_monthly": 5.76,
+        "savings_eur": 1.14,
         "is_real_price": false
       },
       {
@@ -659,9 +659,9 @@
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": 59.0,
+        "best_price": 46.0,
         "merc_price": null,
-        "opt_monthly": 59.0,
+        "opt_monthly": 46.0,
         "merc_monthly": null,
         "savings_eur": null,
         "is_real_price": true
@@ -719,11 +719,11 @@
         "category": "gato",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 4.64,
-        "merc_price": 5.8,
-        "opt_monthly": 4.64,
-        "merc_monthly": 5.8,
-        "savings_eur": 1.16,
+        "best_price": 3.4,
+        "merc_price": 4.25,
+        "opt_monthly": 3.4,
+        "merc_monthly": 4.25,
+        "savings_eur": 0.85,
         "is_real_price": false
       },
       {
@@ -739,17 +739,17 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 197.89,
-    "total_otimizado": 220.85,
-    "total_economy": -22.96,
-    "pct_saved": -11.6,
+    "total_mercadona": 191.84,
+    "total_otimizado": 203.01,
+    "total_economy": -11.17,
+    "pct_saved": -5.8,
     "by_market": {
-      "DIA": 158.35,
-      "Amazon.es": 62.5
+      "DIA": 153.51000000000002,
+      "Amazon.es": 49.5
     },
     "city_name": "Alicante",
-    "pct_total_saved": -11.6,
-    "updated": "2026-11-10 04:49 UTC"
+    "pct_total_saved": -5.8,
+    "updated": "2026-11-10 18:57 UTC"
   },
   "nerja": {
     "city": "nerja",
@@ -987,11 +987,11 @@
         "category": "bebida",
         "qty": 6.0,
         "best_market": "DIA",
-        "best_price": 1.37,
-        "merc_price": 1.71,
-        "opt_monthly": 8.22,
-        "merc_monthly": 10.26,
-        "savings_eur": 2.04,
+        "best_price": 0.77,
+        "merc_price": 0.96,
+        "opt_monthly": 4.62,
+        "merc_monthly": 5.76,
+        "savings_eur": 1.14,
         "is_real_price": false
       },
       {
@@ -1035,9 +1035,9 @@
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": 59.0,
+        "best_price": 46.0,
         "merc_price": null,
-        "opt_monthly": 59.0,
+        "opt_monthly": 46.0,
         "merc_monthly": null,
         "savings_eur": null,
         "is_real_price": true
@@ -1115,16 +1115,16 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 194.02,
-    "total_otimizado": 217.75,
-    "total_economy": -23.73,
-    "pct_saved": -12.2,
+    "total_mercadona": 189.52,
+    "total_otimizado": 201.15,
+    "total_economy": -11.63,
+    "pct_saved": -6.1,
     "by_market": {
-      "DIA": 155.25000000000003,
-      "Amazon.es": 62.5
+      "DIA": 151.65000000000003,
+      "Amazon.es": 49.5
     },
     "city_name": "Nerja",
-    "pct_total_saved": -12.2,
-    "updated": "2026-11-10 04:49 UTC"
+    "pct_total_saved": -6.1,
+    "updated": "2026-11-10 18:57 UTC"
   }
 }
