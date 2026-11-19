@@ -271,35 +271,35 @@
         "category": "suplemento",
         "qty": 0.5,
         "best_market": "Amazon.es",
-        "best_price": 24.0,
+        "best_price": null,
         "merc_price": null,
-        "opt_monthly": 12.0,
+        "opt_monthly": null,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": true
+        "is_real_price": false
       },
       {
         "query": "proteina whey",
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": 20.0,
+        "best_price": null,
         "merc_price": null,
-        "opt_monthly": 20.0,
+        "opt_monthly": null,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": true
+        "is_real_price": false
       },
       {
         "query": "champu anticaspa hombre",
         "category": "higiene",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 3.12,
-        "merc_price": 3.9,
-        "opt_monthly": 3.12,
-        "merc_monthly": 3.9,
-        "savings_eur": 0.78,
+        "best_price": 1.6,
+        "merc_price": 2.0,
+        "opt_monthly": 1.6,
+        "merc_monthly": 2.0,
+        "savings_eur": 0.4,
         "is_real_price": false
       },
       {
@@ -363,17 +363,16 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 190.62,
-    "total_otimizado": 184.53,
-    "total_economy": 6.09,
-    "pct_saved": 3.2,
+    "total_mercadona": 188.72,
+    "total_otimizado": 151.01,
+    "total_economy": 37.71,
+    "pct_saved": 20.0,
     "by_market": {
-      "DIA": 152.53000000000006,
-      "Amazon.es": 32.0
+      "DIA": 151.01000000000005
     },
     "city_name": "Granada",
-    "pct_total_saved": 3.2,
-    "updated": "2026-11-19 04:18 UTC"
+    "pct_total_saved": 20.0,
+    "updated": "2026-11-19 19:42 UTC"
   },
   "alicante": {
     "city": "alicante",
@@ -539,11 +538,11 @@
         "category": "vegetal",
         "qty": 2.0,
         "best_market": "DIA",
-        "best_price": 0.22,
-        "merc_price": 0.28,
-        "opt_monthly": 0.44,
-        "merc_monthly": 0.56,
-        "savings_eur": 0.12,
+        "best_price": 0.41,
+        "merc_price": 0.51,
+        "opt_monthly": 0.82,
+        "merc_monthly": 1.02,
+        "savings_eur": 0.2,
         "is_real_price": false
       },
       {
@@ -647,35 +646,35 @@
         "category": "suplemento",
         "qty": 0.5,
         "best_market": "Amazon.es",
-        "best_price": 24.0,
+        "best_price": null,
         "merc_price": null,
-        "opt_monthly": 12.0,
+        "opt_monthly": null,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": true
+        "is_real_price": false
       },
       {
         "query": "proteina whey",
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": 20.0,
+        "best_price": null,
         "merc_price": null,
-        "opt_monthly": 20.0,
+        "opt_monthly": null,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": true
+        "is_real_price": false
       },
       {
         "query": "champu anticaspa hombre",
         "category": "higiene",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 3.12,
-        "merc_price": 3.9,
-        "opt_monthly": 3.12,
-        "merc_monthly": 3.9,
-        "savings_eur": 0.78,
+        "best_price": 1.6,
+        "merc_price": 2.0,
+        "opt_monthly": 1.6,
+        "merc_monthly": 2.0,
+        "savings_eur": 0.4,
         "is_real_price": false
       },
       {
@@ -739,17 +738,16 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 192.94,
-    "total_otimizado": 186.39,
-    "total_economy": 6.55,
-    "pct_saved": 3.4,
+    "total_mercadona": 191.5,
+    "total_otimizado": 153.25,
+    "total_economy": 38.25,
+    "pct_saved": 20.0,
     "by_market": {
-      "DIA": 154.39000000000004,
-      "Amazon.es": 32.0
+      "DIA": 153.25000000000003
     },
     "city_name": "Alicante",
-    "pct_total_saved": 3.4,
-    "updated": "2026-11-19 04:18 UTC"
+    "pct_total_saved": 20.0,
+    "updated": "2026-11-19 19:42 UTC"
   },
   "nerja": {
     "city": "nerja",
@@ -1023,35 +1021,35 @@
         "category": "suplemento",
         "qty": 0.5,
         "best_market": "Amazon.es",
-        "best_price": 24.0,
+        "best_price": null,
         "merc_price": null,
-        "opt_monthly": 12.0,
+        "opt_monthly": null,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": true
+        "is_real_price": false
       },
       {
         "query": "proteina whey",
         "category": "suplemento",
         "qty": 1.0,
         "best_market": "Amazon.es",
-        "best_price": 20.0,
+        "best_price": null,
         "merc_price": null,
-        "opt_monthly": 20.0,
+        "opt_monthly": null,
         "merc_monthly": null,
         "savings_eur": null,
-        "is_real_price": true
+        "is_real_price": false
       },
       {
         "query": "champu anticaspa hombre",
         "category": "higiene",
         "qty": 1.0,
         "best_market": "DIA",
-        "best_price": 3.12,
-        "merc_price": 3.9,
-        "opt_monthly": 3.12,
-        "merc_monthly": 3.9,
-        "savings_eur": 0.78,
+        "best_price": 1.6,
+        "merc_price": 2.0,
+        "opt_monthly": 1.6,
+        "merc_monthly": 2.0,
+        "savings_eur": 0.4,
         "is_real_price": false
       },
       {
@@ -1115,16 +1113,15 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 190.62,
-    "total_otimizado": 184.53,
-    "total_economy": 6.09,
-    "pct_saved": 3.2,
+    "total_mercadona": 188.72,
+    "total_otimizado": 151.01,
+    "total_economy": 37.71,
+    "pct_saved": 20.0,
     "by_market": {
-      "DIA": 152.53000000000006,
-      "Amazon.es": 32.0
+      "DIA": 151.01000000000005
     },
     "city_name": "Nerja",
-    "pct_total_saved": 3.2,
-    "updated": "2026-11-19 04:18 UTC"
+    "pct_total_saved": 20.0,
+    "updated": "2026-11-19 19:42 UTC"
   }
 }
