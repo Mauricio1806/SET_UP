@@ -372,7 +372,7 @@
     },
     "city_name": "Granada",
     "pct_total_saved": 20.0,
-    "updated": "2026-11-20 04:16 UTC"
+    "updated": "2026-11-20 19:25 UTC"
   },
   "alicante": {
     "city": "alicante",
@@ -538,11 +538,11 @@
         "category": "vegetal",
         "qty": 2.0,
         "best_market": "DIA",
-        "best_price": 0.41,
-        "merc_price": 0.51,
-        "opt_monthly": 0.82,
-        "merc_monthly": 1.02,
-        "savings_eur": 0.2,
+        "best_price": 0.21,
+        "merc_price": 0.26,
+        "opt_monthly": 0.42,
+        "merc_monthly": 0.52,
+        "savings_eur": 0.1,
         "is_real_price": false
       },
       {
@@ -738,16 +738,16 @@
         "is_real_price": false
       }
     ],
-    "total_mercadona": 191.5,
-    "total_otimizado": 153.25,
-    "total_economy": 38.25,
+    "total_mercadona": 191.0,
+    "total_otimizado": 152.85,
+    "total_economy": 38.15,
     "pct_saved": 20.0,
     "by_market": {
-      "DIA": 153.25000000000003
+      "DIA": 152.85000000000005
     },
     "city_name": "Alicante",
     "pct_total_saved": 20.0,
-    "updated": "2026-11-20 04:16 UTC"
+    "updated": "2026-11-20 19:25 UTC"
   },
   "nerja": {
     "city": "nerja",
@@ -1122,6 +1122,6 @@
     },
     "city_name": "Nerja",
     "pct_total_saved": 20.0,
-    "updated": "2026-11-20 04:16 UTC"
+    "updated": "2026-11-20 19:25 UTC"
   }
 }
